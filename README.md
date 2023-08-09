@@ -28,7 +28,7 @@ Um jogo educativo com desafios e testes de conhecimento, focado inicialmente na 
 4. Funcionalidade de feedback imediato, fornecendo orientações sobre respostas corretas e erradas.
 5. Adaptação a diferentes tamanhos de tela de dispositivos Android.
 6. Funcionamento offline, permitindo que as crianças aprendam mesmo sem conexão à internet.
-7.Integração com elementos gamificados, como recompensas e conquistas, para manter o interesse e a motivação.
+7. Integração com elementos gamificados, como recompensas e conquistas, para manter o interesse e a motivação.
 8. Versão piloto na área de matemática até 18/09/2023, com uma demonstração completa.
 9. Tela com menu de áreas de conhecimento (para caso seja adicionado uma área além da de matemática).
 10. Tela com os modos de jogo dentro da área específica.
