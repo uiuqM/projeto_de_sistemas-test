@@ -8,6 +8,14 @@ Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciênc
 
 Aplicativo Educativo para Crianças.
 
+##### Problemática do projeto:
+
+Não é recente as críticas ao ensino público brasileiro, com o nível sempre abaixo, conforme pesquisa da UNESCO de 2019, as escolas municipais possuem infraestrutura precária e isso influencia os resultados escolares.
+De acordo com essa pesquisa, a quantidade de escolas com infraestrutura geral em nível 1 e 2 somados representam 17,4% ao todo. Isto representa o total de escolas que não possuem um nível básico de infraestrutura, e consequentemente, de ensino.
+Com esse nível de desigualdade, essas crianças dificilmente têm acesso à tecnologias e é claro, não conseguem ter os benefícios de um aprendizado atrelado à tecnologia em geral, que hoje em dia, é provado que jogos em educação auxiliam no processo de aprendizado.
+
+[Qualidade da infraestrutura das escolas públicas do ensino fundamental no brasil](https://unesdoc.unesco.org/ark:/48223/pf0000368757?posInSet=1&queryId=7990941a-c4d6-47cc-94a7-f163404e5ce8)
+
 ##### Público-alvo: 
 
 Alunos do 1° ao 5° ano do ensino fundamental, com idades entre 6 e 10 anos.
@@ -56,21 +64,25 @@ A aplicação doze-fatores é uma metodologia para construir softwares-como-serv
 #
 
 ### English:
-Project developed for the Systems Design course of the Computer Science program at the Federal University of Tocantins, Palmas Campus, 2023.2.
+Project developed for the Systems Design discipline of the Computer Science course at the Federal University of Tocantins, Palmas Campus, 2023.2.
 
 #### Scope:
 Educational App for Children.
 
-#### Target Audience:
+##### Project problematic:
+
+The criticisms of Brazilian public education are not recent, with the level always below. According to a 2019 UNESCO study, municipal schools have poor infrastructure and this influences school results. According to this study, the number of schools with general infrastructure at level 1 and 2 combined represent 17.4% of the total. This represents the total number of schools that do not have a basic level of infrastructure, and consequently, of education. With this level of inequality, these children are unlikely to have access to technology and, of course, do not get the benefits of a learning tied to technology in general, which today, it is proven that games in education help in the learning process.
+
+##### Target Audience:
 Students from 1st to 5th grade of elementary school, aged between 6 and 10 years.
 
-#### Project Objectives:
+##### Project Objectives:
 Develop an interactive educational app to help stimulate logic and the development of knowledge in school-age children.
 
-#### Product to Develop:
+##### Product to Develop:
 An educational game with challenges and knowledge tests, initially focused on the field of mathematics, specifically designed for the target audience.
 
-#### Project Requirements:
+##### Project Requirements:
 1. User-friendly and appealing interface for children, with colorful and intuitive design.
 2. Creation of educational challenges that cover mathematical concepts from the 1st to the 5th-grade school curriculum.
 3. Testing module to assess children's knowledge, with multiple-choice questions and interactive tasks.
@@ -83,20 +95,34 @@ An educational game with challenges and knowledge tests, initially focused on th
 10. Screen with game modes within the specific area.
 11. Menu screen of the specific game.
 
-#### Partial Schedule:
+##### Partial Schedule:
 - Planning and Design Phase: Until August 13, 2023.
 - Mathematics Module Development: Until September 4, 2023.
 - Testing and Demo Adjustments: Until September 18, 2023.
 
+#
+
+#### [The Twelve-Factor App](https://12factor.net/pt_br/)
+
+#### Resume:
+Twelve-factor apps are a methodology for building software-as-a-service (SaaS) applications that can be applied to applications written in any programming language and that use any combination of supporting services.
+  - The project will be based on:
+  1. Codebase: A single application should be managed in a single code repository. This promotes traceability and makes collaboration between team members easier.
+  2. Dependencies: All application dependencies should be explicitly declared, typically in a manifest or configuration file. This ensures that all team members have a clear understanding of the project's dependencies.
+  3. Configuration: Application configurations, such as environment variables, API keys, and database connections, should be separated from the code and stored externally. This allows configurations to be easily changed without the need to modify the source code.
+  4. Build, release, run: The development process should be divided into three distinct stages: build, release, and run. This facilitates the deployment of consistent versions of the application to different environments.
+  5. Dev/Prod Parity: Development, testing, and production environments should be as similar as possible to minimize problems caused by configuration differences.
+  6. Logs: Application logs should be treated as event streams and be accessible and searchable. This facilitates the identification and resolution of problems.
 
 ##
 
+#### Stacks:
 * [React Native](https://react.dev/)
 * [MaterialUI](https://mui.com/material-ui/)
 * [Zustand](https://github.com/pmndrs/zustand)
 * [Expo](https://expo.dev/)
 
-
+##
 
 ## App's Screenshots
 
