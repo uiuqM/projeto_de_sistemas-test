@@ -1,6 +1,8 @@
 
 # Conhecimento em Ação
 
+##### english document: https://github.com/erarich/projeto_de_sistemas/blob/develop/READMEeng.md
+
 ### PT-BR:
 Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciência da Computação da Universidade Federal do Tocantins, Câmpus Palmas, 2023.2.
 
