@@ -1,6 +1,7 @@
 # Conhecimento em Ação
 
-### English:
+##### Portuguese document: https://github.com/erarich/projeto_de_sistemas/blob/develop/README.md
+
 Project developed for the Systems Design discipline of the Computer Science course at the Federal University of Tocantins, Palmas Campus, 2023.2.
 
 #### Scope:

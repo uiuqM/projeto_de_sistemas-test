@@ -1,9 +1,9 @@
 
 # Conhecimento em Ação
 
-##### english document: https://github.com/erarich/projeto_de_sistemas/blob/develop/READMEeng.md
+##### Documento em inglês: https://github.com/erarich/projeto_de_sistemas/blob/develop/READMEeng.md
 
-### PT-BR:
+###
 Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciência da Computação da Universidade Federal do Tocantins, Câmpus Palmas, 2023.2.
 
 #### Escopo: 
@@ -65,7 +65,7 @@ A aplicação doze-fatores é uma metodologia para construir softwares-como-serv
 
 #
 
-#### Stacks:
+#### Tecnologias:
 * [React Native](https://react.dev/)
 * [MaterialUI](https://mui.com/material-ui/)
 * [Zustand](https://github.com/pmndrs/zustand)
@@ -110,7 +110,7 @@ Inicie o servidor de desenvolvimento
 
 ## Licença
 
-[Unlicense/Public Domain](https://choosealicense.com/licenses/#unlicense). Você pode usar o aplicativo como desejar.
+[Sem licença/Domínio público](https://choosealicense.com/licenses/#unlicense). Você pode usar o aplicativo como desejar.
 
 
 
