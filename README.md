@@ -3,6 +3,23 @@
 
 Documento em inglês: https://github.com/erarich/projeto_de_sistemas/blob/develop/READMEeng.md
 
+## Índice 
+
+* [Introdução](#descrição-do-projeto)
+* [Parte comercial](#status-do-Projeto)
+  * [Problemática]()
+  * [Funcionalidades]()
+  * [Impactos sociais]()
+  * [Business Model Canvas]()
+* [Parte técnica](#funcionalidades-e-demonstração-da-aplicação)
+  * [Ferramentas obrigatórias]()
+  * [Requisitos funcionais e não-funcionais]()
+  * [Tecnologias]()
+  * [Fatores utilizados do "The Twelve Factor App"]()
+* [Capturas de tela do aplicativo](#pessoas-desenvolvedoras)
+* [Rodando localmente](#acesso-ao-projeto)
+* [Licença](#licença)
+
 
 ## Introdução
 Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciência da Computação da Universidade Federal do Tocantins, Câmpus Palmas, 2023.2 com o objetivo de simular a criação de um produto que tenha impacto social e esteja atrelado à descaracterização de aparelhos de TVBOX.
@@ -19,7 +36,10 @@ Ademais, há como requisitos para o desenvolvimento o uso de alguns conceitos e 
 
 Diante disso, foi discutido o desenvolvimento da problemática relacionada à **aprendizagem matemática voltada para escolas de ensino fundamental no Brasil** por conta do **baixo índice de aprendizado nessa área**. Dessa forma, nossa solução busca **ajudar no desenvolvimento do ensino da matemática com auxílio de tecnologia**. Portanto, será desenvolvido um **aplicativo para sistemas Android cujos dispositivos alvos serão os aparelhos de TVBOX**.
 
-Problemática desenvolvida:
+## Parte comercial
+TODO(Descrição)
+
+### Problemática
 
 Não é recente as críticas ao ensino público brasileiro, com o nível sempre abaixo, conforme pesquisa da UNESCO de 2019, as escolas municipais possuem infraestrutura precária e isso influencia os resultados escolares.
 De acordo com essa pesquisa, a quantidade de escolas com infraestrutura geral em nível 1 e 2 somados representam 17,4% ao todo. Isto representa o total de escolas que não possuem um nível básico de infraestrutura, e consequentemente, de ensino.
@@ -28,8 +48,15 @@ Com esse nível de desigualdade, essas crianças dificilmente têm acesso à tec
 Fontes: 
 [Qualidade da infraestrutura  das escolas públicas do ensino fundamental no Brasil](https://unesdoc.unesco.org/ark:/48223/pf0000368757?posInSet=1&queryId=7990941a-c4d6-47cc-94a7-f163404e5ce8)
 
-##### Requisitos do Projeto:
+### Funcionalidades
+### Impactos sociais
+### Business Model Canvas
 
+## Parte técnica
+TODO(Descrição)
+### Ferramentas obrigatórias
+
+### Requisitos funcionais e não-funcionais
 1. Interface amigável e atraente para crianças, com design colorido e intuitivo.
 2. Criação de desafios educativos que abordem conceitos matemáticos do currículo escolar do 1° ao 5° ano.
 3. Módulo de testes para avaliar o conhecimento das crianças, com perguntas de múltipla escolha e questões interativas.
@@ -42,18 +69,17 @@ Fontes:
 10. Tela com os modos de jogo dentro da área específica.
 11. Tela do menu do jogo específico.
 
-##### Cronograma parcial:
 
-- Fase de Planejamento e Design: Até 13/08/2023.
-- Desenvolvimento do Módulo de Matemática: Até 04/09/2023.
-- Testes e Ajustes da Demo: Até 18/09/2023.
+### Tecnologias
+* [React Native](https://react.dev/)
+* [MaterialUI](https://mui.com/material-ui/)
+* [Zustand](https://github.com/pmndrs/zustand)
+* [Expo](https://expo.dev/)
 
+### Fatores utilizados do "The Twelve Factor App"
 
-## Parte técnica
+[The Twelve-Factor App](https://12factor.net/pt_br/)
 
-#### [The Twelve-Factor App](https://12factor.net/pt_br/)
-
-##### Resumo:
 A aplicação doze-fatores é uma metodologia para construir softwares-como-serviço que pode ser aplicada a aplicações escritas em qualquer linguagem de programação, e que utilizem qualquer combinação de serviços de suporte.
   - O projeto se baseará em:
   1. Código-base (Codebase): Um único aplicativo deve ser gerenciado em um único repositório de código. Isso promove a rastreabilidade e facilita a colaboração entre os membros da equipe.
@@ -63,20 +89,9 @@ A aplicação doze-fatores é uma metodologia para construir softwares-como-serv
   5.  Dev/Prod Parity: Os ambientes de desenvolvimento, teste e produção devem ser o mais semelhantes possível para minimizar problemas causados por diferenças de configuração.
   6.  Logs: Os logs do aplicativo devem ser tratados como fluxos de eventos, sendo acessíveis e pesquisáveis. Isso facilita a identificação e resolução de problemas.
 
-#### Tecnologias:
-* [React Native](https://react.dev/)
-* [MaterialUI](https://mui.com/material-ui/)
-* [Zustand](https://github.com/pmndrs/zustand)
-* [Expo](https://expo.dev/)
+## Capturas de telas do aplicativo
 
-### Capturas de telas do aplicativo
-
-
-### Capturas de telas do aplicativo
-
-(colocar data do término do design)
-
-### Rodando localmente
+## Rodando localmente
 
 Clone o projeto
 
@@ -103,7 +118,7 @@ Inicie o servidor de desenvolvimento
 ```
 
 
-### Licença
+## Licença
 
 [Sem licença/Domínio público](https://choosealicense.com/licenses/#unlicense). Você pode usar o aplicativo como desejar.
 
