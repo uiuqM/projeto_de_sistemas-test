@@ -5,19 +5,19 @@ Documento em inglês: https://github.com/erarich/projeto_de_sistemas/blob/develo
 
 ## Índice 
 
-* [Introdução](#descrição-do-projeto)
-* [Parte comercial](#status-do-Projeto)
-  * [Problemática]()
-  * [Funcionalidades]()
-  * [Impactos sociais]()
-  * [Business Model Canvas]()
-* [Parte técnica](#funcionalidades-e-demonstração-da-aplicação)
-  * [Ferramentas obrigatórias]()
-  * [Requisitos funcionais e não-funcionais]()
-  * [Tecnologias]()
-  * [Fatores utilizados do "The Twelve Factor App"]()
-* [Capturas de tela do aplicativo](#pessoas-desenvolvedoras)
-* [Rodando localmente](#acesso-ao-projeto)
+* [Introdução](#introdução)
+* [Parte comercial](#parte-comercial)
+  * [Problemática](#problemática)
+  * [Funcionalidades](#funcionalidades)
+  * [Impactos sociais](#impactos-sociais)
+  * [Business Model Canvas](#business-model-canvas)
+* [Parte técnica](#parte-técnica)
+  * [Ferramentas obrigatórias](#ferramentas-obrigatórias)
+  * [Requisitos funcionais e não-funcionais](#requisitos-funcionais-e-não-funcionais)
+  * [Tecnologias](#tecnologias)
+  * [Fatores utilizados do "The Twelve Factor App"](#fatores-utilizados-do-the-twelve-factor-app)
+* [Capturas de tela do aplicativo](#capturas-de-tela-do-aplicativo)
+* [Rodando localmente](#rodando-localmente)
 * [Licença](#licença)
 
 
