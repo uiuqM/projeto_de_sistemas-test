@@ -16,7 +16,7 @@ Documento em inglês: https://github.com/erarich/projeto_de_sistemas/blob/develo
   * [Requisitos funcionais e não-funcionais](#requisitos-funcionais-e-não-funcionais)
   * [Tecnologias](#tecnologias)
   * [Fatores utilizados do "The Twelve Factor App"](#fatores-utilizados-do-the-twelve-factor-app)
-* [Capturas de tela do aplicativo](#capturas-de-tela-do-aplicativo)
+* [Capturas de telas do aplicativo](#capturas-de-telas-do-aplicativo)
 * [Rodando localmente](#rodando-localmente)
 * [Licença](#licença)
 
