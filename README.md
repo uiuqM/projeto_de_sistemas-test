@@ -51,7 +51,7 @@ Fontes:
 ### Funcionalidades
 ### Impactos sociais
 ### Business Model Canvas
-![](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/image.png)
+![Business model canva (conhecimento em ação)](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/image.png)
 
 ## Parte técnica
 TODO(Descrição)
@@ -77,18 +77,18 @@ TODO(Descrição)
 * [Zustand](https://github.com/pmndrs/zustand)
 * [Expo](https://expo.dev/)
 
-### Fatores utilizados do "The Twelve Factor App"
+### Fatores utilizados do "The Twelve-Factor App"
 
 [The Twelve-Factor App](https://12factor.net/pt_br/)
 
 A aplicação doze-fatores é uma metodologia para construir softwares-como-serviço que pode ser aplicada a aplicações escritas em qualquer linguagem de programação, e que utilizem qualquer combinação de serviços de suporte.
   - O projeto se baseará em:
-  1. Código-base (Codebase): Um único aplicativo deve ser gerenciado em um único repositório de código. Isso promove a rastreabilidade e facilita a colaboração entre os membros da equipe.
-  2. Dependências (Dependencies): Todas as dependências do aplicativo devem ser declaradas explicitamente, geralmente em um arquivo de manifesto ou configuração. Isso garante que todos os membros da equipe tenham uma compreensão clara das dependências do projeto.
-  3. Configurações (Config): As configurações do aplicativo, como variáveis de ambiente, chaves de API e conexões de banco de dados, devem ser separadas do código e armazenadas de maneira externa. Isso permite que as configurações sejam facilmente alteradas sem a necessidade de modificar o código-fonte.
-  4. Build, release, run: O processo de desenvolvimento deve ser dividido em três etapas distintas: construção (build), lançamento (release) e execução (run). Isso facilita a implantação de versões consistentes do aplicativo em diferentes ambientes.
-  5.  Dev/Prod Parity: Os ambientes de desenvolvimento, teste e produção devem ser o mais semelhantes possível para minimizar problemas causados por diferenças de configuração.
-  6.  Logs: Os logs do aplicativo devem ser tratados como fluxos de eventos, sendo acessíveis e pesquisáveis. Isso facilita a identificação e resolução de problemas.
+  1. Código-base (Codebase): Uma base de código com rastreamento utilizando controle de revisão, muitos deploys. Criamos e gerenciamos o app por apenas um repositório, contendo neste toda sua especificação.
+  2. Dependências (Dependencies): Declare e isole explicitamente as dependências.  A resolução de dependências do projeto está descrita pelo arquivo package.json, vale ressaltar que o gerenciamento é isolado pelo package manager da própria stack.
+  3. Configurações (Config): Armazene as configurações no ambiente. Estamos utilizado variáveis de ambiente para configuração do projeto, fazendo uso tambem do gerenciamento próprio do GitHub secrets.
+  4. Construa, lançe, execute (Build, release, run):Separe estritamente os estágios de construção e execução. O processo de desenvolvimento contará com estratégias definidas para as etapas de build release e run do aplicativo utilizando GitHub Actions.
+  5.  Dev/Prod semelhantes (Dev/Prod Parity): Mantenha o desenvolvimento, homologação e produção o mais similares possível. Os ambientes de desenvolvimento, teste e produção estarão separados pela estratégia de ramificação do projeto
+  6.  Logs (Logs): Trate logs como fluxos de eventos. Faremos uso de logs para rastreios e acompanhamento em etapas de desenvolvimento, bem como em estruturação do projeto no geral.
 
 ## Capturas de telas do aplicativo
 
