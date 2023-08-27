@@ -58,18 +58,6 @@ TODO(Descrição)
 ### Ferramentas obrigatórias
 
 ### Requisitos funcionais e não-funcionais
-1. Interface amigável e atraente para crianças, com design colorido e intuitivo.
-2. Criação de desafios educativos que abordem conceitos matemáticos do currículo escolar do 1° ao 5° ano.
-3. Módulo de testes para avaliar o conhecimento das crianças, com perguntas de múltipla escolha e questões interativas.
-4. Funcionalidade de feedback imediato, fornecendo orientações sobre respostas corretas e erradas.
-5. Adaptação a diferentes tamanhos de tela de dispositivos Android.
-6. Funcionamento offline, permitindo que as crianças aprendam mesmo sem conexão à internet.
-7. Integração com elementos gamificados, como recompensas e conquistas, para manter o interesse e a motivação.
-8. Versão piloto na área de matemática até 18/09/2023, com uma demonstração completa.
-9. Tela com menu de áreas de conhecimento (para caso seja adicionado uma área além da de matemática).
-10. Tela com os modos de jogo dentro da área específica.
-11. Tela do menu do jogo específico.
-
 
 ### Tecnologias
 * [React Native](https://react.dev/)
@@ -82,13 +70,31 @@ TODO(Descrição)
 [The Twelve-Factor App](https://12factor.net/pt_br/)
 
 A aplicação doze-fatores é uma metodologia para construir softwares-como-serviço que pode ser aplicada a aplicações escritas em qualquer linguagem de programação, e que utilizem qualquer combinação de serviços de suporte.
-  - O projeto se baseará em:
-  1. Código-base (Codebase): Uma base de código com rastreamento utilizando controle de revisão, muitos deploys. Criamos e gerenciamos o app por apenas um repositório, contendo neste toda sua especificação.
-  2. Dependências (Dependencies): Declare e isole explicitamente as dependências.  A resolução de dependências do projeto está descrita pelo arquivo package.json, vale ressaltar que o gerenciamento é isolado pelo package manager da própria stack.
-  3. Configurações (Config): Armazene as configurações no ambiente. Estamos utilizado variáveis de ambiente para configuração do projeto, fazendo uso tambem do gerenciamento próprio do GitHub secrets.
-  4. Construa, lançe, execute (Build, release, run):Separe estritamente os estágios de construção e execução. O processo de desenvolvimento contará com estratégias definidas para as etapas de build release e run do aplicativo utilizando GitHub Actions.
-  5.  Dev/Prod semelhantes (Dev/Prod Parity): Mantenha o desenvolvimento, homologação e produção o mais similares possível. Os ambientes de desenvolvimento, teste e produção estarão separados pela estratégia de ramificação do projeto
-  6.  Logs (Logs): Trate logs como fluxos de eventos. Faremos uso de logs para rastreios e acompanhamento em etapas de desenvolvimento, bem como em estruturação do projeto no geral.
+O projeto se baseará em:
+
+**Código-base (Codebase)** *Uma base de código com rastreamento utilizando controle de revisão, muitos deploys.*
+
+Criamos e gerenciamos o projeto por apenas um repositório, contendo neste toda sua especificação.
+
+**Dependências (Dependencies):** *Declare e isole explicitamente as dependências.*
+
+A resolução de dependências do projeto está descrita pelo arquivo *package.json*, vale ressaltar que as dependências são isoladas nativamente pelo próprio Nodejs.
+  
+**Configurações (Config):** *Armazene as configurações no ambiente.* 
+
+Estamos utilizado variáveis de ambiente para configuração do projeto, fazendo uso também do gerenciamento próprio do GitHub Secrets.
+
+**Construa, lançe, execute (Build, release, run):** *Separe estritamente os estágios de construção e execução.*
+
+O processo de desenvolvimento contará com estratégias definidas para as etapas de *build*, *releas*e e *run* do aplicativo utilizando GitHub Actions.
+
+**Dev/Prod semelhantes (Dev/Prod Parity):** *Mantenha o desenvolvimento, homologação e produção o mais similares possível.*
+
+Os ambientes de desenvolvimento, teste e produção estarão separados pela estratégia de ramificação do projeto (GitFlow).
+
+**Logs (Logs):** *Trate logs como fluxos de eventos.*
+
+Faremos uso de *logs* para rastreios e acompanhamento em etapas de desenvolvimento, bem como em estruturação do projeto no geral.
 
 ## Capturas de telas do aplicativo
 
