@@ -71,7 +71,7 @@ Lista geral de "pré-requisitos para o escopo e desenvolvimento do projeto":
 
 ### Requisitos funcionais e não-funcionais
 
-Os requisitos do projeto estão descritos no arquivo *requirements.md* na pasta *files* da pasta *.github*.
+Os requisitos do projeto estão descritos no arquivo *requirements.md* na pasta *files* da pasta *.github*.  
 [Requisitos](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/requirements.md)
 
 ### Tecnologias
