@@ -51,6 +51,7 @@ Fontes:
 ### Funcionalidades
 ### Impactos sociais
 ### Business Model Canvas
+![](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/image.png)
 
 ## Parte técnica
 TODO(Descrição)
