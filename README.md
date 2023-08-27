@@ -20,7 +20,6 @@ Documento em inglês: https://github.com/erarich/projeto_de_sistemas/blob/develo
 * [Rodando localmente](#rodando-localmente)
 * [Licença](#licença)
 
-
 ## Introdução
 Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciência da Computação da Universidade Federal do Tocantins, Câmpus Palmas, 2023.2 com o objetivo de simular a criação de um produto que tenha impacto social e esteja atrelado à descaracterização de aparelhos de TVBOX.
 
@@ -54,10 +53,26 @@ Fontes:
 ![Business model canva (conhecimento em ação)](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/image.png)
 
 ## Parte técnica
-TODO(Descrição)
+
+Descrição técnica do projeto, com as ferramentas e conceitos que serão utilizados.
+
 ### Ferramentas obrigatórias
 
+Como este projeto trata-se de uma atividade para a disciplina de Projeto de Sistemas, algumas ferramentas e conceitos são obrigatórios para a realização do projeto.
+Lista geral de "pré-requisitos para o escopo e desenvolvimento do projeto":
+* O produto precisa gerar algum **Impacto Social**;
+* O produto deve **contemplar pelo menos 6 "The twelve-factor app"**;
+* Deve ser utilizado:
+ * **GitFlow**;
+ * **Semantic Versioning**;
+ * **Code Review**;
+ * **Kanban**;
+* **Apresentação Técnica e Comercial**;
+
 ### Requisitos funcionais e não-funcionais
+
+Os requisitos do projeto estão descritos no arquivo *requirements.md* na pasta *files* da pasta *.github*.
+[Requisitos](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/requirements.md)
 
 ### Tecnologias
 * [React Native](https://react.dev/)
