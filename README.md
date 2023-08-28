@@ -36,7 +36,7 @@ Ademais, há como requisitos para o desenvolvimento o uso de alguns conceitos e 
 Diante disso, foi discutido o desenvolvimento da problemática relacionada à **aprendizagem matemática voltada para escolas de ensino fundamental no Brasil** por conta do **baixo índice de aprendizado nessa área**. Dessa forma, nossa solução busca **ajudar no desenvolvimento do ensino da matemática com auxílio de tecnologia**. Portanto, será desenvolvido um **aplicativo para sistemas Android cujos dispositivos alvos serão os aparelhos de TVBOX**.
 
 ## Parte comercial
-TODO(Descrição)
+Descrição comercial do projeto, com a utilização de *Businness Model Canvas*.
 
 ### Problemática
 
