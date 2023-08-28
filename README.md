@@ -51,12 +51,12 @@ Fontes:
 
 Nesta seção, discutiremos as funcionalidades do projeto desenvolvido. As funcionalidades do projeto estão relacionadas à criação de um aplicativo para sistemas Android, destinado aos aparelhos de TVBOX, com o objetivo de melhorar o ensino da matemática nas escolas de ensino fundamental no Brasil. Algumas das principais funcionalidades incluem:
 
-**Conteúdo Educativo:** O aplicativo oferecerá conteúdo educativo relacionado à matemática, adaptado para o ensino fundamental, com lições interativas e recursos visuais para tornar o aprendizado mais envolvente.
-**Jogos Educativos:** Serão incorporados jogos educativos que utilizam a tecnologia para tornar o aprendizado da matemática mais divertido e eficaz.
-**Acompanhamento de Desempenho:** Os professores e alunos poderão acompanhar o progresso do aprendizado por meio do aplicativo, com relatórios de desempenho e estatísticas.
-**Interface Amigável:** O aplicativo terá uma interface intuitiva e amigável, adequada para crianças e professores.
-**Recursos de Personalização:** Os alunos poderão personalizar suas experiências de aprendizado, escolhendo tópicos específicos ou níveis de dificuldade.
-**Integração com TVBOX:** O aplicativo será projetado para funcionar perfeitamente nos aparelhos de TVBOX, proporcionando uma experiência de ensino de matemática em uma tela maior.
+* **Conteúdo Educativo:** O aplicativo oferecerá conteúdo educativo relacionado à matemática, adaptado para o ensino fundamental, com lições interativas e recursos visuais para tornar o aprendizado mais envolvente.  
+* **Jogos Educativos:** Serão incorporados jogos educativos que utilizam a tecnologia para tornar o aprendizado da matemática mais divertido e eficaz.  
+* **Acompanhamento de Desempenho:** Os professores e alunos poderão acompanhar o progresso do aprendizado por meio do aplicativo, com relatórios de desempenho e estatísticas.
+* **Interface Amigável:** O aplicativo terá uma interface intuitiva e amigável, adequada para crianças e professores.  
+* **Recursos de Personalização:** Os alunos poderão personalizar suas experiências de aprendizado, escolhendo tópicos específicos ou níveis de dificuldade.  
+* **Integração com TVBOX:** O aplicativo será projetado para funcionar perfeitamente nos aparelhos de TVBOX, proporcionando uma experiência de ensino de matemática em uma tela maior.  
 
 ### Impactos sociais
 
