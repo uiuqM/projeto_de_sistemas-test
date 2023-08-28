@@ -21,43 +21,35 @@ Os jogadores devem poder navegar de forma intuitiva entre os diferentes jogos.
 Deve haver uma indicação clara do progresso ou da conclusão de cada jogo.
 
 
-**RF03:** Menu de Configurações para Cada Jogo  
-* **Descrição:** Implementar um menu de configurações personalizadas para cada jogo, permitindo que os jogadores ajustem as opções específicas de cada jogo de acordo com suas preferências.  
-* **Requisitos Específicos:**
-Deve haver um menu de configurações separado para cada jogo disponível na aplicação.
-Os jogadores devem poder personalizar opções como controles, áudio e gráficos para cada jogo individualmente.
-As configurações personalizadas de cada jogo devem ser salvas e restauradas automaticamente quando o jogo for acessado novamente.
- para cada jogo.
-
-**RF04:** Criar o Menu do Primeiro Jogo  
+**RF03:** Criar o Menu do Primeiro Jogo  
 * **Descrição:** Desenvolver um menu interativo para o primeiro jogo, permitindo que os jogadores naveguem pelas opções disponíveis, como iniciar o jogo, configurar as opções e sair do jogo.  
 * **Requisitos Específicos:**
 Deve haver opções visíveis para iniciar o jogo, acessar configurações e sair do jogo.
 O menu deve ser intuitivo e de fácil navegação.
 
 
-**RF05:** Estruturar Inimigos  
+**RF04:** Estruturar Inimigos  
 * **Descrição:** Projetar e implementar os inimigos que os jogadores encontrarão durante o jogo.  
 * **Requisitos Específicos:**
 Cada inimigo deve ter características únicas e diferentes níveis de dificuldade.
 Deve haver uma variedade de inimigos para manter o jogo interessante.
 
 
-**RF06:** Escolher Trilha Sonora  
+**RF05:** Escolher Trilha Sonora  
 * **Descrição:** Selecionar e incorporar uma trilha sonora adequada para o jogo, a fim de criar uma atmosfera envolvente.  
 * **Requisitos Específicos:**
 A trilha sonora deve se adaptar ao contexto do jogo e variar de acordo com as situações.
 Deve haver opção para ajustar o volume da música e dos efeitos sonoros nas configurações.
 
 
-**RF07:** Design das Fases  
+**RF06:** Design das Fases  
 * **Descrição:** Projetar e criar as fases do jogo, incluindo layouts, obstáculos, e elementos visuais.  
 * **Requisitos Específicos:**
 Cada fase deve ter um nível crescente de dificuldade.
 Os elementos de design devem estar alinhados com a temática do jogo.
 
 
-**RF08:** Estruturar Perguntas  
+**RF07:** Estruturar Perguntas  
 * **Descrição:** Desenvolver um sistema de perguntas ou desafios que os jogadores devem resolver durante o jogo.  
 * **Requisitos Específicos:**
 Deve haver uma variedade de perguntas ou desafios.
