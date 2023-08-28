@@ -48,7 +48,27 @@ Fontes:
 [Qualidade da infraestrutura  das escolas públicas do ensino fundamental no Brasil](https://unesdoc.unesco.org/ark:/48223/pf0000368757?posInSet=1&queryId=7990941a-c4d6-47cc-94a7-f163404e5ce8)
 
 ### Funcionalidades
+
+Nesta seção, discutiremos as funcionalidades do projeto desenvolvido. As funcionalidades do projeto estão relacionadas à criação de um aplicativo para sistemas Android, destinado aos aparelhos de TVBOX, com o objetivo de melhorar o ensino da matemática nas escolas de ensino fundamental no Brasil. Algumas das principais funcionalidades incluem:
+
+**Conteúdo Educativo:** O aplicativo oferecerá conteúdo educativo relacionado à matemática, adaptado para o ensino fundamental, com lições interativas e recursos visuais para tornar o aprendizado mais envolvente.
+**Jogos Educativos:** Serão incorporados jogos educativos que utilizam a tecnologia para tornar o aprendizado da matemática mais divertido e eficaz.
+**Acompanhamento de Desempenho:** Os professores e alunos poderão acompanhar o progresso do aprendizado por meio do aplicativo, com relatórios de desempenho e estatísticas.
+**Interface Amigável:** O aplicativo terá uma interface intuitiva e amigável, adequada para crianças e professores.
+**Recursos de Personalização:** Os alunos poderão personalizar suas experiências de aprendizado, escolhendo tópicos específicos ou níveis de dificuldade.
+**Integração com TVBOX:** O aplicativo será projetado para funcionar perfeitamente nos aparelhos de TVBOX, proporcionando uma experiência de ensino de matemática em uma tela maior.
+
 ### Impactos sociais
+
+Nesta seção, abordaremos os impactos sociais esperados do projeto, considerando a problemática do ensino de matemática no ensino fundamental no Brasil e como o aplicativo proposto pode contribuir para mitigar esses problemas. Alguns dos impactos sociais incluem:
+
+**Melhorias na Educação:** O projeto tem o potencial de melhorar significativamente o ensino de matemática nas escolas de ensino fundamental, ajudando a preencher a lacuna de aprendizado nessa área.
+**Acesso à Tecnologia:** O aplicativo proporcionará às crianças de escolas com infraestrutura precária acesso a tecnologias educacionais avançadas, promovendo a inclusão digital.
+**Aprendizado Mais Divertido**: A inclusão de jogos educativos tornará o processo de aprendizado da matemática mais divertido e envolvente, incentivando os alunos a se interessarem mais pela disciplina.
+**Monitoramento do Desempenho:** Os relatórios de desempenho permitirão que professores e pais acompanhem o progresso dos alunos, identificando áreas de melhoria e intervenção precoce.
+**Redução da Desigualdade Educacional:** Ao atender escolas com infraestrutura precária, o projeto contribuirá para reduzir a desigualdade educacional no Brasil, garantindo que mais crianças tenham acesso a recursos educacionais de qualidade.
+**Uso de Tecnologia como Ferramenta de Ensino:** Demonstrará como a tecnologia pode ser uma poderosa ferramenta de ensino, influenciando positivamente as práticas educacionais.
+
 ### Business Model Canvas
 ![Business model canva (conhecimento em ação)](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/image.png)
 
