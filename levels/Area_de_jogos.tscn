@@ -6,6 +6,7 @@
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/5 - Tree_row_BG_2.png" type="Texture" id=4]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=5]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/6 - Distant_trees.png" type="Texture" id=6]
+[ext_resource path="res://.import/Scritps/menu_primeiro_jogo.gd" type="Script" id=7]
 
 [sub_resource type="TileSet" id=1]
 0/name = "6 - Distant_trees.png 0"
@@ -107,12 +108,12 @@
 6/shapes = [  ]
 6/z_index = 0
 
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
+[sub_resource type="DynamicFont" id=2]
+size = 26
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
-draw_center = false
 
 [sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -120,70 +121,35 @@ bg_color = Color( 0.6, 0.6, 0.6, 0 )
 [sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="BitmapFont" id=6]
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="Theme" id=7]
-default_font = SubResource( 6 )
-TextEdit/colors/background_color = Color( 0, 0, 0, 0 )
-TextEdit/colors/bookmark_color = Color( 0.08, 0.49, 0.98, 1 )
-TextEdit/colors/brace_mismatch_color = Color( 1, 0.2, 0.2, 1 )
-TextEdit/colors/breakpoint_color = Color( 0.8, 0.8, 0.4, 0.2 )
-TextEdit/colors/caret_background_color = Color( 0, 0, 0, 1 )
-TextEdit/colors/caret_color = Color( 0.88, 0.88, 0.88, 1 )
-TextEdit/colors/code_folding_color = Color( 0.8, 0.8, 0.8, 0.8 )
-TextEdit/colors/completion_background_color = Color( 0.17, 0.16, 0.2, 1 )
-TextEdit/colors/completion_existing_color = Color( 0.87, 0.87, 0.87, 0.13 )
-TextEdit/colors/completion_font_color = Color( 0.67, 0.67, 0.67, 1 )
-TextEdit/colors/completion_scroll_color = Color( 1, 1, 1, 0.29 )
-TextEdit/colors/completion_selected_color = Color( 0.26, 0.26, 0.27, 1 )
-TextEdit/colors/current_line_color = Color( 0.25, 0.25, 0.26, 0.8 )
-TextEdit/colors/executing_line_color = Color( 0.2, 0.8, 0.2, 0.4 )
-TextEdit/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
-TextEdit/colors/font_color_readonly = Color( 0.88, 0.88, 0.88, 0.5 )
-TextEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
-TextEdit/colors/function_color = Color( 0.4, 0.64, 0.81, 1 )
-TextEdit/colors/line_number_color = Color( 0.67, 0.67, 0.67, 0.4 )
-TextEdit/colors/mark_color = Color( 1, 0.4, 0.4, 0.4 )
-TextEdit/colors/member_variable_color = Color( 0.9, 0.31, 0.35, 1 )
-TextEdit/colors/number_color = Color( 0.92, 0.58, 0.2, 1 )
-TextEdit/colors/safe_line_number_color = Color( 0.67, 0.78, 0.67, 0.6 )
-TextEdit/colors/selection_color = Color( 0.49, 0.49, 0.49, 1 )
-TextEdit/colors/symbol_color = Color( 0.94, 0.94, 0.94, 1 )
-TextEdit/colors/word_highlighted_color = Color( 0.8, 0.9, 0.9, 0.15 )
-TextEdit/constants/completion_lines = 7
-TextEdit/constants/completion_max_width = 50
-TextEdit/constants/completion_scroll_width = 6
-TextEdit/constants/line_spacing = 4
-TextEdit/icons/fold = null
-TextEdit/icons/folded = null
-TextEdit/icons/space = null
-TextEdit/icons/tab = null
-TextEdit/styles/completion = SubResource( 2 )
-TextEdit/styles/focus = SubResource( 3 )
-TextEdit/styles/normal = SubResource( 4 )
-TextEdit/styles/read_only = SubResource( 5 )
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="DynamicFont" id=8]
-outline_size = 2
-outline_color = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
-font_data = ExtResource( 1 )
-
-[node name="Area_de_jogos" type="Node2D"]
+[node name="area_de_jogos" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 format = 1
 tile_data = PoolIntArray( 65536, 1, 0, 65537, 1, 0, 65542, 1, 0, 65543, 3, 0, 65547, 1, 0, 131072, 5, 0, 131076, 5, 0, 131077, 5, 0, 131078, 5, 0, 131079, 4, 0, 131080, 5, 0, 131082, 4, 0, 131084, 5, 0, 262144, 6, 0, 262148, 6, 0, 262152, 6, 0, 262156, 6, 0, 327680, 6, 0, 327684, 6, 0, 327688, 6, 0, 327692, 6, 0, 393216, 6, 0, 393220, 6, 0, 393224, 6, 0, 393228, 6, 0, 458752, 6, 0, 458756, 6, 0, 458760, 6, 0, 458764, 6, 0, 524288, 6, 0, 524292, 6, 0, 524296, 6, 0, 524300, 6, 0 )
 
-[node name="TextEdit" type="TextEdit" parent="."]
-modulate = Color( 0.807843, 0.92549, 0.0313726, 1 )
-margin_left = 193.0
-margin_top = 309.0
-margin_right = 989.0
-margin_bottom = 737.0
-theme = SubResource( 7 )
-custom_colors/member_variable_color = Color( 0.0235294, 0.0235294, 0.0235294, 0.419608 )
-custom_colors/code_folding_color = Color( 0.309804, 0.12549, 0.12549, 1 )
-custom_colors/symbol_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 8 )
-text = "COLOCAR BOTÃO QUE LEVA PARA O GAME AQUI"
+[node name="Button" type="Button" parent="."]
+margin_left = 376.0
+margin_top = 293.0
+margin_right = 753.0
+margin_bottom = 363.0
+custom_colors/font_color_focus = Color( 0.909804, 0.909804, 0.909804, 1 )
+custom_colors/font_color = Color( 0.839216, 0.913725, 0.054902, 1 )
+custom_colors/font_color_hover = Color( 0.878431, 0.054902, 0.054902, 1 )
+custom_colors/font_color_pressed = Color( 0.827451, 0.894118, 0.027451, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+text = "Game 1 "
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
