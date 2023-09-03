@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Conhecimento Em Acção"
-run/main_scene="res://levels/startscreen.tscn"
+config/name="Conhecimento Em Ação"
+run/main_scene="res://levels/startScreen.tscn"
 config/icon="res://config/icon.png"
 
 [gui]
@@ -20,7 +20,7 @@ common/drop_mouse_on_gui_input_disabled=true
 
 [mono]
 
-project/assembly_name="Conhecimento Em Acção"
+project/assembly_name="Conhecimento Em Ação"
 
 [physics]
 
