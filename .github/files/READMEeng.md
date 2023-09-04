@@ -55,10 +55,7 @@ Twelve-factor apps are a methodology for building software-as-a-service (SaaS) a
 ##
 
 #### Stacks:
-* [React Native](https://react.dev/)
-* [MaterialUI](https://mui.com/material-ui/)
-* [Zustand](https://github.com/pmndrs/zustand)
-* [Expo](https://expo.dev/)
+* [Godot] (https://godotengine.org)
 
 ##
 
@@ -77,25 +74,9 @@ Clone the project
 ```bash
   git clone https://github.com/erarich/projeto_de_sistemas.git
 ```
-
-Enter the directory project
-
 ```bash
-  cd conhecimentoEmAcao
+  https://godotengine.org/download/linux/
 ```
-
-Install all dependencies
-
-```bash
-  npm install
-```
-
-Start dev server
-
-```bash
-  npx expo start
-```
-
 
 ## License
 
