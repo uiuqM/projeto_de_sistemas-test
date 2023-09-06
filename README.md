@@ -1,7 +1,7 @@
 
 # Conhecimento em Ação
 
-Documento em inglês: https://github.com/erarich/projeto_de_sistemas/blob/develop/READMEeng.md
+Documento em inglês: https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/READMEeng.md
 
 ## Índice 
 
@@ -95,10 +95,7 @@ Os requisitos do projeto estão descritos no arquivo *requirements.md* na pasta 
 [Requisitos](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/requirements.md)
 
 ### Tecnologias
-* [React Native](https://react.dev/)
-* [MaterialUI](https://mui.com/material-ui/)
-* [Zustand](https://github.com/pmndrs/zustand)
-* [Expo](https://expo.dev/)
+* [Godot] (https://godotengine.org/)
 
 ### Fatores utilizados do "The Twelve-Factor App"
 
@@ -140,25 +137,10 @@ Clone o projeto
 ```bash
   git clone https://github.com/erarich/projeto_de_sistemas.git
 ```
-
-Entre no diretório do projeto
-
+Instale o Godot
 ```bash
-  cd conhecimentoEmAcao
+  https://godotengine.org/download/linux/
 ```
-
-Instale todas as dependências 
-
-```bash
-  npm install
-```
-
-Inicie o servidor de desenvolvimento
-
-```bash
-  npx expo start
-```
-
 
 ## Licença
 
