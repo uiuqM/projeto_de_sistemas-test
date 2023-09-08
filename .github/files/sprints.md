@@ -89,6 +89,22 @@ Legenda:
 - **Dificuldade:** <span style="color:#FFFF00">médio</span>
 - **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
 
-#### 15. Finalizar apresentação comercial e técnica do produto. 
+#### 15. Adicionar screenshots na seção de Resultados alcançados da Sprint 2.
+- **Dificuldade:** <span style="color:#FFFF00">médio</span>
+- **Autor:** [Érick Santos](https://github.com/erarich).
+
+#### 16. Adicionar seção de Premissas e Restrições no README.
+- **Dificuldade:** <span style="color:#00FF00">fácil</span>
+- **Autor:** [Wilque Muriel](https://github.com/uiuqM).
+  
+#### 17. Corrigir arquivo de especificação de requisitos.
+- **Dificuldade:** <span style="color:#FFFF00">médio</span>
+- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+
+#### 18. Adicionar seção no README sobre TVBOX, incluindo como peça importante para o trabalho.
+- **Dificuldade:** <span style="color:#FFFF00">médio</span>
+- **Autor:** [Wilque Muriel](https://github.com/uiuqM).
+
+#### 19. Finalizar apresentação comercial e técnica do produto. 
 - **Dificuldade:** <span style="color:#FF0000">muito difícil</span>
 - **Autores:** [Érick Santos](https://github.com/erarich), [Mateus Alves](https://github.com/MateusAlvez) e [Wilque Muriel](https://github.com/uiuqM).
