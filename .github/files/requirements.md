@@ -1,83 +1,34 @@
 # Requisitos Funcionais e Não-Funcionais
 
-Versão 0.0: 27/08/2023
-Versão 0.1: 28/08/2023
+Versão 0.0: 27/08/2023  
+Versão 0.1: 28/08/2023  
+Versão 0.3: 08/09/2023
 
-## Requisitos funcionais:
+| ID do Épico | Nome do Épico                  | Descrição do Épico                                        | Responsável | Prioridade | Data de Início | Data de Término |
+|-------------|--------------------------------|-----------------------------------------------------------|-------------|------------|----------------|-----------------|
+| EPIC-001    | Suporte a Periféricos de Entrada | Garantir suporte a teclado, mouse e controle remoto.    | João        | Alta       | 01/10/2023     | 15/10/2023      |
+|             |     US-001            | Suporte a Teclado      | Como jogador, quero poder jogar usando um teclado.     | Ana         | 5                        | Em Progresso |
+|             |     US-002            | Suporte a Mouse        | Como jogador, quero poder jogar usando um mouse.       | João        | 5                        | A Fazer      |
+|             |     US-003            | Suporte a Controle Remoto | Como jogador, quero poder jogar usando um controle remoto. | Maria       | 8                        | A Fazer      |
+|             |     US-004            | Detecção Automática de Dispositivos | Como jogador, quero que o sistema reconheça automaticamente meu dispositivo de entrada. | Pedro       | 5                        | A Fazer      |
+| EPIC-002    | Navegação entre Jogos no Menu Principal | Criar um menu de navegação para acesso aos jogos. | Maria       | Média      | 05/10/2023     | 20/10/2023      |
+| EPIC-003    | Menu do Primeiro Jogo           | Desenvolver um menu interativo para o primeiro jogo.      | Pedro       | Média      | 10/10/2023     | 25/10/2023      |
+| EPIC-004    | Estruturar Inimigos             | Projetar e implementar inimigos no jogo.                  | Ana         | Alta       | 15/10/2023     | 30/10/2023      |
+| EPIC-005    | Escolher Trilha Sonora          | Selecionar trilha sonora adequada para o jogo.             | Maria       | Baixa      | 20/10/2023     | 05/11/2023      |
+| EPIC-006    | Design das Fases                | Projetar e criar fases do jogo.                            | João        | Média      | 25/10/2023     | 10/11/2023      |
+| EPIC-007    | Estruturar Perguntas            | Desenvolver sistema de perguntas/desafios para o jogo.     | Pedro       | Alta       | 30/10/2023     | 15/11/2023      |
+| EPIC-008    | Responsividade para Diferentes Tamanhos de Tela | Tornar a aplicação responsiva para vários dispositivos. | João        | Alta       | 01/11/2023     | 15/11/2023      |
+|             |     US-005            | Adaptação a Tablets     | Como usuário, quero que a aplicação se adapte bem a tablets. | Ana         | 5                        | Em Progresso |
+|             |     US-006            | Adaptação a Smartphones | Como usuário, quero que a aplicação funcione bem em smartphones. | João        | 5                        | A Fazer      |
+|             |     US-007            | Adaptação a Computadores | Como usuário, quero que a aplicação tenha uma boa experiência em computadores. | Maria       | 8                        | A Fazer      |
+|             |     US-008            | Testes de Usabilidade   | Como desenvolvedor, quero conduzir testes de usabilidade em diferentes dispositivos. | Pedro       | 8                        | A Fazer      |
+| EPIC-009    | Design Atraente para Crianças  | Criar um design atraente e adequado para crianças.        | Maria       | Média      | 05/11/2023     | 20/11/2023      |
+|             |     US-009            | Escolha de Cores       | Como designer, quero escolher cores alegres e atrativas. | João        | 5                        | Em Progresso |
+|             |     US-010            | Personagens Amigáveis  | Como designer, quero criar personagens amigáveis.      | Maria       | 5                        | A Fazer      |
+|             |     US-011            | Ícones e Botões Intuitivos | Como designer, quero usar ícones e botões simples e intuitivos. | Pedro       | 8                        | A Fazer      |
+|             |     US-012            | Conteúdo Adequado      | Como desenvolvedor, quero garantir que o conteúdo e os desafios sejam adequados para crianças. | Ana         | 8                        | A Fazer      |
+| EPIC-010    | Som de Ambiente no Menu Principal | Adicionar elementos sonoros ao menu principal.         | Pedro       | Média      | 10/11/2023     | 25/11/2023      |
+|             |     US-013            | Trilha Sonora no Menu Principal | Como designer de som, quero criar uma trilha sonora agradável para o menu principal. | Maria       | 5                        | Em Progresso |
+|             |     US-014            | Ajuste de Volume      | Como usuário, quero poder ajustar o volume do som.     | João        | 5                        | A Fazer      |
+|             |     US-015            | Controle de Som       | Como usuário, quero a opção de desativar os sons se desejar. | Pedro       | 8                        | A Fazer      |
 
-**RF01:** Suporte a Periféricos de Entrada  
-* **Descrição:** Garantir que o sistema suporta uma variedade de periféricos de entrada, incluindo teclado, mouse e controle remoto, permitindo aos jogadores escolher o dispositivo de entrada que melhor atenda às suas preferências.  
-* **Requisitos Específicos:**
-Deve haver suporte para teclado, mouse e controle remoto como dispositivos de entrada padrão.
-Os jogadores devem ser capazes de alternar facilmente entre esses dispositivos.
-O sistema deve ser capaz de reconhecer automaticamente e configurar esses dispositivos quando conectados.
-
-
-**RF02:** Navegação entre Jogos no Menu Principal  
-* **Descrição:** Criar um menu de navegação no menu principal da aplicação que permita aos jogadores acessar facilmente diferentes jogos disponíveis.  
-* **Requisitos Específicos:**
-Deve haver um menu de navegação no início da aplicação, onde os jogadores podem ver e selecionar os jogos disponíveis.
-Os jogadores devem poder navegar de forma intuitiva entre os diferentes jogos.
-Deve haver uma indicação clara do progresso ou da conclusão de cada jogo.
-
-
-**RF03:** Criar o Menu do Primeiro Jogo  
-* **Descrição:** Desenvolver um menu interativo para o primeiro jogo, permitindo que os jogadores naveguem pelas opções disponíveis, como iniciar o jogo, configurar as opções e sair do jogo.  
-* **Requisitos Específicos:**
-Deve haver opções visíveis para iniciar o jogo, acessar configurações e sair do jogo.
-O menu deve ser intuitivo e de fácil navegação.
-
-
-**RF04:** Estruturar Inimigos  
-* **Descrição:** Projetar e implementar os inimigos que os jogadores encontrarão durante o jogo.  
-* **Requisitos Específicos:**
-Cada inimigo deve ter características únicas e diferentes níveis de dificuldade.
-Deve haver uma variedade de inimigos para manter o jogo interessante.
-
-
-**RF05:** Escolher Trilha Sonora  
-* **Descrição:** Selecionar e incorporar uma trilha sonora adequada para o jogo, a fim de criar uma atmosfera envolvente.  
-* **Requisitos Específicos:**
-A trilha sonora deve se adaptar ao contexto do jogo e variar de acordo com as situações.
-Deve haver opção para ajustar o volume da música e dos efeitos sonoros nas configurações.
-
-
-**RF06:** Design das Fases  
-* **Descrição:** Projetar e criar as fases do jogo, incluindo layouts, obstáculos, e elementos visuais.  
-* **Requisitos Específicos:**
-Cada fase deve ter um nível crescente de dificuldade.
-Os elementos de design devem estar alinhados com a temática do jogo.
-
-
-**RF07:** Estruturar Perguntas  
-* **Descrição:** Desenvolver um sistema de perguntas ou desafios que os jogadores devem resolver durante o jogo.  
-* **Requisitos Específicos:**
-Deve haver uma variedade de perguntas ou desafios.
-As perguntas devem se tornar mais desafiadoras à medida que o jogo progride.
-
-  
-
-## Requisitos não-funcionais:
-
-**RNF01:** Responsividade para Diferentes Tamanhos de Tela  
-* **Descrição:** Garantir que a aplicação seja responsiva, adaptando-se de forma eficaz a diferentes tamanhos de tela para proporcionar uma experiência de usuário consistente em vários dispositivos.  
-* **Requisitos Específicos:**
-A aplicação deve ser capaz de se ajustar automaticamente a tamanhos de tela variados, como tablets, smartphones e computadores.
-Todos os elementos da interface do usuário, incluindo menus, botões e conteúdo, devem ser claramente legíveis e acessíveis em todas as telas.
-Testes de usabilidade devem ser conduzidos em diferentes dispositivos para garantir uma experiência uniforme.
-
-
-**RNF02:** Design Atraente e Apropriado para Crianças  
-* **Descrição:** Criar um design visualmente cativante e adequado para crianças, tornando a aplicação atraente e fácil de usar para o público infantil.  
-* **Requisitos Específicos:**
-O design deve apresentar cores alegres, personagens amigáveis e elementos visuais que sejam atraentes para crianças.
-A interface do usuário deve ser simples e intuitiva, com ícones e botões grandes e fáceis de entender.
-O conteúdo e os desafios dos jogos devem ser adequados à faixa etária das crianças-alvo.
-
-
-**RNF03:** Som de Ambiente no Menu Principal  
-* **Descrição:** Incluir elementos sonoros de ambiente no menu principal para melhorar a experiência do usuário e criar uma atmosfera envolvente.  
-* **Requisitos Específicos:**
-Deve haver uma trilha sonora agradável e relaxante no menu principal que contribua para uma atmosfera positiva.
-Os sons de ambiente devem ser ajustáveis, permitindo que os usuários controlem o volume ou até mesmo desativem o som, se desejado.
-O som deve ser de alta qualidade e livre de distorções.
