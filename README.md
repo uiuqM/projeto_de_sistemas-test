@@ -38,17 +38,6 @@ Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciênc
   6. Utilizar quadro KANBAM; e
   7. Usar Semantic Versioning para versionamento.
 
-
-Ademais, há como requisitos para o desenvolvimento o uso de alguns conceitos e ferramentas como:
-1. Git Flow (metodologia de gerenciamento de ramificações para repositórios Git)
-2. Versionamento Semântico (metodologia para controle de versões)
-3. Revisão de Código
-4. Metodologia Ágil Kanban
-5. GitHub
-6. Apresentação Técnica e Comercial
-7. Business Model Canvas
-8. “Os Doze Fatores”
-
 Diante disso, foi discutido o desenvolvimento da problemática relacionada à **aprendizagem matemática voltada para escolas de ensino fundamental no Brasil** por conta do **baixo índice de aprendizado nessa área**. Dessa forma, nossa solução busca **ajudar no desenvolvimento do ensino da matemática com auxílio de tecnologia**. Portanto, será desenvolvido um **aplicativo para sistemas Android cujos dispositivos alvos serão os aparelhos de TVBOX**.
 
 ## Parte comercial
