@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 func _ready():
   pass
@@ -8,3 +8,6 @@ func _on_return_btn_pressed():
 	
 func _on_exit_btn_pressed():
 	get_tree().quit()
+
+func _on_game_one_btn_pressed():
+	get_tree().change_scene("res://levels/firstGameScreen.tscn")
