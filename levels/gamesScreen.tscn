@@ -1,13 +1,13 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://scripts/controlsScreen.gd" type="Script" id=2]
-[ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=3]
-[ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=4]
+[ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=2]
+[ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=3]
+[ext_resource path="res://scripts/gamesScreen.gd" type="Script" id=7]
 
-[sub_resource type="TileSet" id=15]
+[sub_resource type="TileSet" id=8]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
-0/texture = ExtResource( 3 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 288, 192 )
@@ -30,7 +30,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "_Complete_static_BG_(288 x 208).png 1"
-1/texture = ExtResource( 3 )
+1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 0, 288, 160 )
@@ -44,7 +44,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "_Complete_static_BG_(288 x 208).png 2"
-2/texture = ExtResource( 3 )
+2/texture = ExtResource( 2 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 0, 128, 288, 96 )
@@ -58,7 +58,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "5 - Sky_color.png 3"
-3/texture = ExtResource( 4 )
+3/texture = ExtResource( 3 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 0, 288, 192 )
@@ -72,30 +72,27 @@
 3/shapes = [  ]
 3/z_index = 0
 
-[sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=16]
+[sub_resource type="DynamicFont" id=15]
 size = 48
 outline_color = Color( 1, 0.0196078, 0.0196078, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=21]
+[sub_resource type="StyleBoxFlat" id=10]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=22]
+[sub_resource type="StyleBoxFlat" id=11]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=23]
+[sub_resource type="StyleBoxFlat" id=12]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=24]
+[sub_resource type="StyleBoxFlat" id=13]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxFlat" id=25]
+[sub_resource type="StyleBoxFlat" id=14]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="Theme" id=17]
+[sub_resource type="Theme" id=16]
 Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
 Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 Button/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
@@ -103,20 +100,20 @@ Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
 Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 Button/constants/hseparation = 2
 Button/fonts/font = null
-Button/styles/disabled = SubResource( 21 )
-Button/styles/focus = SubResource( 22 )
-Button/styles/hover = SubResource( 23 )
-Button/styles/normal = SubResource( 24 )
-Button/styles/pressed = SubResource( 25 )
+Button/styles/disabled = SubResource( 10 )
+Button/styles/focus = SubResource( 11 )
+Button/styles/hover = SubResource( 12 )
+Button/styles/normal = SubResource( 13 )
+Button/styles/pressed = SubResource( 14 )
 
-[sub_resource type="DynamicFont" id=18]
+[sub_resource type="DynamicFont" id=17]
 size = 21
 outline_size = 2
 outline_color = Color( 0, 0.619608, 0.760784, 1 )
 use_mipmaps = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=19]
+[sub_resource type="DynamicFont" id=18]
 size = 17
 outline_size = 4
 outline_color = Color( 0.133333, 0.239216, 0.607843, 1 )
@@ -125,7 +122,7 @@ extra_spacing_bottom = 10
 extra_spacing_space = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=20]
+[sub_resource type="StyleBoxFlat" id=19]
 bg_color = Color( 0, 0, 0, 0.686275 )
 border_width_left = 2
 border_width_top = 2
@@ -134,31 +131,13 @@ border_width_bottom = 2
 shadow_color = Color( 0.0117647, 0.0117647, 0.0117647, 0 )
 shadow_size = 4
 
-[node name="controlscreen" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-script = ExtResource( 2 )
+[node name="gamesScreen" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource( 15 )
+tile_set = SubResource( 8 )
 format = 1
 tile_data = PoolIntArray( 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0 )
-
-[node name="Label" type="Label" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -190.0
-margin_top = -200.0
-margin_right = 178.0
-margin_bottom = -133.0
-custom_colors/font_color = Color( 0.784314, 0.854902, 0.121569, 1 )
-custom_fonts/font = SubResource( 1 )
-text = "Andar para Esquerda / A
-Andar para Direita / D 
-Pular / W ou ESPAÇO"
-align = 1
 
 [node name="screenName" type="Label" parent="."]
 margin_left = 46.0
@@ -167,8 +146,8 @@ margin_right = 1006.0
 margin_bottom = 87.0
 rect_min_size = Vector2( 650, 0 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 16 )
-text = "CONTROLES"
+custom_fonts/font = SubResource( 15 )
+text = "LISTA DE JOGOS"
 align = 1
 valign = 1
 
@@ -177,33 +156,45 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -125.0
-margin_top = 3.0
-margin_right = 127.0
-margin_bottom = 81.0
+margin_left = 362.0
+margin_top = 132.0
+margin_right = 677.0
+margin_bottom = 235.0
 custom_constants/separation = 20
 
-[node name="return_btn" type="Button" parent="controls"]
-margin_right = 252.0
+[node name="game_one_btn" type="Button" parent="controls"]
+margin_right = 336.0
 margin_bottom = 21.0
-theme = SubResource( 17 )
+theme = SubResource( 16 )
 custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
 custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
 custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
-custom_fonts/font = SubResource( 18 )
+custom_fonts/font = SubResource( 17 )
+text = "\"NOME DO JOGO 1\""
+
+[node name="return_btn" type="Button" parent="controls"]
+margin_top = 41.0
+margin_right = 336.0
+margin_bottom = 62.0
+theme = SubResource( 16 )
+custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
+custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
+custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
+custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
+custom_fonts/font = SubResource( 17 )
 text = "VOLTAR"
 
 [node name="exit_btn" type="Button" parent="controls"]
-margin_top = 41.0
-margin_right = 252.0
-margin_bottom = 62.0
-theme = SubResource( 17 )
+margin_top = 82.0
+margin_right = 336.0
+margin_bottom = 103.0
+theme = SubResource( 16 )
 custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
 custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
 custom_colors/font_color_pressed = Color( 0.929412, 0.0862745, 0.203922, 1 )
-custom_fonts/font = SubResource( 18 )
+custom_fonts/font = SubResource( 17 )
 text = "SAIR"
 
 [node name="Label" type="Label" parent="controls/exit_btn"]
@@ -216,10 +207,11 @@ margin_left = -509.0
 margin_top = -321.5
 margin_right = 543.0
 margin_bottom = 283.5
-custom_fonts/font = SubResource( 19 )
-custom_styles/normal = SubResource( 20 )
+custom_fonts/font = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
 text = "						Saindo do game !!!!"
 align = 1
 
+[connection signal="pressed" from="controls/game_one_btn" to="." method="_on_game_one_btn_pressed"]
 [connection signal="pressed" from="controls/return_btn" to="." method="_on_return_btn_pressed"]
 [connection signal="pressed" from="controls/exit_btn" to="." method="_on_exit_btn_pressed"]
