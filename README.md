@@ -24,6 +24,20 @@
 
 ## Introdução
 Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciência da Computação da Universidade Federal do Tocantins, Câmpus Palmas, 2023.2 com o objetivo de simular a criação de um produto que tenha impacto social e esteja atrelado à descaracterização de aparelhos de TVBOX.
+## Premissas:
+  1. Será gerada uma versão demo do projeto nas datas: 18/09/2023, 16/10/2023 e 13/11/2023;
+  2. Faremos uma apresentação comercial e técnica do projeto nas datas: 18/09/2023, 16/10/2023 e 13/11/2023;
+  3. Faremos acompanhamento com o professor ao meio de cada sprint; e
+  4. Abordaremos gamificação no contexto do ensino matemático.
+## Restrições:
+  1. O projeto deve ser entregue até o dia da apresentação final da disciplina 04/12/2023;
+  2. Deverá fazer uso do equipamento TVBOX;
+  3. O projeto deve ter impacto social;
+  4. Deve ser utilizado a estratégia de ramificação GitFlow;
+  5. Contemplar pelo menos 6 Twelve-factor app;
+  6. Utilizar quadro KANBAM; e
+  7. Usar Semantic Versioning para versionamento.
+
 
 Ademais, há como requisitos para o desenvolvimento o uso de alguns conceitos e ferramentas como:
 1. Git Flow (metodologia de gerenciamento de ramificações para repositórios Git)
