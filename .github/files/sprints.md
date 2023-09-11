@@ -18,9 +18,11 @@
 
 - Configuração de ambiente foi configurado corretamente;
 - Os menus do jogo foram desenvolvidos;
-- Foi utilizado uma solução alto nível para o aparelho TVBOX: o aplicativo BitLocker.
+- Foi utilizado uma solução alto nível para o aparelho TVBOX: o aplicativo AppLock.
 
-TODO: adicionar screenshots para documentar os resultados alcançados. Adicionar pasta "images" na pasta .github/files e criar pastas para cada sprint.
+![Resultados alcançados](../imagens/menu_game.jpeg)
+
+![Resultados alcançados](../imagens/app_lock.jpeg)
 
 ## Sprint 2 (05/09 - 18/09)
 
