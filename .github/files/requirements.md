@@ -4,31 +4,145 @@ Versão 0.0: 27/08/2023
 Versão 0.1: 28/08/2023  
 Versão 0.3: 08/09/2023
 
-| ID do Épico | Nome do Épico                  | Descrição do Épico                                        | Responsável | Prioridade | Data de Início | Data de Término |
-|-------------|--------------------------------|-----------------------------------------------------------|-------------|------------|----------------|-----------------|
-| EPIC-001    | Suporte a Periféricos de Entrada | Garantir suporte a teclado, mouse e controle remoto.    | João        | Alta       | 01/10/2023     | 15/10/2023      |
-|             |     US-001            | Suporte a Teclado      | Como jogador, quero poder jogar usando um teclado.     | Ana         | 5                        | Em Progresso |
-|             |     US-002            | Suporte a Mouse        | Como jogador, quero poder jogar usando um mouse.       | João        | 5                        | A Fazer      |
-|             |     US-003            | Suporte a Controle Remoto | Como jogador, quero poder jogar usando um controle remoto. | Maria       | 8                        | A Fazer      |
-|             |     US-004            | Detecção Automática de Dispositivos | Como jogador, quero que o sistema reconheça automaticamente meu dispositivo de entrada. | Pedro       | 5                        | A Fazer      |
-| EPIC-002    | Navegação entre Jogos no Menu Principal | Criar um menu de navegação para acesso aos jogos. | Maria       | Média      | 05/10/2023     | 20/10/2023      |
-| EPIC-003    | Menu do Primeiro Jogo           | Desenvolver um menu interativo para o primeiro jogo.      | Pedro       | Média      | 10/10/2023     | 25/10/2023      |
-| EPIC-004    | Estruturar Inimigos             | Projetar e implementar inimigos no jogo.                  | Ana         | Alta       | 15/10/2023     | 30/10/2023      |
-| EPIC-005    | Escolher Trilha Sonora          | Selecionar trilha sonora adequada para o jogo.             | Maria       | Baixa      | 20/10/2023     | 05/11/2023      |
-| EPIC-006    | Design das Fases                | Projetar e criar fases do jogo.                            | João        | Média      | 25/10/2023     | 10/11/2023      |
-| EPIC-007    | Estruturar Perguntas            | Desenvolver sistema de perguntas/desafios para o jogo.     | Pedro       | Alta       | 30/10/2023     | 15/11/2023      |
-| EPIC-008    | Responsividade para Diferentes Tamanhos de Tela | Tornar a aplicação responsiva para vários dispositivos. | João        | Alta       | 01/11/2023     | 15/11/2023      |
-|             |     US-005            | Adaptação a Tablets     | Como usuário, quero que a aplicação se adapte bem a tablets. | Ana         | 5                        | Em Progresso |
-|             |     US-006            | Adaptação a Smartphones | Como usuário, quero que a aplicação funcione bem em smartphones. | João        | 5                        | A Fazer      |
-|             |     US-007            | Adaptação a Computadores | Como usuário, quero que a aplicação tenha uma boa experiência em computadores. | Maria       | 8                        | A Fazer      |
-|             |     US-008            | Testes de Usabilidade   | Como desenvolvedor, quero conduzir testes de usabilidade em diferentes dispositivos. | Pedro       | 8                        | A Fazer      |
-| EPIC-009    | Design Atraente para Crianças  | Criar um design atraente e adequado para crianças.        | Maria       | Média      | 05/11/2023     | 20/11/2023      |
-|             |     US-009            | Escolha de Cores       | Como designer, quero escolher cores alegres e atrativas. | João        | 5                        | Em Progresso |
-|             |     US-010            | Personagens Amigáveis  | Como designer, quero criar personagens amigáveis.      | Maria       | 5                        | A Fazer      |
-|             |     US-011            | Ícones e Botões Intuitivos | Como designer, quero usar ícones e botões simples e intuitivos. | Pedro       | 8                        | A Fazer      |
-|             |     US-012            | Conteúdo Adequado      | Como desenvolvedor, quero garantir que o conteúdo e os desafios sejam adequados para crianças. | Ana         | 8                        | A Fazer      |
-| EPIC-010    | Som de Ambiente no Menu Principal | Adicionar elementos sonoros ao menu principal.         | Pedro       | Média      | 10/11/2023     | 25/11/2023      |
-|             |     US-013            | Trilha Sonora no Menu Principal | Como designer de som, quero criar uma trilha sonora agradável para o menu principal. | Maria       | 5                        | Em Progresso |
-|             |     US-014            | Ajuste de Volume      | Como usuário, quero poder ajustar o volume do som.     | João        | 5                        | A Fazer      |
-|             |     US-015            | Controle de Som       | Como usuário, quero a opção de desativar os sons se desejar. | Pedro       | 8                        | A Fazer      |
 
+#### **Epic 1: Suporte a Periféricos de Entrada**
+| User Story | Descrição |
+|------------|-----------|
+| **US 1.1** | Como jogador, quero poder usar meu teclado para interagir com o jogo, para que possa jogar confortavelmente. |
+| **US 1.2** | Como jogador, desejo usar um mouse para controlar o jogo, permitindo uma experiência mais precisa. |
+| **US 1.3** | Como jogador, desejo utilizar um controle remoto como dispositivo de entrada, permitindo jogar de forma conveniente na sala de estar. |
+| **US 1.4** | Como jogador, quero ser capaz de alternar facilmente entre dispositivos de entrada durante o jogo, para que possa escolher o mais adequado para cada situação. |
+| **US 1.5** | Como jogador, desejo que o sistema reconheça automaticamente o dispositivo de entrada conectado e configure as opções correspondentes, para evitar configurações manuais. |
+
+#### **Epic 2: Navegação entre Jogos no Menu Principal**
+| User Story | Descrição |
+|------------|-----------|
+| **US 2.1** | Como jogador, desejo um menu de navegação no início da aplicação, onde posso ver todos os jogos disponíveis. |
+| **US 2.2** | Como jogador, quero poder navegar de forma intuitiva entre os jogos no menu principal. |
+| **US 2.3** | Como jogador, desejo uma indicação clara do progresso ou da conclusão de cada jogo no menu principal. |
+
+#### **Epic 3: Menu de Configurações para Cada Jogo**
+| User Story | Descrição |
+|------------|-----------|
+| **US 3.1** | Como jogador, desejo um menu de configurações separado para cada jogo disponível na aplicação. |
+| **US 3.2** | Como jogador, quero personalizar opções como controles, áudio e gráficos para cada jogo individualmente. |
+| **US 3.3** | Como jogador, desejo que as configurações personalizadas de cada jogo sejam salvas e restauradas automaticamente quando eu acessar o jogo novamente. |
+
+#### **Epic 4: Criar o Menu do Primeiro Jogo**
+| User Story | Descrição |
+|------------|-----------|
+| **US 4.1** | Como jogador, desejo opções visíveis para iniciar o jogo, acessar configurações e sair do jogo no menu do primeiro jogo. |
+| **US 4.2** | Como jogador, quero que o menu seja intuitivo e de fácil navegação no primeiro jogo. |
+
+#### **Epic 5: Estruturar Inimigos**
+| User Story | Descrição |
+|------------|-----------|
+| **US 5.1** | Como jogador, desejo que cada inimigo tenha características únicas e diferentes níveis de dificuldade. |
+| **US 5.2** | Como jogador, quero uma variedade de inimigos para manter o jogo interessante. |
+
+#### **Epic 6: Escolher Trilha Sonora**
+| User Story | Descrição |
+|------------|-----------|
+| **US 6.1** | Como jogador, desejo uma trilha sonora que se adapte ao contexto do jogo e varie de acordo com as situações. |
+| **US 6.2** | Como jogador, quero a opção de ajustar o volume da música e dos efeitos sonoros nas configurações. |
+
+#### **Epic 7: Design das Fases**
+| User Story | Descrição |
+|------------|-----------|
+| **US 7.1** | Como jogador, quero que cada fase tenha um nível crescente de dificuldade. |
+| **US 7.2** | Como jogador, desejo que os elementos de design estejam alinhados com a temática do jogo. |
+
+#### **Epic 8: Estruturar Perguntas**
+| User Story | Descrição |
+|------------|-----------|
+| **US 8.1** | Como jogador, desejo uma variedade de perguntas ou desafios ao longo do jogo. |
+| **US 8.2** | Como jogador, quero que as perguntas se tornem mais desafiadoras à medida que o jogClaro! Aqui estão os epics e as user stories em formato de quadros:
+
+#### **Epic 1: Suporte a Periféricos de Entrada**
+| User Story | Descrição |
+|------------|-----------|
+| **US 1.1** | Como jogador, quero poder usar meu teclado para interagir com o jogo, para que possa jogar confortavelmente. |
+| **US 1.2** | Como jogador, desejo usar um mouse para controlar o jogo, permitindo uma experiência mais precisa. |
+| **US 1.3** | Como jogador, desejo utilizar um controle remoto como dispositivo de entrada, permitindo jogar de forma conveniente na sala de estar. |
+| **US 1.4** | Como jogador, quero ser capaz de alternar facilmente entre dispositivos de entrada durante o jogo, para que possa escolher o mais adequado para cada situação. |
+| **US 1.5** | Como jogador, desejo que o sistema reconheça automaticamente o dispositivo de entrada conectado e configure as opções correspondentes, para evitar configurações manuais. |
+
+#### **Epic 2: Navegação entre Jogos no Menu Principal**
+| User Story | Descrição |
+|------------|-----------|
+| **US 2.1** | Como jogador, desejo um menu de navegação no início da aplicação, onde posso ver todos os jogos disponíveis. |
+| **US 2.2** | Como jogador, quero poder navegar de forma intuitiva entre os jogos no menu principal. |
+| **US 2.3** | Como jogador, desejo uma indicação clara do progresso ou da conclusão de cada jogo no menu principal. |
+
+#### **Epic 3: Menu de Configurações para Cada Jogo**
+| User Story | Descrição |
+|------------|-----------|
+| **US 3.1** | Como jogador, desejo um menu de configurações separado para cada jogo disponível na aplicação. |
+| **US 3.2** | Como jogador, quero personalizar opções como controles, áudio e gráficos para cada jogo individualmente. |
+| **US 3.3** | Como jogador, desejo que as configurações personalizadas de cada jogo sejam salvas e restauradas automaticamente quando eu acessar o jogo novamente. |
+
+#### **Epic 4: Criar o Menu do Primeiro Jogo**
+| User Story | Descrição |
+|------------|-----------|
+| **US 4.1** | Como jogador, desejo opções visíveis para iniciar o jogo, acessar configurações e sair do jogo no menu do primeiro jogo. |
+| **US 4.2** | Como jogador, quero que o menu seja intuitivo e de fácil navegação no primeiro jogo. |
+
+#### **Epic 5: Estruturar Inimigos**
+| User Story | Descrição |
+|------------|-----------|
+| **US 5.1** | Como jogador, desejo que cada inimigo tenha características únicas e diferentes níveis de dificuldade. |
+| **US 5.2** | Como jogador, quero uma variedade de inimigos para manter o jogo interessante. |
+
+#### **Epic 6: Escolher Trilha Sonora**
+| User Story | Descrição |
+|------------|-----------|
+| **US 6.1** | Como jogador, desejo uma trilha sonora que se adapte ao contexto do jogo e varie de acordo com as situações. |
+| **US 6.2** | Como jogador, quero a opção de ajustar o volume da música e dos efeitos sonoros nas configurações. |
+
+#### **Epic 7: Design das Fases**
+| User Story | Descrição |
+|------------|-----------|
+| **US 7.1** | Como jogador, quero que cada fase tenha um nível crescente de dificuldade. |
+| **US 7.2** | Como jogador, desejo que os elementos de design estejam alinhados com a temática do jogo. |
+
+#### **Epic 8: Estruturar Perguntas**
+| User Story | Descrição |
+|------------|-----------|
+| **US 8.1** | Como jogador, desejo uma variedade de perguntas ou desafios ao longo do jogo. |
+| **US 8.2** | Como jogador, quero que as perguntas se tornem mais desafiadoras à medida que o jogo progride. |o progride. |
+
+Aqui estão os requisitos não-funcionais e as premissas/restrições em formato de quadros:
+
+### **Requisitos não funcionais**
+
+#### **RNF01: Responsividade para Diferentes Tamanhos de Tela**
+| Descrição | Garantir que a aplicação seja responsiva, adaptando-se de forma eficaz a diferentes tamanhos de tela para proporcionar uma experiência de usuário consistente em vários dispositivos. |
+|------------|-----------|
+| **Requisitos Específicos** | - A aplicação deve ser capaz de se ajustar automaticamente a tamanhos de tela variados, como tablets, smartphones e computadores. - Todos os elementos da interface do usuário, incluindo menus, botões e conteúdo, devem ser claramente legíveis e acessíveis em todas as telas. - Testes de usabilidade devem ser conduzidos em diferentes dispositivos para garantir uma experiência uniforme. |
+
+#### **RNF02: Design Atraente e Apropriado para Crianças**
+| Descrição | Criar um design visualmente cativante e adequado para crianças, tornando a aplicação atraente e fácil de usar para o público infantil. |
+|------------|-----------|
+| **Requisitos Específicos** | - O design deve apresentar cores alegres, personagens amigáveis e elementos visuais que sejam atraentes para crianças. - A interface do usuário deve ser simples e intuitiva, com ícones e botões grandes e fáceis de entender. - O conteúdo e os desafios dos jogos devem ser adequados à faixa etária das crianças-alvo. |
+
+#### **RNF03: Som de Ambiente no Menu Principal**
+| Descrição | Incluir elementos sonoros de ambiente no menu principal para melhorar a experiência do usuário e criar uma atmosfera envolvente. |
+|------------|-----------|
+| **Requisitos Específicos** | - Deve haver uma trilha sonora agradável e relaxante no menu principal que contribua para uma atmosfera positiva. - Os sons de ambiente devem ser ajustáveis, permitindo que os usuários controlem o volume ou até mesmo desativem o som, se desejado. - O som deve ser de alta qualidade e livre de distorções. |
+
+#### **Premissas**
+| Descrição |
+ - Será gerada uma versão demo do projeto nas datas: 18/09/2023, 16/10/2023 e 13/11/2023;
+ - Faremos uma apresentação comercial e técnica do projeto nas datas: 	18/09/2023, 16/10/2023 e 13/11/2023; 
+ - Faremos acompanhamento com o professor ao meio de cada sprint;
+  - Abordaremos gamificação no contexto do ensino matemático. 
+
+
+#### **Restrições**
+| Descrição | 
+- O projeto deve ser entregue até o dia da apresentação final da disciplina 04/12/2023; 
+- Deverá fazer uso do equipamento TVBOX; 
+- O projeto deve ter impacto social;
+- Deve ser utilizado a estratégia de ramificação GitFlow;
+ - Contemplar pelo menos 6 Twelve-factor app; 
+ - Utilizar quadro KANBAM; e - Usar Semantic Versioning para versionamento. 
