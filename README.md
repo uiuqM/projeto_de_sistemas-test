@@ -140,7 +140,6 @@ Segundo análises da Anatel, foram encontrados softwares maliciosos, chamados de
 Diante de tal situação, foram doados para o projeto EPIC, do curso de Ciência da Computação, vários aparelhos de TVBOX, sendo que a maioria da remessa são do modelo MXQ PRO 4K, com a finalidade de estudantes do curso participarem no processo de descaracterização, Esse processo visa alterar o sistema interno dos aparelhos de forma a torná-los adequados para uso pelo público em geral, sem possibilitar atividades ilegais ou tornar mais difícil o acesso a conteúdo pirata.  
 Este projeto é uma iniciativa importante que busca promover o uso responsável de dispositivos de TV Box e resguardar os interesses legais e a segurança dos usuários. A conscientização sobre os riscos associados ao uso de TV Boxes piratas e a promoção de alternativas legais são passos cruciais na luta contra a pirataria e na proteção da privacidade e segurança dos consumidores.
 
-
 ## Capturas de telas do aplicativo
 
 ## Rodando localmente
