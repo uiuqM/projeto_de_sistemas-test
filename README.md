@@ -133,6 +133,14 @@ Os ambientes de desenvolvimento, teste e produção estarão separados pela estr
 
 Faremos uso de *logs* para rastreios e acompanhamento em etapas de desenvolvimento, bem como em estruturação do projeto no geral.
 
+## TVbox
+  Os aparelhos de TVBOX são aparelhos pequenos que funcionam como mini-computadores que possuem o intuito de estabelecer para o usuário final a experiência de uma Smart TV, isto é, um aparelho de televisão que possui diversas funcionalidades de computadores pessoais e smartphones. Apesar do propósito citado, o uso só se torna ilegal quando ela permite acessar canais e outros conteúdos restritos por assinatura de forma clandestina [1](https://www.oficinadanet.com.br/iptv/44670-usar-tv-box-ilegal), caracterizando crime de pirataria.  
+Além de ser tecnicamente um crime, utilizar uma TV Box pirata pode trazer outros riscos ao usuário. A própria Anatel chegou a analisar alguns modelos TV Box pirata e eles concluíram que o usuário pode colocar em risco sua própria segurança e privacidade.  
+Segundo análises da Anatel, foram encontrados softwares maliciosos, chamados de malwares, capazes de controlar o dispositivo remotamente sem autorização; acessar indevidamente dados e informações dos usuários — incluindo registros financeiros e arquivos de fotos; possibilitar o acesso a dados de dispositivos que compartilham a mesma rede de internet. [2](https://canaltech.com.br/governo/o-que-caracteriza-tv-box-e-ilegal-239790/)  
+Diante de tal situação, foram doados para o projeto EPIC, do curso de Ciência da Computação, vários aparelhos de TVBOX, sendo que a maioria da remessa são do modelo MXQ PRO 4K, com a finalidade de estudantes do curso participarem no processo de descaracterização, Esse processo visa alterar o sistema interno dos aparelhos de forma a torná-los adequados para uso pelo público em geral, sem possibilitar atividades ilegais ou tornar mais difícil o acesso a conteúdo pirata.  
+Este projeto é uma iniciativa importante que busca promover o uso responsável de dispositivos de TV Box e resguardar os interesses legais e a segurança dos usuários. A conscientização sobre os riscos associados ao uso de TV Boxes piratas e a promoção de alternativas legais são passos cruciais na luta contra a pirataria e na proteção da privacidade e segurança dos consumidores.
+
+
 ## Capturas de telas do aplicativo
 
 ## Rodando localmente
