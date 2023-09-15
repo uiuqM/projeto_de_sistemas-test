@@ -138,6 +138,8 @@ font_data = ExtResource( 3 )
 [node name="startscreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -2.0
+margin_right = -2.0
 theme = SubResource( 2 )
 script = ExtResource( 4 )
 
@@ -212,10 +214,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -509.0
-margin_top = -321.5
-margin_right = 543.0
-margin_bottom = 283.5
+margin_left = -532.5
+margin_top = -360.5
+margin_right = 586.5
+margin_bottom = 379.5
 custom_fonts/font = SubResource( 15 )
 custom_styles/normal = SubResource( 16 )
 text = "						Saindo do game !!!!"
