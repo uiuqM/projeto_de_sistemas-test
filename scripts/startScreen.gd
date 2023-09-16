@@ -3,6 +3,9 @@ extends Control
 func _ready():
 	$controls/exit_btn/Label.hide()
 	$controls/start_btn.grab_focus()
+	if $AudioStreamPlayer.playing == false:
+		$AudioStreamPlayer.play()
+	pass
 
 func _on_start_btn_pressed():
 	get_tree().change_scene("res://levels/gamesScreen.tscn")
