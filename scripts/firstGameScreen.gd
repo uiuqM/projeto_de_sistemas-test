@@ -4,7 +4,7 @@ func _ready():
 	pass
 	
 func _on_start_btn_pressed():
-	pass
+	get_tree().change_scene("res://levels/levels_first_game/firstStageScreen.tscn")
 	
 func _on_return_btn_pressed():
 	var _change_scene: bool = get_tree().change_scene("res://levels/gamesScreen.tscn")
