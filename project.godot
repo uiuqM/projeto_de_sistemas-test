@@ -36,6 +36,10 @@ config/name="Conhecimento Em Ação"
 run/main_scene="res://levels/startScreen.tscn"
 config/icon="res://config/icon.png"
 
+[autoload]
+
+SceneTransition="*res://levels/sceneTransition.tscn"
+
 [global]
 
 layer=false

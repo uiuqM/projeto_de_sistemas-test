@@ -1,8 +1,9 @@
 extends Node2D
 
 func _ready():
+	$controls/return_btn.grab_focus()
 	pass
 
 func _on_return_btn_pressed():
-	var _change_scene: bool = get_tree().change_scene("res://levels/firstGameScreen.tscn")
+	SceneTransition.change_scene("res://levels/firstGameScreen.tscn")
 	
