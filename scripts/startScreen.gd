@@ -8,7 +8,7 @@ func _ready():
 	pass
 
 func _on_start_btn_pressed():
-	get_tree().change_scene("res://levels/gamesScreen.tscn")
+	SceneTransition.change_scene("res://levels/gamesScreen.tscn")
 
 func _on_exit_btn_pressed():
 	$controls/exit_btn/Label.show()
