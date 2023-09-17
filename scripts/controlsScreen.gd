@@ -1,10 +1,10 @@
 extends Control
 
 func _ready():
-  pass
+	$controls/return_btn.grab_focus()
 
 func _on_return_btn_pressed():
-	var _change_scene: bool = get_tree().change_scene("res://levels/startScreen.tscn")
+	SceneTransition.change_scene("res://levels/startScreen.tscn")
 	
 func _on_exit_btn_pressed():
 	get_tree().quit()
