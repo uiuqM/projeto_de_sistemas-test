@@ -21,3 +21,15 @@ func _on_control_btn_pressed():
 
 func _on_about_btn_pressed():
 	SceneTransition.change_scene("res://levels/aboutScreen.tscn")
+
+func _on_start_btn_focus_exited():
+	$button_exit.play()
+
+func _on_control_btn_focus_entered():
+	$button_exit.play()
+
+func _on_about_btn_focus_entered():
+	$button_exit.play()
+
+func _on_exit_btn_focus_entered():
+	$button_exit.play()

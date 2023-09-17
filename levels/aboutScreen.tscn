@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=2]
 [ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=3]
 [ext_resource path="res://scripts/aboutScreen.gd" type="Script" id=4]
+[ext_resource path="res://sounds/blipSelect.wav" type="AudioStream" id=5]
 
 [sub_resource type="TileSet" id=15]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
@@ -258,9 +259,17 @@ margin_right = 210.0
 margin_bottom = 40.0
 text = "uiuqM"
 
+[node name="button_exit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="focus_entered" from="controls/codebase_btn" to="." method="_on_codebase_btn_focus_entered"]
 [connection signal="pressed" from="controls/codebase_btn" to="." method="_on_codebase_btn_pressed"]
+[connection signal="focus_entered" from="controls/return_btn" to="." method="_on_return_btn_focus_entered"]
 [connection signal="pressed" from="controls/return_btn" to="." method="_on_return_btn_pressed"]
+[connection signal="focus_entered" from="controls/exit_btn" to="." method="_on_exit_btn_focus_entered"]
 [connection signal="pressed" from="controls/exit_btn" to="." method="_on_exit_btn_pressed"]
+[connection signal="focus_entered" from="HBoxContainer/erarich_btn" to="." method="_on_erarich_btn_focus_entered"]
 [connection signal="pressed" from="HBoxContainer/erarich_btn" to="." method="_on_erarich_btn_pressed"]
 [connection signal="pressed" from="HBoxContainer/mateus_btn" to="." method="_on_mateus_btn_pressed"]
+[connection signal="focus_entered" from="HBoxContainer/wilque_btn" to="." method="_on_wilque_btn_focus_entered"]
 [connection signal="pressed" from="HBoxContainer/wilque_btn" to="." method="_on_wilque_btn_pressed"]
