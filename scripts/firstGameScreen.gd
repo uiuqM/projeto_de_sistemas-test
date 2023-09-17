@@ -15,3 +15,9 @@ func _on_return_btn_pressed():
 	
 func _on_exit_btn_pressed():
 	get_tree().quit()
+
+func _on_start_btn_focus_entered():
+	$button_exit.play()
+
+func _on_return_btn_focus_entered():
+	$button_exit.play()
