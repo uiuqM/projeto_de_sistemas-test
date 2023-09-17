@@ -5,6 +5,7 @@ func _ready():
 	pass
 
 func _on_return_btn_pressed():
+	playMusicMenu._pause()
 	SceneTransition.change_scene("res://levels/startScreen.tscn")
 	
 func _on_codebase_btn_focus_entered():
