@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://config/DUNGEON007B.ogg" type="AudioStream" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
