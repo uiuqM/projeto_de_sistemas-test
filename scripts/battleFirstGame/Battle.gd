@@ -43,7 +43,7 @@ func _ready():
 	print("\nMultiplicacao %d" % (n_one * n_two))
 	$QuestionsPanel.show()
 	$ActionsPanel.show()
-	
+	$ActionsPanel/Actions/LineEdit.grab_focus()
 	$ActionsPanel/Actions/LineEdit.connect("enter_pressed", self, "_on_LineEdit_enter_pressed")
 
 func set_health(progress_bar, health, max_health):
