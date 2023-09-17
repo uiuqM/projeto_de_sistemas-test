@@ -1,11 +1,11 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
-[ext_resource path="res://src/BaseEnemy.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Dragon.png" type="Texture" id=2]
+[ext_resource path="res://models/battle/Dragon.png" type="Texture" id=1]
+[ext_resource path="res://scripts/battleFirstGame/BaseEnemy.gd" type="Script" id=2]
 
 [resource]
-script = ExtResource( 1 )
-name = "Dragon"
-texture = ExtResource( 2 )
+script = ExtResource( 2 )
+name = "Enemy"
+texture = ExtResource( 1 )
 health = 45
 damage = 15

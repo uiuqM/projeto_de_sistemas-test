@@ -39,6 +39,7 @@ config/icon="res://config/icon.png"
 [autoload]
 
 SceneTransition="*res://levels/sceneTransition.tscn"
+State="*res://scripts/battleFirstGame/State.gd"
 
 [global]
 
