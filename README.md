@@ -115,15 +115,15 @@ Criamos e gerenciamos o projeto por apenas um repositório, contendo neste toda 
 
 **Dependências (Dependencies):** *Declare e isole explicitamente as dependências.*
 
-A resolução de dependências do projeto está descrita pelo arquivo *package.json*, vale ressaltar que as dependências são isoladas nativamente pelo próprio Nodejs.
+A resolução de dependências do projeto está descrita pelo arquivo **project.godot**.
   
 **Configurações (Config):** *Armazene as configurações no ambiente.* 
 
-Estamos utilizado variáveis de ambiente para configuração do projeto, fazendo uso também do gerenciamento próprio do GitHub Secrets.
+Estamos utilizado variáveis de ambiente para configuração do projeto.
 
 **Construa, lançe, execute (Build, release, run):** *Separe estritamente os estágios de construção e execução.*
 
-O processo de desenvolvimento contará com estratégias definidas para as etapas de *build*, *releas*e e *run* do aplicativo utilizando GitHub Actions.
+O processo de desenvolvimento contará com estratégias definidas para as etapas de *build*, *release* e *run* do aplicativo.
 
 **Dev/Prod semelhantes (Dev/Prod Parity):** *Mantenha o desenvolvimento, homologação e produção o mais similares possível.*
 
