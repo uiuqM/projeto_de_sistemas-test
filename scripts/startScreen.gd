@@ -20,5 +20,4 @@ func _on_control_btn_pressed():
 	get_tree().current_scene.add_child(CrontrolScreen)
 
 func _on_about_btn_pressed():
-	var AboutScreen = load("res://levels/aboutScreen.tscn").instance()
-	get_tree().current_scene.add_child(AboutScreen)
+	SceneTransition.change_scene("res://levels/aboutScreen.tscn")
