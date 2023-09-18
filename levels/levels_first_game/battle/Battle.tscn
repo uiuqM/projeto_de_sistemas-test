@@ -155,14 +155,26 @@ tracks/0/keys = {
 }
 
 [node name="Battle" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
 
 [node name="Background" type="TextureRect" parent="."]
+anchor_left = -0.011
+anchor_top = 0.007
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 3.0
+margin_bottom = 2.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 4
@@ -176,9 +188,6 @@ margin_left = -141.0
 margin_top = -46.0
 margin_right = 3.0
 margin_bottom = 70.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ProgressBar" type="ProgressBar" parent="EnemyContainer"]
 margin_right = 144.0
@@ -198,9 +207,6 @@ custom_fonts/font = ExtResource( 3 )
 text = "HP: 25/50"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Enemy" type="TextureRect" parent="EnemyContainer"]
 margin_top = 20.0
@@ -260,16 +266,13 @@ align = 1
 valign = 1
 
 [node name="ActionsPanel" type="Panel" parent="."]
-anchor_left = 0.5
-anchor_right = 0.5
+anchor_left = 0.636
+anchor_right = 0.636
 margin_left = 53.0
 margin_top = 75.0
 margin_right = 53.0
 margin_bottom = 75.0
 custom_styles/panel = SubResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Actions" type="VBoxContainer" parent="ActionsPanel"]
 anchor_right = 1.0
@@ -353,10 +356,10 @@ current = true
 script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="QuestionsPanel"]
-margin_left = 66.0
-margin_top = 9.0
-margin_right = 254.0
-margin_bottom = 23.0
+margin_left = 275.0
+margin_top = 170.0
+margin_right = 463.0
+margin_bottom = 184.0
 custom_fonts/font = ExtResource( 3 )
 text = "Qual o resultado de 4 * 9?"
 

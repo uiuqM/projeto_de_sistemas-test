@@ -73,6 +73,7 @@ func enemy_turn():
 		display_text("%s dealt %d damage!" % [enemy.name, enemy.damage])
 		yield(self, "textbox_closed")
 		$ActionsPanel.show()
+		$ActionsPanel/Actions/LineEdit.grab_focus()
 	else:
 		display_text("%s defeated you!" % enemy.name)
 		yield(self, "textbox_closed")
@@ -158,3 +159,5 @@ func display_new_question():
 	n_two = numbers[1]
 	$QuestionsPanel/Label.text = "Qual o resultado de %d %c %d?" % [n_one, operation, n_two] 
 	$QuestionsPanel.show()
+	$ActionsPanel/Actions/LineEdit.grab_focus()
+
