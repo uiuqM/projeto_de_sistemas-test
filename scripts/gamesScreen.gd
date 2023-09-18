@@ -3,6 +3,7 @@ extends Node2D
 func _ready():
 	$controls/exit_btn/Label.hide()
 	$controls/game_one_btn.grab_focus()
+	playMusicMenu._ready()
 
 func _on_return_btn_pressed():
 	SceneTransition.change_scene("res://levels/startScreen.tscn")
