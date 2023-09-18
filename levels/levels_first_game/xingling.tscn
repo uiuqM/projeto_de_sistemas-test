@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://models/game/Fantasy Battlers - Free/Original size/03.png" type="Texture" id=1]
+[ext_resource path="res://models/battle/Dragon.png" type="Texture" id=1]
 [ext_resource path="res://scripts/xingling.gd" type="Script" id=2]
 [ext_resource path="res://models/worlds/grassland/Quest-Mark-Idle-16x16.png" type="Texture" id=3]
 
