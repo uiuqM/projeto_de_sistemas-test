@@ -37,7 +37,7 @@ func _ready():
 	var numbers = _draw_numbers()
 	n_one = numbers[0]
 	n_two = numbers[1]
-	$QuestionsPanel/Label.text = "Qual o resultado de %d %c %d?" % [n_one, operation, n_two] 
+	$QuestionsPanel/Label.text = " Me diga mortal qual o resultado de %d %c %d?" % [n_one, operation, n_two] 
 	print("\nSoma %d" % (n_one + n_two))
 	print("\nSubtracao %d" % (n_one - n_two))
 	print("\nMultiplicacao %d" % (n_one * n_two))
@@ -157,7 +157,7 @@ func display_new_question():
 	var numbers = _draw_numbers()
 	n_one = numbers[0]
 	n_two = numbers[1]
-	$QuestionsPanel/Label.text = "Qual o resultado de %d %c %d?" % [n_one, operation, n_two] 
+	$QuestionsPanel/Label.text = "Me diga mortal qual o resultado de %d %c %d?" % [n_one, operation, n_two] 
 	$QuestionsPanel.show()
 	$ActionsPanel/Actions/LineEdit.grab_focus()
 
