@@ -103,3 +103,18 @@
 #### 19. Finalizar apresentação comercial e técnica do produto. 
 - **Dificuldade:** muito difícil
 - **Autores:** [Érick Santos](https://github.com/erarich), [Mateus Alves](https://github.com/MateusAlvez) e [Wilque Muriel](https://github.com/uiuqM).
+
+
+### Resultados alcançados
+
+A maioria das tasks foram realizadas, conforme segue imagens:
+
+![Resultados alcançados](./images_results_sprint_2/one.png)
+![Resultados alcançados](./images_results_sprint_2/two.png)
+![Resultados alcançados](./images_results_sprint_2/three.png)
+![Resultados alcançados](./images_results_sprint_2/four.png)
+![Resultados alcançados](./images_results_sprint_2/fifth.png)
+![Resultados alcançados](./images_results_sprint_2/six.png)
+![Resultados alcançados](./images_results_sprint_2/seven.png)
+![Resultados alcançados](./images_results_sprint_2/eight.png)
+![Resultados alcançados](./images_results_sprint_2/nine.png)
