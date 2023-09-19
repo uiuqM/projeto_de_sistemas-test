@@ -24,16 +24,19 @@
 
 ## Introdução
 Projeto desenvolvido para a disciplina de Projeto de Sistemas do Curso de Ciência da Computação da Universidade Federal do Tocantins, Câmpus Palmas, 2023.2 com o objetivo de simular a criação de um produto que tenha impacto social e esteja atrelado à descaracterização de aparelhos de TVBOX.
-
-Ademais, há como requisitos para o desenvolvimento o uso de alguns conceitos e ferramentas como:
-1. Git Flow (metodologia de gerenciamento de ramificações para repositórios Git)
-2. Versionamento Semântico (metodologia para controle de versões)
-3. Revisão de Código
-4. Metodologia Ágil Kanban
-5. GitHub
-6. Apresentação Técnica e Comercial
-7. Business Model Canvas
-8. “Os Doze Fatores”
+## Premissas:
+  1. Será gerada uma versão demo do projeto nas datas: 18/09/2023, 16/10/2023 e 13/11/2023;
+  2. Faremos uma apresentação comercial e técnica do projeto nas datas: 18/09/2023, 16/10/2023 e 13/11/2023;
+  3. Faremos acompanhamento com o professor ao meio de cada sprint; e
+  4. Abordaremos gamificação no contexto do ensino matemático.
+## Restrições:
+  1. O projeto deve ser entregue até o dia da apresentação final da disciplina 04/12/2023;
+  2. Deverá fazer uso do equipamento TVBOX;
+  3. O projeto deve ter impacto social;
+  4. Deve ser utilizado a estratégia de ramificação GitFlow;
+  5. Contemplar pelo menos 6 Twelve-factor app;
+  6. Utilizar quadro KANBAM; e
+  7. Usar Semantic Versioning para versionamento.
 
 Diante disso, foi discutido o desenvolvimento da problemática relacionada à **aprendizagem matemática voltada para escolas de ensino fundamental no Brasil** por conta do **baixo índice de aprendizado nessa área**. Dessa forma, nossa solução busca **ajudar no desenvolvimento do ensino da matemática com auxílio de tecnologia**. Portanto, será desenvolvido um **aplicativo para sistemas Android cujos dispositivos alvos serão os aparelhos de TVBOX**.
 
@@ -112,15 +115,15 @@ Criamos e gerenciamos o projeto por apenas um repositório, contendo neste toda 
 
 **Dependências (Dependencies):** *Declare e isole explicitamente as dependências.*
 
-A resolução de dependências do projeto está descrita pelo arquivo *package.json*, vale ressaltar que as dependências são isoladas nativamente pelo próprio Nodejs.
+A resolução de dependências do projeto está descrita pelo arquivo **project.godot**.
   
 **Configurações (Config):** *Armazene as configurações no ambiente.* 
 
-Estamos utilizado variáveis de ambiente para configuração do projeto, fazendo uso também do gerenciamento próprio do GitHub Secrets.
+Estamos utilizado variáveis de ambiente para configuração do projeto.
 
 **Construa, lançe, execute (Build, release, run):** *Separe estritamente os estágios de construção e execução.*
 
-O processo de desenvolvimento contará com estratégias definidas para as etapas de *build*, *releas*e e *run* do aplicativo utilizando GitHub Actions.
+O processo de desenvolvimento contará com estratégias definidas para as etapas de *build*, *release* e *run* do aplicativo.
 
 **Dev/Prod semelhantes (Dev/Prod Parity):** *Mantenha o desenvolvimento, homologação e produção o mais similares possível.*
 
@@ -129,6 +132,13 @@ Os ambientes de desenvolvimento, teste e produção estarão separados pela estr
 **Logs (Logs):** *Trate logs como fluxos de eventos.*
 
 Faremos uso de *logs* para rastreios e acompanhamento em etapas de desenvolvimento, bem como em estruturação do projeto no geral.
+
+## TVbox
+  Os aparelhos de TVBOX são aparelhos pequenos que funcionam como mini-computadores que possuem o intuito de estabelecer para o usuário final a experiência de uma Smart TV, isto é, um aparelho de televisão que possui diversas funcionalidades de computadores pessoais e smartphones. Apesar do propósito citado, o uso só se torna ilegal quando ela permite acessar canais e outros conteúdos restritos por assinatura de forma clandestina [1](https://www.oficinadanet.com.br/iptv/44670-usar-tv-box-ilegal), caracterizando crime de pirataria.  
+Além de ser tecnicamente um crime, utilizar uma TV Box pirata pode trazer outros riscos ao usuário. A própria Anatel chegou a analisar alguns modelos TV Box pirata e eles concluíram que o usuário pode colocar em risco sua própria segurança e privacidade.  
+Segundo análises da Anatel, foram encontrados softwares maliciosos, chamados de malwares, capazes de controlar o dispositivo remotamente sem autorização; acessar indevidamente dados e informações dos usuários — incluindo registros financeiros e arquivos de fotos; possibilitar o acesso a dados de dispositivos que compartilham a mesma rede de internet. [2](https://canaltech.com.br/governo/o-que-caracteriza-tv-box-e-ilegal-239790/)  
+Diante de tal situação, foram doados para o projeto EPIC, do curso de Ciência da Computação, vários aparelhos de TVBOX, sendo que a maioria da remessa são do modelo MXQ PRO 4K, com a finalidade de estudantes do curso participarem no processo de descaracterização, Esse processo visa alterar o sistema interno dos aparelhos de forma a torná-los adequados para uso pelo público em geral, sem possibilitar atividades ilegais ou tornar mais difícil o acesso a conteúdo pirata.  
+Este projeto é uma iniciativa importante que busca promover o uso responsável de dispositivos de TV Box e resguardar os interesses legais e a segurança dos usuários. A conscientização sobre os riscos associados ao uso de TV Boxes piratas e a promoção de alternativas legais são passos cruciais na luta contra a pirataria e na proteção da privacidade e segurança dos consumidores.
 
 ## Capturas de telas do aplicativo
 
