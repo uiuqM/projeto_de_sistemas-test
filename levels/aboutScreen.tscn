@@ -1,17 +1,10 @@
-<<<<<<< HEAD
-[gd_scene load_steps=17 format=2]
-=======
 [gd_scene load_steps=18 format=2]
->>>>>>> be901a8de571d07fce69ee841cdaeff2f31e0b23
 
 [ext_resource path="res://fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=2]
 [ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=3]
 [ext_resource path="res://scripts/aboutScreen.gd" type="Script" id=4]
-<<<<<<< HEAD
-=======
 [ext_resource path="res://sounds/blipSelect.wav" type="AudioStream" id=5]
->>>>>>> be901a8de571d07fce69ee841cdaeff2f31e0b23
 
 [sub_resource type="TileSet" id=15]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
@@ -287,85 +280,6 @@ custom_styles/normal = SubResource( 19 )
 text = "						Saindo do game !!!!"
 align = 1
 
-<<<<<<< HEAD
-[node name="Label" type="Label" parent="."]
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 47.0
-margin_top = 100.0
-margin_right = 1007.0
-margin_bottom = 230.0
-custom_colors/font_color = Color( 0.784314, 0.854902, 0.121569, 1 )
-custom_fonts/font = SubResource( 20 )
-text = "Jogo criado para a disciplina de 
-Projeto de Sistemas do curso de 
-Ciência da Computação da Universidade Federal do Tocantins, 
-utilizando Godot Engine. 
-Com o objetivo de ser um jogo educativo 
-que possa ser utilizado em aparelhos TVBOX.
-"
-align = 1
-valign = 1
-
-[node name="screenName" type="Label" parent="."]
-margin_left = 46.0
-margin_top = 36.0
-margin_right = 1006.0
-margin_bottom = 87.0
-rect_min_size = Vector2( 650, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 21 )
-text = "SOBRE"
-align = 1
-valign = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = 416.0
-margin_top = 236.0
-margin_right = 626.0
-margin_bottom = 276.0
-
-[node name="erarich_btn" type="Button" parent="HBoxContainer"]
-margin_right = 56.0
-margin_bottom = 40.0
-text = "erarich"
-
-[node name="mateus_btn" type="Button" parent="HBoxContainer"]
-margin_left = 60.0
-margin_right = 154.0
-margin_bottom = 40.0
-text = "MateusAlvez"
-
-[node name="wilque_btn" type="Button" parent="HBoxContainer"]
-margin_left = 158.0
-margin_right = 210.0
-margin_bottom = 40.0
-text = "uiuqM"
-
-<<<<<<< HEAD
-[connection signal="pressed" from="controls/codebase_btn" to="." method="_on_codebase_btn_pressed"]
-[connection signal="pressed" from="controls/return_btn" to="." method="_on_return_btn_pressed"]
-[connection signal="pressed" from="controls/exit_btn" to="." method="_on_exit_btn_pressed"]
-[connection signal="pressed" from="HBoxContainer/erarich_btn" to="." method="_on_erarich_btn_pressed"]
-[connection signal="pressed" from="HBoxContainer/mateus_btn" to="." method="_on_mateus_btn_pressed"]
-=======
-[node name="button_exit" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-
-[connection signal="focus_entered" from="controls/codebase_btn" to="." method="_on_codebase_btn_focus_entered"]
-[connection signal="pressed" from="controls/codebase_btn" to="." method="_on_codebase_btn_pressed"]
-[connection signal="focus_entered" from="controls/return_btn" to="." method="_on_return_btn_focus_entered"]
-[connection signal="pressed" from="controls/return_btn" to="." method="_on_return_btn_pressed"]
-[connection signal="focus_entered" from="controls/exit_btn" to="." method="_on_exit_btn_focus_entered"]
-[connection signal="pressed" from="controls/exit_btn" to="." method="_on_exit_btn_pressed"]
-[connection signal="focus_entered" from="HBoxContainer/erarich_btn" to="." method="_on_erarich_btn_focus_entered"]
-[connection signal="pressed" from="HBoxContainer/erarich_btn" to="." method="_on_erarich_btn_pressed"]
-[connection signal="pressed" from="HBoxContainer/mateus_btn" to="." method="_on_mateus_btn_pressed"]
-[connection signal="focus_entered" from="HBoxContainer/wilque_btn" to="." method="_on_wilque_btn_focus_entered"]
->>>>>>> be901a8de571d07fce69ee841cdaeff2f31e0b23
-[connection signal="pressed" from="HBoxContainer/wilque_btn" to="." method="_on_wilque_btn_pressed"]
-=======
 [node name="button_exit" type="AudioStreamPlayer" parent="Control"]
 stream = ExtResource( 5 )
 
@@ -380,4 +294,3 @@ stream = ExtResource( 5 )
 [connection signal="pressed" from="Control/controls/return_btn" to="." method="_on_return_btn_pressed"]
 [connection signal="focus_entered" from="Control/controls/exit_btn" to="." method="_on_exit_btn_focus_entered"]
 [connection signal="pressed" from="Control/controls/exit_btn" to="." method="_on_exit_btn_pressed"]
->>>>>>> 94611e770d68952ba1e9e3f0290dc688ae27e8b2
