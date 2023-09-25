@@ -42,9 +42,15 @@ SceneTransition="*res://levels/sceneTransition.tscn"
 State="*res://scripts/battleFirstGame/State.gd"
 playMusicMenu="*res://levels/music-menu-player.tscn"
 
+[display]
+
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
+
 [global]
 
 layer=false
+window=false
 
 [gui]
 
