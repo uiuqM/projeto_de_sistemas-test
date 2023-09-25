@@ -197,10 +197,11 @@ valign = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control"]
 anchor_right = 1.0
-margin_left = -121.958
-margin_top = -112.045
-margin_right = 88.0415
-margin_bottom = -92.0452
+margin_left = -182.957
+margin_top = -115.068
+margin_right = 143.043
+margin_bottom = -95.0678
+alignment = 1
 
 [node name="erarich_btn" type="Button" parent="Control/HBoxContainer"]
 margin_right = 56.0
@@ -218,6 +219,12 @@ margin_left = 158.0
 margin_right = 210.0
 margin_bottom = 20.0
 text = "uiuqM"
+
+[node name="sophia_btn" type="Button" parent="Control/HBoxContainer"]
+margin_left = 214.0
+margin_right = 326.0
+margin_bottom = 20.0
+text = "SophiaMenezes"
 
 [node name="controls" type="VBoxContainer" parent="Control"]
 anchor_left = 0.5

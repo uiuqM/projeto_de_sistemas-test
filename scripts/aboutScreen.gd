@@ -22,3 +22,6 @@ func _on_erarich_btn_focus_entered():
 
 func _on_wilque_btn_focus_entered():
 	$Control/button_exit.play()
+
+func _on_sophia_btn_focus_entered():
+	$Control/button_exit.play()
