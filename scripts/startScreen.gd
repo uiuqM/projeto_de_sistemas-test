@@ -30,3 +30,9 @@ func _on_about_btn_focus_entered():
 
 func _on_exit_btn_focus_entered():
 	$button_exit.play()
+
+func _on_start_btn_focus_entered():
+	$button_exit.play()
+
+func _on_config_btn_pressed():
+	SceneTransition.change_scene("res://levels/configScreen.tscn")

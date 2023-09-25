@@ -133,22 +133,24 @@ shadow_color = Color( 0.0117647, 0.0117647, 0.0117647, 0 )
 shadow_size = 4
 
 [node name="gamesScreen" type="Node2D"]
-position = Vector2( 530, 299 )
+position = Vector2( 487, 317 )
 script = ExtResource( 7 )
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2( -533, -300 )
+position = Vector2( -489, -321 )
 tile_set = SubResource( 8 )
 format = 1
-tile_data = PoolIntArray( 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 16, 3, 0, 20, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 196624, 3, 0, 196628, 3, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 393232, 1, 0, 393236, 1, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0, 524304, 2, 0, 524308, 2, 0 )
+tile_data = PoolIntArray( 65532, 3, 0, 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 16, 3, 0, 262140, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 196624, 3, 0, 458748, 1, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 393232, 1, 0, 589820, 2, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0, 524304, 2, 0 )
 
 [node name="screenName" type="Label" parent="."]
-anchor_top = 1.0
-anchor_bottom = 1.0
-margin_left = -260.0
-margin_top = -218.0
-margin_right = 700.0
-margin_bottom = -167.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -405.0
+margin_top = -175.0
+margin_right = 555.0
+margin_bottom = -124.0
 rect_min_size = Vector2( 650, 0 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
 custom_colors/font_color_shadow = Color( 0.129412, 0.317647, 0.756863, 1 )
@@ -160,16 +162,19 @@ custom_fonts/font = SubResource( 15 )
 text = "LISTA DE JOGOS"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="controls" type="VBoxContainer" parent="."]
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 33.0
-margin_top = -80.0
-margin_right = 369.0
-margin_bottom = 23.0
+anchor_bottom = 1.0
+margin_left = -97.0
+margin_top = -40.0
+margin_right = 239.0
+margin_bottom = 63.0
 custom_constants/separation = 20
 
 [node name="game_one_btn" type="Button" parent="controls"]
@@ -184,7 +189,6 @@ custom_fonts/font = SubResource( 17 )
 text = "MUNDO MATEMÁTICO"
 
 [node name="return_btn" type="Button" parent="controls"]
-visible = false
 margin_top = 41.0
 margin_right = 336.0
 margin_bottom = 62.0
@@ -197,9 +201,9 @@ custom_fonts/font = SubResource( 17 )
 text = "VOLTAR"
 
 [node name="exit_btn" type="Button" parent="controls"]
-margin_top = 41.0
+margin_top = 82.0
 margin_right = 336.0
-margin_bottom = 62.0
+margin_bottom = 103.0
 theme = SubResource( 16 )
 custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
