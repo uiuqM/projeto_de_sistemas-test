@@ -1,9 +1,9 @@
 # Requisitos Funcionais e Não-Funcionais
 
-Versão 0.0: 27/08/2023  
-Versão 0.1: 28/08/2023  
-Versão 0.3: 08/09/2023
-Versão 0.2: 17/09/2023
+- Versão 0.0: 27/08/2023  
+- Versão 0.1: 28/08/2023  
+- Versão 0.3: 08/09/2023
+- Versão 0.2: 17/09/2023
 
 #### **Epic 1: Suporte a Periféricos de Entrada**
 
@@ -62,8 +62,8 @@ Versão 0.2: 17/09/2023
 #### **Epic 8: Estruturar Perguntas**
 
 | User Story | Descrição                                                                                      |
-| ---------- | ---------------------------------------------------------------------------------------------- | ----------- |
-| **US 8.1** | Como jogador, quero que as perguntas se tornem mais desafiadoras à medida que o jogo progride. | o progride. |
+| ---------- | ---------------------------------------------------------------------------------------------- |
+| **US 8.1** | Como jogador, quero que as perguntas se tornem mais desafiadoras à medida que o jogo progride. |
 
 ### **Requisitos não funcionais**
 
