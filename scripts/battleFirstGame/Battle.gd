@@ -68,15 +68,21 @@ func enemy_turn():
 		
 		current_player_health = max(0, current_player_health - enemy.damage)
 		set_health($PlayerPanel/PlayerData/ProgressBar, current_player_health, State.max_health)
-		$AnimationPlayer.play("shake")
-		yield($AnimationPlayer, "animation_finished")
+		$PlayerPanel/anime.play("dano")
+		yield($PlayerPanel/anime, "animation_finished")
 		display_text("%s dealt %d damage!" % [enemy.name, enemy.damage])
 		yield(self, "textbox_closed")
 		$ActionsPanel.show()
 		$ActionsPanel/Actions/LineEdit.grab_focus()
 	else:
 		display_text("%s defeated you!" % enemy.name)
-		yield(self, "textbox_closed")
+		yield(self, "textbox_closed") 
+		$PlayerPanel/anime.play("hit")
+		yield($PlayerPanel/anime, "animation_finished")
+			
+		yield(get_tree().create_timer(0.25), "timeout")
+		get_tree().quit()
+		
 
 func _on_Run_pressed():
 	display_text("Got away safely!")

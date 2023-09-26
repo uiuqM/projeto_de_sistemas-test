@@ -209,6 +209,7 @@ radius = 22.0
 height = 30.0
 
 [node name="player" type="KinematicBody2D"]
+position = Vector2( -30, 2 )
 collision_mask = 14
 script = ExtResource( 1 )
 
@@ -228,8 +229,7 @@ anims/jump = SubResource( 4 )
 anims/run = SubResource( 5 )
 
 [node name="Collisionplayer" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 0, -1 )
+position = Vector2( -2, -9 )
 shape = SubResource( 3 )
 
 [node name="raycasts" type="Node2D" parent="."]
@@ -245,3 +245,19 @@ position = Vector2( -5, 10 )
 enabled = true
 cast_to = Vector2( 0, 32 )
 collision_mask = 8
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 7, -70 )
+current = true
+limit_left = -158
+limit_top = -303
+limit_bottom = 600
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.4
+drag_margin_top = 0.3
+drag_margin_right = 0.4
+drag_margin_bottom = 0.3
+editor_draw_limits = true
+editor_draw_drag_margin = true
