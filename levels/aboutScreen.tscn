@@ -6,7 +6,7 @@
 [ext_resource path="res://scripts/aboutScreen.gd" type="Script" id=4]
 [ext_resource path="res://sounds/blipSelect.wav" type="AudioStream" id=5]
 
-[sub_resource type="TileSet" id=15]
+[sub_resource type="TileSet" id=27]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
 0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
@@ -144,17 +144,15 @@ __meta__ = {
 }
 
 [node name="Control" type="Control" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
 rect_rotation = -0.721242
 
 [node name="TileMap" type="TileMap" parent="Control"]
-position = Vector2( -539, -313.5 )
-tile_set = SubResource( 15 )
+position = Vector2( -544.883, -316.202 )
+tile_set = SubResource( 27 )
 format = 1
-tile_data = PoolIntArray( 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0 )
+tile_data = PoolIntArray( 65532, 3, 0, 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 16, 3, 0, 262140, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 196624, 3, 0, 458748, 1, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 393232, 1, 0, 589820, 2, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0, 524304, 2, 0 )
 
 [node name="Label" type="Label" parent="Control"]
 anchor_left = 0.5
@@ -200,10 +198,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -179.974
-margin_top = -71.0667
-margin_right = 135.026
-margin_bottom = 72.9333
+margin_left = -168.973
+margin_top = -72.0627
+margin_right = 146.027
+margin_bottom = 71.9373
 custom_constants/separation = 20
 
 [node name="codebase_btn" type="Button" parent="Control/controls"]
@@ -255,14 +253,12 @@ text = "SAIR"
 
 [node name="Label" type="Label" parent="Control/controls/exit_btn"]
 visible = false
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -509.0
-margin_top = -321.5
-margin_right = 543.0
-margin_bottom = 283.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -376.0
+margin_top = -367.0
+margin_right = 342.0
+margin_bottom = 219.0
 custom_fonts/font = SubResource( 18 )
 custom_styles/normal = SubResource( 19 )
 text = "						Saindo do game !!!!"
