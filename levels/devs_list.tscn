@@ -1,14 +1,14 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=2]
-[ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=3]
-[ext_resource path="res://scripts/aboutScreen.gd" type="Script" id=4]
-[ext_resource path="res://sounds/blipSelect.wav" type="AudioStream" id=5]
+[ext_resource path="res://sounds/blipSelect.wav" type="AudioStream" id=2]
+[ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=3]
+[ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=4]
+[ext_resource path="res://scripts/devs_list.gd" type="Script" id=5]
 
 [sub_resource type="TileSet" id=27]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 288, 192 )
@@ -31,7 +31,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "_Complete_static_BG_(288 x 208).png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 0, 288, 160 )
@@ -45,7 +45,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "_Complete_static_BG_(288 x 208).png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 0, 128, 288, 96 )
@@ -59,7 +59,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "5 - Sky_color.png 3"
-3/texture = ExtResource( 3 )
+3/texture = ExtResource( 4 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 0, 288, 192 )
@@ -73,10 +73,7 @@
 3/shapes = [  ]
 3/z_index = 0
 
-[sub_resource type="DynamicFont" id=20]
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=21]
+[sub_resource type="DynamicFont" id=28]
 size = 48
 outline_color = Color( 1, 0.0196078, 0.0196078, 1 )
 font_data = ExtResource( 1 )
@@ -96,7 +93,7 @@ bg_color = Color( 0.6, 0.6, 0.6, 0 )
 [sub_resource type="StyleBoxFlat" id=26]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="Theme" id=16]
+[sub_resource type="Theme" id=29]
 Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
 Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 Button/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
@@ -110,14 +107,14 @@ Button/styles/hover = SubResource( 24 )
 Button/styles/normal = SubResource( 25 )
 Button/styles/pressed = SubResource( 26 )
 
-[sub_resource type="DynamicFont" id=17]
+[sub_resource type="DynamicFont" id=30]
 size = 21
 outline_size = 2
 outline_color = Color( 0, 0.619608, 0.760784, 1 )
 use_mipmaps = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=18]
+[sub_resource type="DynamicFont" id=31]
 size = 17
 outline_size = 4
 outline_color = Color( 0.133333, 0.239216, 0.607843, 1 )
@@ -126,7 +123,7 @@ extra_spacing_bottom = 10
 extra_spacing_space = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=19]
+[sub_resource type="StyleBoxFlat" id=32]
 bg_color = Color( 0, 0, 0, 0.686275 )
 border_width_left = 2
 border_width_top = 2
@@ -136,60 +133,37 @@ shadow_color = Color( 0.0117647, 0.0117647, 0.0117647, 0 )
 shadow_size = 4
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 544, 316 )
-rotation = 0.0122173
-script = ExtResource( 4 )
-__meta__ = {
-"_editor_description_": ""
-}
+position = Vector2( 543, 318 )
+script = ExtResource( 5 )
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_rotation = -0.721242
+margin_left = -2.0
+margin_top = -5.0
+margin_right = -2.0
+margin_bottom = -5.0
+rect_rotation = 0.0149254
 
 [node name="TileMap" type="TileMap" parent="Control"]
-position = Vector2( -544.883, -316.202 )
+position = Vector2( -539, -313.5 )
 tile_set = SubResource( 27 )
 format = 1
-tile_data = PoolIntArray( 65532, 3, 0, 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 16, 3, 0, 262140, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 196624, 3, 0, 458748, 1, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 393232, 1, 0, 589820, 2, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0, 524304, 2, 0 )
-
-[node name="Label" type="Label" parent="Control"]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -493.906
-margin_top = -254.183
-margin_right = 466.094
-margin_bottom = -124.183
-custom_colors/font_color = Color( 0.886275, 0.894118, 0.788235, 1 )
-custom_colors/font_outline_modulate = Color( 0.247059, 0.0666667, 0.898039, 1 )
-custom_colors/font_color_shadow = Color( 0.117647, 0.419608, 0.709804, 1 )
-custom_fonts/font = SubResource( 20 )
-text = "Jogo criado para a disciplina de 
-Projeto de Sistemas do curso de 
-Ciência da Computação da Universidade Federal do Tocantins, 
-utilizando Godot Engine. 
-Com o objetivo de ser um jogo educativo 
-que possa ser utilizado em aparelhos TVBOX.
-"
-align = 1
-valign = 1
+tile_data = PoolIntArray( -131076, 3, 0, -196608, 3, 0, -196604, 3, 0, -196600, 3, 0, -196596, 3, 0, -196592, 3, 0, 65532, 3, 0, 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 16, 3, 0, 262140, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 196624, 3, 0, 458748, 1, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 393232, 1, 0, 589820, 2, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0, 524304, 2, 0 )
 
 [node name="screenName" type="Label" parent="Control"]
 anchor_left = 0.5
-anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -505.886
-margin_top = -307.188
-margin_right = 454.114
-margin_bottom = -256.188
+margin_left = -562.077
+margin_top = -296.854
+margin_right = 589.923
+margin_bottom = -146.854
 rect_min_size = Vector2( 650, 0 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 21 )
-text = "SOBRE"
+custom_fonts/font = SubResource( 28 )
+text = "LISTA DE 
+DESENVOLVEDORES
+"
 align = 1
 valign = 1
 
@@ -198,80 +172,102 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -168.973
-margin_top = -72.0627
-margin_right = 146.027
-margin_bottom = 71.9373
+margin_left = -157.5
+margin_top = -113.0
+margin_right = 157.5
+margin_bottom = 113.0
 custom_constants/separation = 20
 
-[node name="codebase_btn" type="Button" parent="Control/controls"]
+[node name="erarich_btn" type="Button" parent="Control/controls"]
 margin_right = 315.0
 margin_bottom = 21.0
-theme = SubResource( 16 )
+theme = SubResource( 29 )
 custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
 custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
 custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
-custom_fonts/font = SubResource( 17 )
-text = "CODIGO FONTE"
+custom_fonts/font = SubResource( 30 )
+text = "ERICK SANTOS"
 
-[node name="dev_list" type="Button" parent="Control/controls"]
+[node name="mateus_btn" type="Button" parent="Control/controls"]
 margin_top = 41.0
 margin_right = 315.0
 margin_bottom = 62.0
-theme = SubResource( 16 )
+theme = SubResource( 29 )
 custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
 custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
 custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
-custom_fonts/font = SubResource( 17 )
-text = "DESENVOLVEDORES"
+custom_fonts/font = SubResource( 30 )
+text = "MATEUS ALVES"
 
-[node name="return_btn" type="Button" parent="Control/controls"]
+[node name="sophia_btn" type="Button" parent="Control/controls"]
 margin_top = 82.0
 margin_right = 315.0
 margin_bottom = 103.0
-theme = SubResource( 16 )
+theme = SubResource( 29 )
 custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
 custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
 custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
-custom_fonts/font = SubResource( 17 )
-text = "VOLTAR"
+custom_fonts/font = SubResource( 30 )
+text = "SOPHIA MENEZES"
 
-[node name="exit_btn" type="Button" parent="Control/controls"]
+[node name="wilque_btn" type="Button" parent="Control/controls"]
 margin_top = 123.0
 margin_right = 315.0
 margin_bottom = 144.0
-theme = SubResource( 16 )
+theme = SubResource( 29 )
+custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
+custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
+custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
+custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
+custom_fonts/font = SubResource( 30 )
+text = "WILQUE MURIEL"
+
+[node name="return_btn" type="Button" parent="Control/controls"]
+margin_top = 164.0
+margin_right = 315.0
+margin_bottom = 185.0
+theme = SubResource( 29 )
+custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
+custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
+custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
+custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
+custom_fonts/font = SubResource( 30 )
+text = "VOLTAR"
+
+[node name="exit_btn" type="Button" parent="Control/controls"]
+margin_top = 205.0
+margin_right = 315.0
+margin_bottom = 226.0
+theme = SubResource( 29 )
 custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
 custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
 custom_colors/font_color_pressed = Color( 0.929412, 0.0862745, 0.203922, 1 )
-custom_fonts/font = SubResource( 17 )
+custom_fonts/font = SubResource( 30 )
 text = "SAIR"
 
 [node name="Label" type="Label" parent="Control/controls/exit_btn"]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -376.0
-margin_top = -367.0
-margin_right = 342.0
-margin_bottom = 219.0
-custom_fonts/font = SubResource( 18 )
-custom_styles/normal = SubResource( 19 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -509.0
+margin_top = -321.5
+margin_right = 543.0
+margin_bottom = 283.5
+custom_fonts/font = SubResource( 31 )
+custom_styles/normal = SubResource( 32 )
 text = "						Saindo do game !!!!"
 align = 1
 
 [node name="button_exit" type="AudioStreamPlayer" parent="Control"]
-stream = ExtResource( 5 )
+stream = ExtResource( 2 )
 
-[connection signal="focus_entered" from="Control/controls/codebase_btn" to="." method="_on_codebase_btn_focus_entered"]
-[connection signal="pressed" from="Control/controls/codebase_btn" to="." method="_on_codebase_btn_pressed"]
-[connection signal="focus_entered" from="Control/controls/dev_list" to="." method="_on_codebase_btn_focus_entered"]
-[connection signal="pressed" from="Control/controls/dev_list" to="." method="_on_dev_list_pressed"]
-[connection signal="focus_entered" from="Control/controls/return_btn" to="." method="_on_return_btn_focus_entered"]
-[connection signal="pressed" from="Control/controls/return_btn" to="." method="_on_return_btn_pressed"]
-[connection signal="focus_entered" from="Control/controls/exit_btn" to="." method="_on_exit_btn_focus_entered"]
-[connection signal="pressed" from="Control/controls/exit_btn" to="." method="_on_exit_btn_pressed"]
+[connection signal="pressed" from="Control/controls/erarich_btn" to="." method="_on_erarich_btn_pressed"]
+[connection signal="pressed" from="Control/controls/mateus_btn" to="." method="_on_mateus_btn_pressed"]
+[connection signal="pressed" from="Control/controls/sophia_btn" to="." method="_on_sophia_btn_pressed"]
+[connection signal="pressed" from="Control/controls/wilque_btn" to="." method="_on_wilque_btn_pressed"]

@@ -50,6 +50,7 @@ window/stretch/aspect="keep"
 [global]
 
 layer=false
+window=false
 
 [gui]
 
