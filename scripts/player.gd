@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var velocity = Vector2()
-var move_speed = 600
+var move_speed = 1000
 var gravity = 1200
 var jump_force = -1200
 var is_grounded
