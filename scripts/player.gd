@@ -40,7 +40,7 @@ func _set_animation():
 	var anim = "idle"
 	
 	if !is_grounded:
-		anim = "hit"
+		anim = "jump"
 	elif velocity.x != 0:
 		anim = "run"
 	
