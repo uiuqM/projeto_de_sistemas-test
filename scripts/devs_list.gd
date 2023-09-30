@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready():
 	$Control/controls/erarich_btn.grab_focus()
+	playMusicMenu._ready()
 	pass
 
 func _on_erarich_btn_pressed():
@@ -22,3 +23,8 @@ func _on_wilque_btn_pressed():
 
 func on_button_exited():
 	$button_exit.play()
+
+func _on_return_btn_pressed():
+	$button_pressed.play()
+	playMusicMenu._pause()
+	SceneTransition.change_scene("res://levels/aboutScreen.tscn")

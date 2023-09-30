@@ -2,6 +2,7 @@ extends Control
 
 func _ready():
 	$controls/return_btn.grab_focus()
+	playMusicMenu._ready()
 
 func _on_return_btn_pressed():
 	$button_pressed.play()
