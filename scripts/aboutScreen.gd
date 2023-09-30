@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready():
 	$Control/controls/codebase_btn.grab_focus()
+	playMusicMenu._ready()
 	pass
 
 func _on_return_btn_pressed():
