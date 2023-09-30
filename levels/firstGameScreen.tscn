@@ -197,10 +197,11 @@ __meta__ = {
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 460.0
-margin_top = 276.0
-margin_right = 586.0
-margin_bottom = 372.0
+margin_left = 453.0
+margin_top = 255.0
+margin_right = 579.0
+margin_bottom = 399.0
+custom_constants/separation = 20
 alignment = 1
 
 [node name="start_btn" type="Button" parent="controls"]
@@ -216,9 +217,9 @@ custom_fonts/font = SubResource( 9 )
 text = "JOGAR"
 
 [node name="instruction_btn" type="Button" parent="controls"]
-margin_top = 25.0
+margin_top = 41.0
 margin_right = 126.0
-margin_bottom = 46.0
+margin_bottom = 62.0
 focus_neighbour_top = NodePath("../exit_btn")
 theme = SubResource( 8 )
 custom_colors/font_color_focus = Color( 0.87451, 0.72549, 0.0352941, 1 )
@@ -229,9 +230,9 @@ custom_fonts/font = SubResource( 9 )
 text = "SOBRE"
 
 [node name="return_btn" type="Button" parent="controls"]
-margin_top = 50.0
+margin_top = 82.0
 margin_right = 126.0
-margin_bottom = 71.0
+margin_bottom = 103.0
 theme = SubResource( 27 )
 custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
@@ -241,9 +242,9 @@ custom_fonts/font = SubResource( 28 )
 text = "VOLTAR"
 
 [node name="exit_btn" type="Button" parent="controls"]
-margin_top = 75.0
+margin_top = 123.0
 margin_right = 126.0
-margin_bottom = 96.0
+margin_bottom = 144.0
 focus_neighbour_bottom = NodePath("../start_btn")
 theme = SubResource( 8 )
 custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
