@@ -150,14 +150,15 @@ text = "VOLTAR"
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 47.0
-margin_top = 100.0
-margin_right = 1007.0
-margin_bottom = 230.0
-custom_colors/font_color = Color( 0.784314, 0.854902, 0.121569, 1 )
+margin_left = 104.0
+margin_top = 99.0
+margin_right = 954.0
+margin_bottom = 247.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 20 )
-text = "O seu objetivo como jogador é derrotar todos os inimigos 
-do mapa. Responda as questões corretamente e derrote
+text = "O seu objetivo como JOVEM APRENDIZ de MATEMÁGICA 
+é derrotar todos os inimigos  do mapa. 
+Responda as questões corretamente e derrote
 TODOS!!!"
 align = 1
 valign = 1
@@ -170,7 +171,7 @@ margin_bottom = 87.0
 rect_min_size = Vector2( 650, 0 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 21 )
-text = "INTRUÇÕES"
+text = "INSTRUÇÕES"
 align = 1
 valign = 1
 
