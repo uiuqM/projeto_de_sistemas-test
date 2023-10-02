@@ -208,6 +208,14 @@ A maioria das tasks foram realizadas, conforme segue imagens:
 
 ### Resultados alcançados
 
+- Foi adicionado um NPC (Non-player Character ou Personagem não jogável) para auxílio no jogo;
+- Mudanças no ambiente do jogo, tornando-se mais didático;
+- Movimentação do personagem corrigida e finalizada com inserção de animação;
+- Correção do enqudramento das telas;
+- Adição de tela de lista de desenvolvedores;
+- Adição de música nas outras telas do jogo;
+- Correção dos sons dos botões;
+- Mudanças Canva Client;
 - Referente a estruturação da primeira fase, temos:
 
   ### Primeira fase: Mundo Primavera
