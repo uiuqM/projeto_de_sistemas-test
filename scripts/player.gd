@@ -1,17 +1,48 @@
 extends KinematicBody2D
 
 var velocity = Vector2()
-var move_speed = 350
-var gravity = 2000
-var jump_force = -800
+var move_speed = 1000
+var gravity = 1200
+var jump_force = -1200
+var is_grounded
+onready var raycasts = $raycasts
 
 
 func _physics_process(delta : float) -> void:
  velocity.y += gravity * delta
 
- var move_direction = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
- if Input.is_action_pressed("jump"):
-		velocity.y = jump_force /2
- velocity.x = move_speed * move_direction
+ _get_input()
 
- move_and_slide(velocity)
+ velocity = move_and_slide(velocity)
+ is_grounded = _check_is_ground()
+ _set_animation()
+
+func _get_input():
+	 velocity.x = 0
+	 var move_direction = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
+	 velocity.x = lerp(velocity.x,  move_speed * move_direction, 0.2)
+	
+	 if move_direction !=0:
+		 $texture.scale.x = move_direction
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("jump") and is_grounded:
+		velocity.y = jump_force /2
+
+
+func _check_is_ground():
+	for raycast in raycasts.get_children():
+		if raycast.is_colliding():
+			return true 
+	return false
+	
+func _set_animation():
+	var anim = "idle"
+	
+	if !is_grounded:
+		anim = "jump"
+	elif velocity.x != 0:
+		anim = "run"
+	
+	if $anime.assigned_animation != anim:
+		$anime.play(anim)

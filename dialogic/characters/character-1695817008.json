@@ -1,0 +1,21 @@
+{
+	"color": "#ffcc0101",
+	"description": "Grande mago é personagem que sem estará com você te dando dicas sobre o mundo que vc se encontra no momento",
+	"display_name": "Nosliede",
+	"display_name_bool": true,
+	"id": "character-1695817008.json",
+	"mirror_portraits": false,
+	"name": "grande_mago",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -100,
+	"offset_y": -250,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://models/npc/mage/faces/face_happy.png"
+		}
+	],
+	"scale": 1000,
+	"theme": "theme-1695816702.cfg"
+}

@@ -1,0 +1,47 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 2.003,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá Aventureiro me chamo Nosliede, estarei te ajudando em sua jornada!!\n"
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nesse mundo a matemática flui como mágica, observe bem as paisagens elas irão te ajudar a prosseguir nas suas batalhas \n"
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Boa sorte !!!!!\n\n"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1695817557.json",
+		"name": "introdução_mundo_1"
+	}
+}

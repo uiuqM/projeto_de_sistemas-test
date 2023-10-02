@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://config/DUNGEON007B.ogg" type="AudioStream" id=1]
-
-[node name="CanvasLayer" type="CanvasLayer"]
-=======
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://config/DUNGEON007B.ogg" type="AudioStream" id=1]
@@ -12,7 +5,6 @@
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource( 2 )
->>>>>>> 94611e770d68952ba1e9e3f0290dc688ae27e8b2
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 modulate = Color( 1, 1, 1, 0 )

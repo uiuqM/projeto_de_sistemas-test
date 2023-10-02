@@ -1,11 +1,11 @@
 
-# Conhecimento em Ação
+# Mundo Matemático
 
 [Documento de especificação de requisitos](.github/files/requirements.md)  
 [Documento de planejamento de sprints](.github/files/sprints.md)
 ## Índice 
 
-- [Conhecimento em Ação](#conhecimento-em-ação)
+- [Mundo Matemático](#conhecimento-em-ação)
   - [Índice](#índice)
   - [Introdução](#introdução)
   - [Parte comercial](#parte-comercial)
@@ -56,8 +56,7 @@ Fontes:
 
 Nesta seção, discutiremos as funcionalidades do projeto desenvolvido. As funcionalidades do projeto estão relacionadas à criação de um aplicativo para sistemas Android, destinado aos aparelhos de TVBOX, com o objetivo de melhorar o ensino da matemática nas escolas de ensino fundamental no Brasil. Algumas das principais funcionalidades incluem:
 
-* **Conteúdo Educativo:** O aplicativo oferecerá conteúdo educativo relacionado à matemática, adaptado para o ensino fundamental, com lições interativas e recursos visuais para tornar o aprendizado mais envolvente.  
-* **Jogos Educativos:** Serão incorporados jogos educativos que utilizam a tecnologia para tornar o aprendizado da matemática mais divertido e eficaz.  
+* **Conteúdo Educativo:** O aplicativo oferecerá conteúdo educativo relacionado à matemática, adaptado para o ensino fundamental, com lições interativas e recursos visuais para tornar o aprendizado mais envolvente.   
 * **Acompanhamento de Desempenho:** Os professores e alunos poderão acompanhar o progresso do aprendizado por meio do aplicativo, com relatórios de desempenho e estatísticas.
 * **Interface Amigável:** O aplicativo terá uma interface intuitiva e amigável, adequada para crianças e professores.  
 * **Recursos de Personalização:** Os alunos poderão personalizar suas experiências de aprendizado, escolhendo tópicos específicos ou níveis de dificuldade.  
@@ -69,13 +68,13 @@ Nesta seção, abordaremos os impactos sociais esperados do projeto, considerand
 
 * **Melhorias na Educação:** O projeto tem o potencial de melhorar significativamente o ensino de matemática nas escolas de ensino fundamental, ajudando a preencher a lacuna de aprendizado nessa área.  
 * **Acesso à Tecnologia:** O aplicativo proporcionará às crianças de escolas com infraestrutura precária acesso a tecnologias educacionais avançadas, promovendo a inclusão digital.  
-* **Aprendizado Mais Divertido**: A inclusão de jogos educativos tornará o processo de aprendizado da matemática mais divertido e envolvente, incentivando os alunos a se interessarem mais pela disciplina.  
+* **Aprendizado Mais Divertido**: A inclusão do jogo educativo tornará o processo de aprendizado da matemática mais divertido e envolvente, incentivando os alunos a se interessarem mais pela disciplina.  
 * **Monitoramento do Desempenho:** Os relatórios de desempenho permitirão que professores e pais acompanhem o progresso dos alunos, identificando áreas de melhoria e intervenção precoce.  
 * **Redução da Desigualdade Educacional:** Ao atender escolas com infraestrutura precária, o projeto contribuirá para reduzir a desigualdade educacional no Brasil, garantindo que mais crianças tenham acesso a recursos educacionais de qualidade.  
 * **Uso de Tecnologia como Ferramenta de Ensino:** Demonstrará como a tecnologia pode ser uma poderosa ferramenta de ensino, influenciando positivamente as práticas educacionais.  
 
 ### Business Model Canvas
-![Business model canva (conhecimento em ação)](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/image.png)
+![Business model canva (Mundo Matemático)](https://github.com/erarich/projeto_de_sistemas/blob/develop/.github/files/image.png)
 
 ## Parte técnica
 
@@ -157,6 +156,3 @@ Instale o Godot
 ## Licença
 
 [Sem licença/Domínio público](https://choosealicense.com/licenses/#unlicense). Você pode usar o aplicativo como desejar.
-
-
-

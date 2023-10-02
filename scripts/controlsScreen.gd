@@ -2,20 +2,16 @@ extends Control
 
 func _ready():
 	$controls/return_btn.grab_focus()
+	playMusicMenu._ready()
 
 func _on_return_btn_pressed():
+	$button_pressed.play()
 	SceneTransition.change_scene("res://levels/startScreen.tscn")
 	playMusicMenu._pause()
 	
 func _on_exit_btn_pressed():
+	$button_pressed.play()
 	get_tree().quit()
-<<<<<<< HEAD
-=======
 
-
-func _on_return_btn_focus_entered():
+func on_button_exited():
 	$button_exit.play()
-
-func _on_exit_btn_focus_entered():
-	$button_exit.play()
->>>>>>> be901a8de571d07fce69ee841cdaeff2f31e0b23
