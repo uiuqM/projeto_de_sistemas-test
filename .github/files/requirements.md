@@ -2,8 +2,9 @@
 
 - Versão 0.0: 27/08/2023  
 - Versão 0.1: 28/08/2023  
-- Versão 0.3: 08/09/2023
-- Versão 0.2: 17/09/2023
+- Versão 0.2: 08/09/2023
+- Versão 0.3: 17/09/2023
+- Versão 0.4: 02/10/2023
 
 #### **Epic 1: Suporte a Periféricos de Entrada**
 
@@ -15,28 +16,20 @@
 | **US 1.4** | Como jogador, quero ser capaz de alternar facilmente entre dispositivos de entrada durante o jogo, para que possa escolher o mais adequado para cada situação.            |
 | **US 1.5** | Como jogador, desejo que o sistema reconheça automaticamente o dispositivo de entrada conectado e configure as opções correspondentes, para evitar configurações manuais. |
 
-#### **Epic 2: Navegação entre Jogos no Menu Principal**
-
-| User Story | Descrição                                                                                                    |
-| ---------- | ------------------------------------------------------------------------------------------------------------ |
-| **US 2.1** | Como jogador, desejo um menu de navegação no início da aplicação, onde posso ver todos os jogos disponíveis. |
-| **US 2.2** | Como jogador, quero poder navegar de forma intuitiva entre os jogos no menu principal.                       |
-| **US 2.3** | Como jogador, desejo uma indicação clara do progresso ou da conclusão de cada jogo no menu principal.        |
-
-#### **Epic 3: Menu de Configurações para Cada Jogo**
+#### **Epic 2: Menu de Configurações para o Jogo**
 
 | User Story | Descrição                                                                                                                                            |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **US 3.1** | Como jogador, desejo um menu de configurações separado para cada jogo disponível na aplicação.                                                       |
-| **US 3.2** | Como jogador, quero personalizar opções como controles, áudio e gráficos para cada jogo individualmente.                                             |
-| **US 3.3** | Como jogador, desejo que as configurações personalizadas de cada jogo sejam salvas e restauradas automaticamente quando eu acessar o jogo novamente. |
+| **US 2.1** | Como jogador, desejo um menu de configurações separado para o jogo disponível na aplicação.                                                       |
+| **US 2.2** | Como jogador, quero personalizar opções como controles, áudio e gráficos para o jogo.                                             |
+| **US 2.3** | Como jogador, desejo que as configurações personalizadas do jogo sejam salvas e restauradas automaticamente quando eu acessar o jogo novamente. |
 
-#### **Epic 4: Criar o Menu do Primeiro Jogo**
+#### **Epic 4: Criar o Menu do Jogo**
 
 | User Story | Descrição                                                                                                                |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------ |
 | **US 4.1** | Como jogador, desejo opções visíveis para iniciar o jogo, acessar configurações e sair do jogo no menu do primeiro jogo. |
-| **US 4.2** | Como jogador, quero que o menu seja intuitivo e de fácil navegação no primeiro jogo.                                     |
+| **US 4.2** | Como jogador, quero que o menu seja intuitivo e de fácil navegação no jogo.                                     |
 
 #### **Epic 5: Estruturar Inimigos**
 
