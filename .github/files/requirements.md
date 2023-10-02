@@ -24,39 +24,39 @@
 | **US 2.2** | Como jogador, quero personalizar opções como controles, áudio e gráficos para o jogo.                                             |
 | **US 2.3** | Como jogador, desejo que as configurações personalizadas do jogo sejam salvas e restauradas automaticamente quando eu acessar o jogo novamente. |
 
-#### **Epic 4: Criar o Menu do Jogo**
+#### **Epic 3: Criar o Menu do Jogo**
 
 | User Story | Descrição                                                                                                                |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **US 4.1** | Como jogador, desejo opções visíveis para iniciar o jogo, acessar configurações e sair do jogo no menu do primeiro jogo. |
-| **US 4.2** | Como jogador, quero que o menu seja intuitivo e de fácil navegação no jogo.                                     |
+| **US 3.1** | Como jogador, desejo opções visíveis para iniciar o jogo, acessar configurações e sair do jogo no menu do primeiro jogo. |
+| **US 3.2** | Como jogador, quero que o menu seja intuitivo e de fácil navegação no jogo.                                     |
 
-#### **Epic 5: Estruturar Inimigos**
+#### **Epic 4: Estruturar Inimigos**
 
 | User Story | Descrição                                                                                              |
 | ---------- | ------------------------------------------------------------------------------------------------------ |
-| **US 5.1** | Como jogador, desejo que cada inimigo tenha características únicas e diferentes níveis de dificuldade. |
-| **US 5.2** | Como jogador, quero uma variedade de inimigos para manter o jogo interessante.                         |
+| **US 4.1** | Como jogador, desejo que cada inimigo tenha características únicas e diferentes níveis de dificuldade. |
+| **US 4.2** | Como jogador, quero uma variedade de inimigos para manter o jogo interessante.                         |
 
-#### **Epic 6: Escolher Trilha Sonora**
+#### **Epic 5: Escolher Trilha Sonora**
 
 | User Story | Descrição                                                                                                    |
 | ---------- | ------------------------------------------------------------------------------------------------------------ |
-| **US 6.1** | Como jogador, desejo uma trilha sonora que se adapte ao contexto do jogo e varie de acordo com as situações. |
-| **US 6.2** | Como jogador, quero a opção de ajustar o volume da música e dos efeitos sonoros nas configurações.           |
+| **US 5.1** | Como jogador, desejo uma trilha sonora que se adapte ao contexto do jogo e varie de acordo com as situações. |
+| **US 5.2** | Como jogador, quero a opção de ajustar o volume da música e dos efeitos sonoros nas configurações.           |
 
-#### **Epic 7: Design das Fases**
+#### **Epic 6: Design das Fases**
 
 | User Story | Descrição                                                                                 |
 | ---------- | ----------------------------------------------------------------------------------------- |
-| **US 7.1** | Como jogador, quero que cada fase tenha um nível crescente de dificuldade.                |
-| **US 7.2** | Como jogador, desejo que os elementos de design estejam alinhados com a temática do jogo. |
+| **US 6.1** | Como jogador, quero que cada fase tenha um nível crescente de dificuldade.                |
+| **US 6.2** | Como jogador, desejo que os elementos de design estejam alinhados com a temática do jogo. |
 
-#### **Epic 8: Estruturar Perguntas**
+#### **Epic 7: Estruturar Perguntas**
 
 | User Story | Descrição                                                                                      |
 | ---------- | ---------------------------------------------------------------------------------------------- |
-| **US 8.1** | Como jogador, quero que as perguntas se tornem mais desafiadoras à medida que o jogo progride. |
+| **US 7.1** | Como jogador, quero que as perguntas se tornem mais desafiadoras à medida que o jogo progride. |
 
 ### **Requisitos não funcionais**
 
