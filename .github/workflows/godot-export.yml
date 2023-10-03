@@ -24,7 +24,7 @@ jobs:
       - name: Setup
         run: |
           mkdir -v -p build/android
-          godot --export "mundo-matematico" ../build/android/$EXPORT_NAME-debug.apk
+          godot --export "mundo-matematico" ../build/android/$EXPORT_NAME.apk
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
