@@ -7,7 +7,7 @@ on:
 env:
   GODOT_VERSION: 3.5.2
   EXPORT_NAME: conhecimento_em_acao
-  PROJECT_PATH: projeto_de_sistemas
+  PROJECT_PATH: projeto_de_sistemas-test
   
 jobs:
 
