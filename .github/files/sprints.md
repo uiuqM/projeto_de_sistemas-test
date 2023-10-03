@@ -232,3 +232,67 @@ A maioria das tasks foram realizadas, conforme segue imagens:
   | Numbruxo, o feiticeiro numérico                                                               | Expressões II (Dificuldade: Médio/Difícil)            |
   | Porcentório, o regente das porcentagens perversas                                             | Porcentagem (Dificuldade: Médio/Difícil)              |
   | Arithmetros, o Regente do Caos Numérico                                                       | Chefão (Dificuldade: Difícil)                         |
+
+## Sprint 4 (03/10 - 16/10)
+
+**Objetivo Principal:** Corrigir erros da versão atual do jogo, melhorar aspectos de jogabilidade, evoluir as demais fases. Estruturar a relação habilidades/competências com o jogo.
+
+#### 1. Concluir Mapa (Percurso do Personagem).
+
+- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+
+#### 2. Estruturar a Trilha Sonora do jogo.
+
+- **Autor:** [Wilque Muriel](https://github.com/uiuqM).
+
+#### 3. Procurar Sprites dos Inimigos.
+
+- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+
+#### 4. Adicionar Inimigos ao mapa.
+
+- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+
+#### 5. Estruturar os outros mundos (Verão, Outono e Inverno).
+
+- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+
+#### 6. Adaptar o jogo para que o mouse/teclado seja utilizável. US 1.1 e US 1.2.
+
+- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+
+#### 7. Corrigir tela de batalha.
+
+- **Autor:** [Érick Santos](https://github.com/erarich).
+
+#### 8. Reestruturar Pasta Diretório do projeto.
+
+- **Autor:** [Érick Santos](https://github.com/erarich).
+
+#### 9. Corrigir "bugs" das nuvens (visual).
+
+- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+
+#### 10. Tela de Pause.
+
+- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+
+#### 11. HUD Básica.
+
+- **Autores:** [Mateus Alves](https://github.com/MateusAlvez) e [Érick Santos](https://github.com/erarich).
+
+#### 12. Morte do Personagem (Reiniciar).
+
+- **Autor:** [Érick Santos](https://github.com/erarich).
+
+#### 13. Morte dos Inimigos (Inimigos sumirem).
+
+- **Autor:** [Érick Santos](https://github.com/erarich).
+
+#### 14. Movimentação do Personagem (Colisão - Plataforma).
+
+- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+
+#### 15. Salvamento.
+
+- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
