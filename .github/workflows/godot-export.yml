@@ -6,8 +6,8 @@ on:
 
 env:
   GODOT_VERSION: 3.5.2
-  EXPORT_NAME: projeto_de_sistemas-test
-  PROJECT_PATH: projeto_de_sistemas-test
+  EXPORT_NAME: projeto
+  PROJECT_PATH: projeto
   
 jobs:
 
