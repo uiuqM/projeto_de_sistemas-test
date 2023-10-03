@@ -62,6 +62,7 @@ jobs:
       - name: Android build
         run: |
           mkdir -v -p build/android
+          cd $PROJECT_PATH
           godot --export "mundo-matematico" ../build/android/$EXPORT_NAME.apk
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
