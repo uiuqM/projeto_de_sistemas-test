@@ -211,11 +211,11 @@ points = PoolVector2Array( 16, 0, 0, 0, 0, 0, 16, 0 )
 6/shape_offset = Vector2( 0, 0 )
 6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 6/shape = SubResource( 31 )
-6/shape_one_way = false
+6/shape_one_way = true
 6/shape_one_way_margin = 1.0
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 31 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -694,5 +694,5 @@ script = ExtResource( 13 )
 position = Vector2( 1482.5, 630 )
 shape = SubResource( 36 )
 
-[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
