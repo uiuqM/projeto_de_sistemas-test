@@ -12,38 +12,26 @@ var n_one = 0
 var n_two = 0 
 
 func _ready():
+	$ActionsPanel/Actions/LineEdit.set_meta("_gui_order", 1)
+	$ActionsPanel/Actions/NoResponse.set_meta("_gui_order", 2)
+	$ActionsPanel/Actions/Run.set_meta("_gui_order", 3)
 	set_health($EnemyContainer/ProgressBar, enemy.health, enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBar, State.current_health, State.max_health)
 	$EnemyContainer/Enemy.texture = enemy.texture
 	
 	current_player_health = State.current_health
 	current_enemy_health = enemy.health
-	
+		
 	$Textbox.hide()
 	$ActionsPanel.hide()
 	$QuestionsPanel.hide()
 	
-	display_text("A wild %s appears!" % enemy.name.to_upper())
+	display_text("Um %s apareceu!" % enemy.name.to_upper())
 	yield(self, "textbox_closed")
 	
-	var operation_number = _draw_operation()
-	if(operation_number == 0):
-		operation = "+"
-	elif(operation_number == 1):
-		operation = "-"
-	else:
-		operation = "*"
+	display_question()
 	
-	var numbers = _draw_numbers()
-	n_one = numbers[0]
-	n_two = numbers[1]
-	$QuestionsPanel/Label.text = " Me diga mortal qual o resultado de %d %c %d?" % [n_one, operation, n_two] 
-	print("\nSoma %d" % (n_one + n_two))
-	print("\nSubtracao %d" % (n_one - n_two))
-	print("\nMultiplicacao %d" % (n_one * n_two))
-	$QuestionsPanel.show()
-	$ActionsPanel.show()
-	$ActionsPanel/Actions/LineEdit.grab_focus()
+	$ActionsPanel/Actions/LineEdit.connect("space_pressed", self, "_on_LineEdit_space_pressed")
 	$ActionsPanel/Actions/LineEdit.connect("enter_pressed", self, "_on_LineEdit_enter_pressed")
 
 func set_health(progress_bar, health, max_health):
@@ -52,7 +40,7 @@ func set_health(progress_bar, health, max_health):
 	progress_bar.get_node("Label").text = "HP: %d/%d" % [health, max_health]
 
 func _input(event):
-	if (Input.is_action_just_pressed("ui_accept") or Input.is_mouse_button_pressed(BUTTON_LEFT)) and $Textbox.visible:
+	if (Input.is_action_just_pressed("ui_response") or Input.is_mouse_button_pressed(BUTTON_LEFT)) and $Textbox.visible:
 		$Textbox.hide()
 		emit_signal("textbox_closed")
 
@@ -63,26 +51,26 @@ func display_text(text):
 
 func enemy_turn():
 	if current_player_health > 0:
-		display_text("%s launches at you fiercely!" % enemy.name)
+		display_text("%s ataca você ferozmente!" % enemy.name)
 		yield(self, "textbox_closed")
 		
 		current_player_health = max(0, current_player_health - enemy.damage)
 		set_health($PlayerPanel/PlayerData/ProgressBar, current_player_health, State.max_health)
 		$PlayerPanel/anime.play("dano")
 		yield($PlayerPanel/anime, "animation_finished")
-		display_text("%s dealt %d damage!" % [enemy.name, enemy.damage])
-		yield(self, "textbox_closed")
+		display_text("%s infligiu %d de dano!" % [enemy.name, enemy.damage])
+
+		display_question()
 		$ActionsPanel.show()
 		$ActionsPanel/Actions/LineEdit.grab_focus()
 	else:
-		display_text("%s defeated you!" % enemy.name)
+		display_text("%s derrotou você!" % enemy.name)
 		yield(self, "textbox_closed") 
 		$PlayerPanel/anime.play("hit")
 		yield($PlayerPanel/anime, "animation_finished")
 			
 		yield(get_tree().create_timer(0.25), "timeout")
-		get_tree().quit()
-		
+		get_tree().reload_current_scene()
 
 func _on_Run_pressed():
 	display_text("Got away safely!")
@@ -91,6 +79,12 @@ func _on_Run_pressed():
 	get_tree().quit()
 
 func _on_LineEdit_enter_pressed(value):
+	if $ActionsPanel/Actions/LineEdit.text.empty():
+		print("empty")
+		return
+		
+		
+	$QuestionsPanel/Textbox2/Label.hide()
 	var result = 0
 	
 	if operation == "+":
@@ -108,27 +102,35 @@ func _on_LineEdit_enter_pressed(value):
 		$AnimationPlayer.play("enemy_damaged")
 		yield($AnimationPlayer, "animation_finished")
 		
-		display_text("You dealt %d damage!" % State.damage)
+		display_text("O inimigo recebeu %d de dano!" % State.damage)
 		yield(self, "textbox_closed")
 		
 		if current_enemy_health == 0:
-			display_text("%s was defeated!" % enemy.name)
+			display_text("%s foi derrotado!" % enemy.name)
 			yield(self, "textbox_closed")
 			
 			$AnimationPlayer.play("enemy_died")
 			yield($AnimationPlayer, "animation_finished")
 			
 			yield(get_tree().create_timer(0.25), "timeout")
-			get_tree().quit()
+			SceneTransition.change_scene("res://levels/levels_first_game/firstStageScreen.tscn")
 		
 		$ActionsPanel/Actions/LineEdit.clear()
-		display_new_question()
+		display_question()
 	else:
 		print("Valor incorreto")
-		print("value %d" % value)
-		print("result %d" % result)
+		if current_player_health == 0:
+			display_text("%s derrotou você!" % enemy.name)
+			yield(self, "textbox_closed") 
+			$PlayerPanel/anime.play("hit")
+			yield($PlayerPanel/anime, "animation_finished")
+			
+			yield(get_tree().create_timer(0.25), "timeout")
+			get_tree().reload_current_scene()
 		enemy_turn()
-	print("Valor inserido:", value)
+	
+
+		
 	$ActionsPanel/Actions/LineEdit.clear()
 	$ActionsPanel.show()
 
@@ -151,7 +153,8 @@ func _draw_operation():
 	
 	return rng_operation
 
-func display_new_question():
+func display_question():
+	$QuestionsPanel/Textbox2/Label.show()
 	var operation_number = _draw_operation()
 	if(operation_number == 0):
 		operation = "+"
@@ -163,7 +166,12 @@ func display_new_question():
 	var numbers = _draw_numbers()
 	n_one = numbers[0]
 	n_two = numbers[1]
-	$QuestionsPanel/Label.text = "Me diga mortal qual o resultado de %d %c %d?" % [n_one, operation, n_two] 
+	$QuestionsPanel/Textbox2/Label.text = "Qual é o resultado de %d %c %d?" % [n_one, operation, n_two] 
 	$QuestionsPanel.show()
+	$ActionsPanel.show()
 	$ActionsPanel/Actions/LineEdit.grab_focus()
 
+func _on_LineEdit_space_pressed():
+	print("TESTE")
+	$ActionsPanel/Actions/NoResponse.set_focus_mode(FOCUS_ALL)
+	$ActionsPanel/Actions/Run.set_focus_mode(FOCUS_ALL)
