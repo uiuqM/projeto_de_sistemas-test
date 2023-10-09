@@ -694,5 +694,5 @@ script = ExtResource( 13 )
 position = Vector2( 1482.5, 630 )
 shape = SubResource( 36 )
 
-[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
+[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
