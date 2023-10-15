@@ -6,7 +6,7 @@ func _ready():
 
 func _on_return_btn_pressed():
 	$button_pressed.play()
-	SceneTransition.change_scene("res://levels/startScreen.tscn")
+	SceneTransition.change_scene("res://scenes/startScreen.tscn")
 	playMusicMenu._pause()
 	
 func _on_exit_btn_pressed():

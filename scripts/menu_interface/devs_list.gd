@@ -27,4 +27,4 @@ func on_button_exited():
 func _on_return_btn_pressed():
 	$button_pressed.play()
 	playMusicMenu._pause()
-	SceneTransition.change_scene("res://levels/aboutScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/aboutScreen.tscn")
