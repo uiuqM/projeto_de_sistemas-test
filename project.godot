@@ -100,7 +100,7 @@ _global_script_class_icons={
 
 config/name="Conhecimento Em Ação"
 run/main_scene="res://levels/startScreen.tscn"
-config/icon="res://config/icon.png"
+config/icon="res://config/icon.jpg"
 
 [autoload]
 
