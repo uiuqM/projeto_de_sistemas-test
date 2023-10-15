@@ -99,14 +99,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Conhecimento Em Ação"
-run/main_scene="res://levels/startScreen.tscn"
-config/icon="res://config/icon.png"
+run/main_scene="res://scenes/startScreen.tscn"
+config/icon="res://config/icon.jpg"
 
 [autoload]
 
-SceneTransition="*res://levels/sceneTransition.tscn"
+SceneTransition="*res://scenes/sceneTransition.tscn"
 State="*res://scripts/battleFirstGame/State.gd"
-playMusicMenu="*res://levels/music-menu-player.tscn"
+playMusicMenu="*res://scenes/music-menu-player.tscn"
 
 [display]
 

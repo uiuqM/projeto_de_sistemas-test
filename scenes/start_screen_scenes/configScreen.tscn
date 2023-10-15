@@ -4,7 +4,7 @@
 [ext_resource path="res://sounds/blipSelect.wav" type="AudioStream" id=2]
 [ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=3]
 [ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=4]
-[ext_resource path="res://scripts/configScreen.gd" type="Script" id=5]
+[ext_resource path="res://scripts/menu_interface/configScreen.gd" type="Script" id=5]
 [ext_resource path="res://sounds/click.wav" type="AudioStream" id=6]
 [ext_resource path="res://fonts/NES.tres" type="DynamicFont" id=7]
 

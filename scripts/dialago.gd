@@ -39,4 +39,4 @@ func show_dialogo() -> void:
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://levels/levels_first_game/battle/Battle.tscn")
+	get_tree().change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/battle/Battle.tscn")

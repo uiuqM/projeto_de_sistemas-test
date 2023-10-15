@@ -7,18 +7,18 @@ func _ready():
 
 func _on_start_btn_pressed():
 	$button_pressed.play()
-	SceneTransition.change_scene("res://levels/levels_first_game/firstStageScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/firstStageScreen.tscn")
 	playMusicMenu._pause()
 	
 func _on_instruction_btn_pressed():
 	$button_pressed.play()
 	playMusicMenu._pause()
-	SceneTransition.change_scene("res://levels/levels_first_game/aboutFirstGame.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/aboutFirstGame.tscn")
 	
 func _on_return_btn_pressed():
 	$button_pressed.play()
 	playMusicMenu._pause()
-	SceneTransition.change_scene("res://levels/startScreen.tscn")
+	SceneTransition.change_scene("res://scenes/startScreen.tscn")
 	
 func _on_exit_btn_pressed():
 	$button_pressed.play()

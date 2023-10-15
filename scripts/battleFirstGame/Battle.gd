@@ -113,7 +113,7 @@ func _on_LineEdit_enter_pressed(value):
 			yield($AnimationPlayer, "animation_finished")
 			
 			yield(get_tree().create_timer(0.25), "timeout")
-			SceneTransition.change_scene("res://levels/levels_first_game/firstStageScreen.tscn")
+			SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/firstStageScreen.tscn")
 		
 		$ActionsPanel/Actions/LineEdit.clear()
 		display_question()

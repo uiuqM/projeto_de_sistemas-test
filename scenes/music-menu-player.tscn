@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://config/DUNGEON007B.ogg" type="AudioStream" id=1]
+[ext_resource path="res://sounds/DUNGEON007B.ogg" type="AudioStream" id=1]
 [ext_resource path="res://scripts/playMusic-menu.gd" type="Script" id=2]
 
 [node name="CanvasLayer" type="CanvasLayer"]

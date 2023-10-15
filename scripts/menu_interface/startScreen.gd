@@ -7,19 +7,19 @@ func _ready():
 # Funções de botão pressionado
 func _on_start_btn_pressed(): # "Jogar" button
 	$button_pressed.play()
-	SceneTransition.change_scene("res://levels/firstGameScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/firstPhaseScreen.tscn")
 
 func _on_control_btn_pressed(): # "Controles" button
 	$button_pressed.play()
-	SceneTransition.change_scene("res://levels/controlsScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/controlsScreen.tscn")
 
 func _on_config_btn_pressed(): # "Configurações" button
 	$button_pressed.play()
-	SceneTransition.change_scene("res://levels/configScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/configScreen.tscn")
 
 func _on_about_btn_pressed(): # "Sobre" button
 	$button_pressed.play()
-	SceneTransition.change_scene("res://levels/aboutScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/aboutScreen.tscn")
 
 func _on_exit_btn_pressed(): # "Sair" button
 	$button_pressed.play()

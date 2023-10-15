@@ -7,5 +7,5 @@ func _ready():
 
 func _on_return_btn_pressed():
 	playMusicMenu._pause()
-	SceneTransition.change_scene("res://levels/firstGameScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/firstPhaseScreen.tscn")
 	
