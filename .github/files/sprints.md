@@ -458,7 +458,7 @@ _- Objetivo do Jogo: Derrotar Arithmetros, o Regente do Caos Numérico, restaura
   - Programação do Diálogo: Codificar os diálogos do Mestre Matemágico, onde ele dá dicas sobre como os jogadores podem explorar o mundo misterioso da matemática.
     Exemplo de Diálogo:
 
-        >O Decimador Desafiante está à espera. Nesta etapa, concentrem-se na representação decimal de números racionais, além de adição, subtração, multiplicação e divisão de números racionais. A matemática está em todos os lugares!
+    > O Decimador Desafiante está à espera. Nesta etapa, concentrem-se na representação decimal de números racionais, além de adição, subtração, multiplicação e divisão de números racionais. A matemática está em todos os lugares!
 
   - Integração e Desenvolvimento das Dicas nas Nuvens: Criar as pistas visuais nas nuvens que os jogadores podem usar para resolver desafios ou obter dicas durante a etapa.
 
