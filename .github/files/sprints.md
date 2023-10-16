@@ -253,9 +253,9 @@ A maioria das tasks foram realizadas, conforme segue imagens:
 
 - **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
 
-#### 5. Estruturar os outros mundos (Verão, Outono e Inverno).
+#### ~~5. Estruturar os outros mundos (Verão, Outono e Inverno).~~
 
-- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+- ~~**Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).~~
 
 #### 6. Adaptar o jogo para que o mouse/teclado seja utilizável. US 1.1 e US 1.2.
 
@@ -269,13 +269,13 @@ A maioria das tasks foram realizadas, conforme segue imagens:
 
 - **Autor:** [Érick Santos](https://github.com/erarich).
 
-#### 9. Corrigir "bugs" das nuvens (visual).
+#### ~~9. Corrigir "bugs" das nuvens (visual).~~
 
-- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+- ~~**Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).~~
 
 #### 10. Tela de Pause.
 
-- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+- **Autor:** ~~[Mateus Alves](https://github.com/MateusAlvez)~~ [Wilque Muriel](https://github.com/uiuqM).
 
 #### 11. HUD Básica.
 
@@ -295,7 +295,15 @@ A maioria das tasks foram realizadas, conforme segue imagens:
 
 #### 15. Salvamento.
 
-- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+- **Autor:** ~~[Mateus Alves](https://github.com/MateusAlvez).~~ [Wilque Muriel](https://github.com/uiuqM).
+
+#### 16. Opção para usuário realizar o controle do áudio (música e sons de interaface).
+
+- **Autor:** [Wilque Muriel](https://github.com/uiuqM).
+
+#### 17. Planejar como serão as batalhas com cada inimigo, relacionando-as com cada habilidade da BNCC referente com o inimigo.
+
+- **Autores:** [Sophia Menezes](https://github.com/SophiaMenezes) e [Érick Santos](https://github.com/erarich).
 
 ### Resultados alcançados
 
