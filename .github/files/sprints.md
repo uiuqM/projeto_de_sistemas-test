@@ -441,12 +441,13 @@ _- Objetivo do Jogo: Derrotar Arithmetros, o Regente do Caos Numérico, restaura
 - _Objetivo:_ Introduzir os jogadores à representação decimal de números racionais, adição, subtração, multiplicação e divisão de números racionais cuja representação decimal é finita.
 
 - _Desafio Reconhecimento Decimal:_**Identificar números na forma decimal em uma série de números mistos.**
+
   | 10 | **0,5** | 7 | 2 | **3,7** | 1 | 9 |
 
 - _Desafio Equivalência Fracionária:_ **Associar números racionais na forma decimal com suas representações fracionárias equivalentes.**
   Obs.: Devem ser geradas três representações na forma de fração, mas apenas uma estará correta. A posição da resposta correta deve ser aleatória. Não deve haver números racionais complexos.
 
-![Resultados alcançados](./images_results_sprint_2/equivalenciaFracionaria.png)
+![Resultados alcançados](./images_results_sprint_4/equivalenciaFracionaria.png)
 
 - **Desenvolvimento:**
 
@@ -472,7 +473,7 @@ _- Objetivo do Jogo: Derrotar Arithmetros, o Regente do Caos Numérico, restaura
 - _Desafio Equivalência Fracionária:_ **Associar números racionais na forma decimal com suas representações fracionárias equivalentes.**
   Obs.: Devem ser geradas três representações na forma de fração, mas apenas uma estará correta. A posição da resposta correta deve ser aleatória. Não deve haver números racionais complexos.
 
-![Resultados alcançados](./images_results_sprint_2/equivalenciaFracionaria.png)
+![Resultados alcançados](./images_results_sprint_4/equivalenciaFracionaria.png)
 
 - **Desenvolvimento:**
 
