@@ -1,0 +1,80 @@
+{
+	"events": [
+		{
+			"animation": "back_in_down.gd",
+			"animation_length": 0.359,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Um vejo que você esta indo bem! \n  "
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mas antes queria ver se esta seguindo minhas dicas ?"
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Temos algumas nuvens magicas, pode me dizer oque esta escrito nelas?"
+		},
+		{
+			"choice": "1+1=2",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vejo que aprendeu rápido "
+		},
+		{
+			"choice": "1+1=1",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Preste mais atenção nesse maravilhoso mundo que ele vai te dar tudo oque precisar"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1696284576.json",
+		"name": "texto_suporte_mapa1"
+	}
+}

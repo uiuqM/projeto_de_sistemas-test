@@ -1,0 +1,320 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://sounds/blipSelect.wav" type="AudioStream" id=2]
+[ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=3]
+[ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=4]
+[ext_resource path="res://scripts/menu_interface/configScreen.gd" type="Script" id=5]
+[ext_resource path="res://sounds/click.wav" type="AudioStream" id=6]
+[ext_resource path="res://fonts/NES.tres" type="DynamicFont" id=7]
+
+[sub_resource type="TileSet" id=1]
+0/name = "_Complete_static_BG_(288 x 208).png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 288, 192 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 0
+0/autotile/bitmask_flags = [  ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 32, 32 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "_Complete_static_BG_(288 x 208).png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 288, 160 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "_Complete_static_BG_(288 x 208).png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 128, 288, 96 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "5 - Sky_color.png 3"
+3/texture = ExtResource( 4 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 288, 192 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+outline_color = Color( 1, 0.0196078, 0.0196078, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=27]
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = null
+Button/styles/disabled = SubResource( 22 )
+Button/styles/focus = SubResource( 23 )
+Button/styles/hover = SubResource( 24 )
+Button/styles/normal = SubResource( 25 )
+Button/styles/pressed = SubResource( 26 )
+
+[sub_resource type="DynamicFont" id=28]
+size = 21
+outline_size = 2
+outline_color = Color( 0, 0.619608, 0.760784, 1 )
+use_mipmaps = true
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+script = ExtResource( 5 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 65531, 3, 0, 65532, 3, 0, 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 16, 3, 0, 262139, 3, 0, 262140, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 196624, 3, 0, 458747, 1, 0, 458748, 1, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 393232, 1, 0, 589819, 2, 0, 589820, 2, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0, 524304, 2, 0 )
+
+[node name="gameName" type="Label" parent="."]
+margin_left = 28.0
+margin_top = 38.0
+margin_right = 988.0
+margin_bottom = 89.0
+rect_min_size = Vector2( 650, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "CONFIGURAÇÕES"
+align = 1
+valign = 1
+
+[node name="button_exit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="controls" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -151.0
+margin_right = 164.0
+margin_bottom = 93.0
+custom_constants/separation = 20
+
+[node name="return_btn" type="Button" parent="controls"]
+margin_right = 315.0
+margin_bottom = 21.0
+theme = SubResource( 27 )
+custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
+custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
+custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
+custom_colors/font_color_pressed = Color( 0.952941, 0.054902, 0.117647, 1 )
+custom_fonts/font = SubResource( 28 )
+text = "VOLTAR"
+
+[node name="exit_btn" type="Button" parent="controls"]
+margin_top = 41.0
+margin_right = 315.0
+margin_bottom = 62.0
+theme = SubResource( 27 )
+custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
+custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
+custom_colors/font_color_hover = Color( 0.972549, 0.12549, 0.12549, 1 )
+custom_colors/font_color_pressed = Color( 0.929412, 0.0862745, 0.203922, 1 )
+custom_fonts/font = SubResource( 28 )
+text = "SAIR"
+
+[node name="button_pressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 63.0
+margin_top = 151.0
+margin_right = 959.0
+margin_bottom = 265.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_constants/separation = 60
+alignment = 1
+
+[node name="main_menu_container" type="GridContainer" parent="HBoxContainer"]
+margin_left = 54.0
+margin_right = 345.0
+margin_bottom = 114.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/main_menu_container"]
+margin_right = 291.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="HBoxContainer/main_menu_container/VBoxContainer"]
+margin_right = 291.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+text = "MÚSICA DO MENU PRINCIPAL"
+
+[node name="HSlider" type="HSlider" parent="HBoxContainer/main_menu_container"]
+margin_top = 28.0
+margin_right = 291.0
+margin_bottom = 44.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/main_menu_container"]
+margin_top = 48.0
+margin_right = 291.0
+margin_bottom = 78.0
+alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer/main_menu_container/HBoxContainer"]
+margin_left = 88.0
+margin_right = 143.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 7 )
+text = "Play"
+
+[node name="Button2" type="Button" parent="HBoxContainer/main_menu_container/HBoxContainer"]
+margin_left = 147.0
+margin_right = 203.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 7 )
+text = "Stop"
+
+[node name="game_music_container" type="GridContainer" parent="HBoxContainer"]
+margin_left = 405.0
+margin_right = 576.0
+margin_bottom = 114.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/game_music_container"]
+margin_right = 171.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="HBoxContainer/game_music_container/VBoxContainer"]
+margin_right = 171.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+text = "MÚSICA DO JOGO"
+
+[node name="HSlider" type="HSlider" parent="HBoxContainer/game_music_container"]
+margin_top = 28.0
+margin_right = 171.0
+margin_bottom = 44.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/game_music_container"]
+margin_top = 48.0
+margin_right = 171.0
+margin_bottom = 78.0
+alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer/game_music_container/HBoxContainer"]
+margin_left = 28.0
+margin_right = 83.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 7 )
+text = "Play"
+
+[node name="Button2" type="Button" parent="HBoxContainer/game_music_container/HBoxContainer"]
+margin_left = 87.0
+margin_right = 143.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 7 )
+text = "Stop"
+
+[node name="sfx_container" type="GridContainer" parent="HBoxContainer"]
+margin_left = 636.0
+margin_right = 842.0
+margin_bottom = 114.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/sfx_container"]
+margin_right = 206.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="HBoxContainer/sfx_container/VBoxContainer"]
+margin_right = 206.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+text = "SONS DE INTERFACE"
+
+[node name="HSlider" type="HSlider" parent="HBoxContainer/sfx_container"]
+margin_top = 28.0
+margin_right = 206.0
+margin_bottom = 44.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/sfx_container"]
+margin_top = 48.0
+margin_right = 206.0
+margin_bottom = 78.0
+alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer/sfx_container/HBoxContainer"]
+margin_left = 45.0
+margin_right = 100.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 7 )
+text = "Play"
+
+[node name="Button2" type="Button" parent="HBoxContainer/sfx_container/HBoxContainer"]
+margin_left = 104.0
+margin_right = 160.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 7 )
+text = "Stop"
+
+[connection signal="pressed" from="controls/return_btn" to="." method="_on_return_btn_pressed"]
+[connection signal="focus_exited" from="controls/exit_btn" to="." method="on_button_exited"]
+[connection signal="pressed" from="controls/exit_btn" to="." method="_on_exit_btn_pressed"]
