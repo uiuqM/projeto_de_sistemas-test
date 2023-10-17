@@ -507,3 +507,12 @@ _- Objetivo do Jogo: Derrotar Arithmetros, o Regente do Caos Numérico, restaura
     Exemplo de Diálogo:
 
     > Chegou o momento final, onde enfrentarão Arithmetros. Revisem tudo o que aprenderam e utilizem suas habilidades. Lembrem-se de que a matemática é a chave para a restauração da ordem!
+
+- Sprites dos Inimigos:
+
+![Resultados alcançados](./images_results_sprint_4/misterioso_matematico.png)
+![Resultados alcançados](./images_results_sprint_4/multiplicador_maluco.png)
+![Resultados alcançados](./images_results_sprint_4/divisor_da_escuridao.png)
+![Resultados alcançados](./images_results_sprint_4/numbruxo.png)
+![Resultados alcançados](./images_results_sprint_4/decimador_desafiante.png)
+![Resultados alcançados](./images_results_sprint_4/quebrador_de_fracoes.png)
