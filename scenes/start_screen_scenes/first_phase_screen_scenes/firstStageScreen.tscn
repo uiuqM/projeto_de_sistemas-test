@@ -635,7 +635,7 @@ dialogo_text = [ "Se você acha que pode me vencer ? venhaaaaa !!!!!!           
 motion_mirroring = Vector2( 1152, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/sky"]
-position = Vector2( -3, -309 )
+position = Vector2( -7, -297 )
 scale = Vector2( 4.00694, 4.40865 )
 texture = ExtResource( 5 )
 centered = false
@@ -694,5 +694,5 @@ script = ExtResource( 13 )
 position = Vector2( 1482.5, 630 )
 shape = SubResource( 36 )
 
-[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
+[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
