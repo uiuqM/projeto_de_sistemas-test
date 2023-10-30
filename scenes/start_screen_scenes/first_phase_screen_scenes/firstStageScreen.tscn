@@ -14,7 +14,6 @@
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/npc_1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/Area2D.gd" type="Script" id=13]
 
-
 [sub_resource type="ConvexPolygonShape2D" id=20]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
@@ -695,5 +694,5 @@ script = ExtResource( 13 )
 position = Vector2( 1482.5, 630 )
 shape = SubResource( 36 )
 
-[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
