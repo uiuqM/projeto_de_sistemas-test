@@ -14,7 +14,6 @@
 [ext_resource path="res://models/characters/player/Archer/Run.png" type="Texture" id=12]
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/dano.tres" type="Animation" id=13]
 
-
 [sub_resource type="TileSet" id=39]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
 0/texture = ExtResource( 9 )
@@ -956,10 +955,10 @@ anchor_left = 0.623
 anchor_top = 0.5
 anchor_right = 0.63
 anchor_bottom = 0.5
-margin_left = 130.952
-margin_top = -7.0
-margin_right = 1151.13
-margin_bottom = 593.0
+margin_left = -507.0
+margin_top = -307.0
+margin_right = 527.514
+margin_bottom = 293.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
 
@@ -1141,6 +1140,7 @@ margin_top = 62.0
 margin_right = 372.0
 margin_bottom = 88.0
 focus_neighbour_bottom = NodePath("../LineEdit")
+focus_mode = 0
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 3
 custom_colors/font_color_focus = Color( 0.0745098, 0.721569, 0.101961, 1 )
