@@ -5,6 +5,7 @@
 [ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=3]
 [ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=4]
 
+
 [sub_resource type="TileSet" id=15]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
 0/texture = ExtResource( 4 )

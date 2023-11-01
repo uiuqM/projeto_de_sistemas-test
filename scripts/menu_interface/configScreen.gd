@@ -1,9 +1,9 @@
 extends Node
 
-signal stop
 
 func _ready():
 	$controls/return_btn.grab_focus()
+	playMusicMenu._ready()
 	set_process_input(true)  # Enable input processing for this node
 
 func _on_return_btn_pressed():
@@ -18,12 +18,12 @@ func _on_exit_btn_pressed():
 func on_button_exited():
 	$button_exit.play()
 
+
 func _on_Button_play_music_game_pressed():
-	Input.is_mouse_button_pressed(BUTTON_LEFT)
-	playMusicMenu._ready()
+	if (Input.is_mouse_button_pressed(BUTTON_LEFT)):
+		playMusicMenu._ready()
+
 
 func _on_Button_stop_music_game_pressed():
-	Input.is_action_just_pressed("ui_response") or Input.is_mouse_button_pressed(BUTTON_LEFT)
-	playMusicMenu._pause()
-
-
+	if (Input.is_action_just_pressed("ui_response") or Input.is_mouse_button_pressed(BUTTON_LEFT)):
+		playMusicMenu._pause()
