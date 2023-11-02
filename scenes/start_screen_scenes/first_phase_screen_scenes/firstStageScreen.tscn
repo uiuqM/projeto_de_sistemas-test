@@ -662,7 +662,6 @@ collision_layer = 2
 dialogo_text = [ "Se você acha que pode me vencer ? venhaaaaa !!!!!!                                  ->", "", "" ]
 
 [node name="interface" parent="." instance=ExtResource( 4 )]
-visible = false
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
