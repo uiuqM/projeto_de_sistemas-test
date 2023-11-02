@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/playerScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://models/worlds/grassland/Terrain (16 x 16).png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://models/worlds/tropics/Background parts/2 - Waters_version_2.png" type="Texture" id=14]
 [ext_resource path="res://models/worlds/tropics/Background parts/1 - Waters_version_1.png" type="Texture" id=15]
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/npc_1_pre_luta.gd" type="Script" id=16]
+[ext_resource path="res://models/itens/apple.tscn" type="PackedScene" id=17]
 
 [sub_resource type="ConvexPolygonShape2D" id=20]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -661,6 +662,7 @@ collision_layer = 2
 dialogo_text = [ "Se você acha que pode me vencer ? venhaaaaa !!!!!!                                  ->", "", "" ]
 
 [node name="interface" parent="." instance=ExtResource( 4 )]
+visible = false
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -713,15 +715,18 @@ scale = Vector2( 4.00694, 2 )
 texture = ExtResource( 7 )
 centered = false
 
-[node name="Nosliede" parent="." instance=ExtResource( 12 )]
-position = Vector2( 125, 485 )
+[node name="npc" type="Node2D" parent="."]
+position = Vector2( 6644, 52 )
 
-[node name="Nosliede2" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1479, 441 )
+[node name="Nosliede" parent="npc" instance=ExtResource( 12 )]
+position = Vector2( -6519, 433 )
+
+[node name="Nosliede2" parent="npc" instance=ExtResource( 12 )]
+position = Vector2( -5165, 389 )
 script = ExtResource( 11 )
 
-[node name="Nosliede3" parent="." instance=ExtResource( 12 )]
-position = Vector2( 4344, 374 )
+[node name="Nosliede3" parent="npc" instance=ExtResource( 12 )]
+position = Vector2( -2300, 322 )
 script = ExtResource( 16 )
 
 [node name="fall_zone" type="Area2D" parent="."]
@@ -730,6 +735,98 @@ script = ExtResource( 13 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fall_zone"]
 position = Vector2( 3656, 644.5 )
 shape = SubResource( 36 )
+
+[node name="frutas" type="Node2D" parent="."]
+
+[node name="apple" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 211, 483 )
+
+[node name="apple5" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 1278, 498 )
+
+[node name="apple6" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 1868, 503 )
+
+[node name="apple4" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 1341, 497 )
+
+[node name="apple3" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 2391, 435 )
+
+[node name="apple7" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 2512, 407 )
+
+[node name="apple9" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 3438, 255 )
+
+[node name="apple8" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 3341, 289 )
+
+[node name="apple2" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 383, 485 )
+
+[node name="apple10" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 3643, 190 )
+
+[node name="apple11" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 3544, 232 )
+
+[node name="apple13" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 3720, 423 )
+
+[node name="apple16" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 4551, 179 )
+
+[node name="apple15" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 4534, 158 )
+
+[node name="apple14" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 3462, 445 )
+
+[node name="apple17" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 4574, 156 )
+
+[node name="apple18" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 354, 484 )
+
+[node name="apple12" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 4049, 152 )
+
+[node name="apple19" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 849, 368 )
+
+[node name="apple20" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 973, 361 )
+
+[node name="apple21" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 1104, 361 )
+
+[node name="apple22" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 2056, 503 )
+
+[node name="apple23" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 2803, 283 )
+
+[node name="apple24" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 2938, 331 )
+
+[node name="apple25" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 2952, 379 )
+
+[node name="apple26" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 5234, 288 )
+
+[node name="apple27" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 5389, 276 )
+
+[node name="apple28" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 5927, 155 )
+
+[node name="apple29" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 5993, 150 )
+
+[node name="apple30" parent="frutas" instance=ExtResource( 17 )]
+position = Vector2( 6214, 149 )
 
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
