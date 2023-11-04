@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/playerScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://models/worlds/grassland/Terrain (16 x 16).png" type="Texture" id=2]
@@ -18,6 +18,11 @@
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/npc_1_pre_luta.gd" type="Script" id=16]
 [ext_resource path="res://models/itens/apple.tscn" type="PackedScene" id=17]
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/inimigo1.tscn" type="PackedScene" id=18]
+[ext_resource path="res://sounds/FIELD002.ogg" type="AudioStream" id=19]
+[ext_resource path="res://scripts/firstStageScreen.gd" type="Script" id=20]
+[ext_resource path="res://sounds/jump.wav" type="AudioStream" id=21]
+[ext_resource path="res://sounds/powerUp.wav" type="AudioStream" id=22]
+[ext_resource path="res://scripts/frutasSound.gd" type="Script" id=23]
 
 [sub_resource type="ConvexPolygonShape2D" id=20]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -601,6 +606,7 @@ extents = Vector2( 3816, 23.5 )
 
 [node name="Fase_01" type="Node2D"]
 position = Vector2( -1, -4 )
+script = ExtResource( 20 )
 
 [node name="sprite" type="Node2D" parent="."]
 
@@ -657,6 +663,9 @@ tile_data = PoolIntArray( 393627, 0, 0, 393628, 8, 0, 393629, 8, 0, 393630, 8, 0
 
 [node name="player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1657, 427 )
+
+[node name="jumpSound" type="AudioStreamPlayer" parent="player"]
+stream = ExtResource( 21 )
 
 [node name="xingling" parent="." instance=ExtResource( 3 )]
 position = Vector2( 6644, 52 )
@@ -738,6 +747,7 @@ position = Vector2( 3656, 644.5 )
 shape = SubResource( 36 )
 
 [node name="frutas" type="Node2D" parent="."]
+script = ExtResource( 23 )
 
 [node name="apple" parent="frutas" instance=ExtResource( 17 )]
 position = Vector2( 211, 483 )
@@ -829,8 +839,44 @@ position = Vector2( 5993, 150 )
 [node name="apple30" parent="frutas" instance=ExtResource( 17 )]
 position = Vector2( 6214, 149 )
 
+[node name="powerSound" type="AudioStreamPlayer" parent="frutas"]
+stream = ExtResource( 22 )
+
 [node name="inimigo1" parent="." instance=ExtResource( 18 )]
 position = Vector2( 2069, 540 )
 
+[node name="gameMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 19 )
+
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
+[connection signal="geted" from="frutas/apple" to="frutas" method="_on_apple_geted"]
+[connection signal="geted" from="frutas/apple5" to="frutas" method="_on_apple5_geted"]
+[connection signal="geted" from="frutas/apple6" to="frutas" method="_on_apple6_geted"]
+[connection signal="geted" from="frutas/apple4" to="frutas" method="_on_apple4_geted"]
+[connection signal="geted" from="frutas/apple3" to="frutas" method="_on_apple3_geted"]
+[connection signal="geted" from="frutas/apple7" to="frutas" method="_on_apple7_geted"]
+[connection signal="geted" from="frutas/apple9" to="frutas" method="_on_apple9_geted"]
+[connection signal="geted" from="frutas/apple8" to="frutas" method="_on_apple8_geted"]
+[connection signal="geted" from="frutas/apple2" to="frutas" method="_on_apple2_geted"]
+[connection signal="geted" from="frutas/apple10" to="frutas" method="_on_apple10_geted"]
+[connection signal="geted" from="frutas/apple11" to="frutas" method="_on_apple11_geted"]
+[connection signal="geted" from="frutas/apple13" to="frutas" method="_on_apple13_geted"]
+[connection signal="geted" from="frutas/apple16" to="frutas" method="_on_apple16_geted"]
+[connection signal="geted" from="frutas/apple15" to="frutas" method="_on_apple15_geted"]
+[connection signal="geted" from="frutas/apple14" to="frutas" method="_on_apple14_geted"]
+[connection signal="geted" from="frutas/apple17" to="frutas" method="_on_apple17_geted"]
+[connection signal="geted" from="frutas/apple18" to="frutas" method="_on_apple18_geted"]
+[connection signal="geted" from="frutas/apple12" to="frutas" method="_on_apple12_geted"]
+[connection signal="geted" from="frutas/apple19" to="frutas" method="_on_apple19_geted"]
+[connection signal="geted" from="frutas/apple20" to="frutas" method="_on_apple20_geted"]
+[connection signal="geted" from="frutas/apple21" to="frutas" method="_on_apple21_geted"]
+[connection signal="geted" from="frutas/apple22" to="frutas" method="_on_apple22_geted"]
+[connection signal="geted" from="frutas/apple23" to="frutas" method="_on_apple23_geted"]
+[connection signal="geted" from="frutas/apple24" to="frutas" method="_on_apple24_geted"]
+[connection signal="geted" from="frutas/apple25" to="frutas" method="_on_apple25_geted"]
+[connection signal="geted" from="frutas/apple26" to="frutas" method="_on_apple26_geted"]
+[connection signal="geted" from="frutas/apple27" to="frutas" method="_on_apple27_geted"]
+[connection signal="geted" from="frutas/apple28" to="frutas" method="_on_apple28_geted"]
+[connection signal="geted" from="frutas/apple29" to="frutas" method="_on_apple29_geted"]
+[connection signal="geted" from="frutas/apple30" to="frutas" method="_on_apple30_geted"]

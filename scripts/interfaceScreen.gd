@@ -3,8 +3,7 @@ class_name interface
 
 const DIALOGO: PackedScene = preload("res://scenes/start_screen_scenes/first_phase_screen_scenes/dialago.tscn")
 
-func _ready():
-	playMusicGame._ready()
+
 
 func spaw_dialogo(dialogo_text_list:Array) -> void:
 		var dialogo: dialago = DIALOGO.instance()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/menu_interface/startScreen.gd" type="Script" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://sounds/click.wav" type="AudioStream" id=4]
 [ext_resource path="res://models/worlds/grassland/Background parts/_Complete_static_BG_(288 x 208).png" type="Texture" id=5]
 [ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=6]
-[ext_resource path="res://sounds/DUNGEON007B.ogg" type="AudioStream" id=7]
 
 [sub_resource type="Theme" id=2]
 Button/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
@@ -220,10 +219,6 @@ custom_fonts/font = SubResource( 17 )
 text = "MUNDO MATEMÁTICO"
 align = 1
 valign = 1
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
-autoplay = true
 
 [node name="button_exit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
