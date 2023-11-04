@@ -190,6 +190,7 @@ custom_constants/separation = 20
 [node name="codebase_btn" type="Button" parent="Control/controls"]
 margin_right = 315.0
 margin_bottom = 21.0
+focus_neighbour_top = NodePath("../exit_btn")
 theme = SubResource( 16 )
 custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
@@ -226,6 +227,7 @@ text = "VOLTAR"
 margin_top = 123.0
 margin_right = 315.0
 margin_bottom = 144.0
+focus_neighbour_bottom = NodePath("../codebase_btn")
 theme = SubResource( 16 )
 custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
