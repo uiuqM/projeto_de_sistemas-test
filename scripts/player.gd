@@ -60,7 +60,6 @@ func knocback():
 
 func _on_hurtbox_body_entered(body):
 	Global.player_health -= 1
-	
 	hurted = true
 	knocback()
 	get_node ("hurtbox/CollisionShape2D").set_deferred("disabled",true)
