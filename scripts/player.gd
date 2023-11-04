@@ -5,7 +5,6 @@ var move_speed = 1000
 var gravity = 1200
 var jump_force = -1200
 var is_grounded
-var health = 3 
 var hurted = false
 var knocback_dir = 10
 var knocback_int = 600
@@ -60,14 +59,14 @@ func knocback():
 	velocity = move_and_slide(velocity)
 
 func _on_hurtbox_body_entered(body):
-	health-= 1
+	Global.player_health -= 1
 	hurted = true
 	knocback()
 	get_node ("hurtbox/CollisionShape2D").set_deferred("disabled",true)
 	yield(get_tree().create_timer(0.4),"timeout")
 	get_node ("hurtbox/CollisionShape2D").set_deferred("disabled",false)
 	hurted = false
-	if health < 1:
+	if Global.player_health < 1:
 		$anime.play("hit")
 		queue_free()
 		yield(get_tree().create_timer(0.4),"timeout")
