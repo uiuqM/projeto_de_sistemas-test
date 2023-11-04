@@ -388,8 +388,18 @@ custom_styles/hover = SubResource( 39 )
 custom_styles/focus = SubResource( 40 )
 text = "Stop"
 
+[connection signal="focus_exited" from="controls/return_btn" to="." method="on_button_exited"]
 [connection signal="pressed" from="controls/return_btn" to="." method="_on_return_btn_pressed"]
 [connection signal="focus_exited" from="controls/exit_btn" to="." method="on_button_exited"]
 [connection signal="pressed" from="controls/exit_btn" to="." method="_on_exit_btn_pressed"]
+[connection signal="focus_exited" from="HBoxContainer/main_menu_container/HSlider" to="." method="on_button_exited"]
+[connection signal="focus_exited" from="HBoxContainer/main_menu_container/HBoxContainer/Button_play_menu_music" to="." method="on_button_exited"]
+[connection signal="focus_exited" from="HBoxContainer/main_menu_container/HBoxContainer/Button_stop_menu_music" to="." method="on_button_exited"]
+[connection signal="focus_exited" from="HBoxContainer/game_music_container/HSlider" to="." method="on_button_exited"]
+[connection signal="focus_exited" from="HBoxContainer/game_music_container/HBoxContainer/Button_play_music_game" to="." method="on_button_exited"]
 [connection signal="pressed" from="HBoxContainer/game_music_container/HBoxContainer/Button_play_music_game" to="." method="_on_Button_play_music_game_pressed"]
+[connection signal="focus_exited" from="HBoxContainer/game_music_container/HBoxContainer/Button_stop_music_game" to="." method="on_button_exited"]
 [connection signal="pressed" from="HBoxContainer/game_music_container/HBoxContainer/Button_stop_music_game" to="." method="_on_Button_stop_music_game_pressed"]
+[connection signal="focus_exited" from="HBoxContainer/sfx_container/HSlider" to="." method="on_button_exited"]
+[connection signal="focus_exited" from="HBoxContainer/sfx_container/HBoxContainer/Button_play_interface_sound" to="." method="on_button_exited"]
+[connection signal="focus_exited" from="HBoxContainer/sfx_container/HBoxContainer/Button_stop_interface_sound" to="." method="on_button_exited"]

@@ -7,7 +7,6 @@
 [ext_resource path="res://scripts/menu_interface/devs_list.gd" type="Script" id=5]
 [ext_resource path="res://sounds/click.wav" type="AudioStream" id=6]
 
-
 [sub_resource type="TileSet" id=27]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
 0/texture = ExtResource( 3 )
@@ -165,6 +164,7 @@ custom_constants/separation = 20
 [node name="erarich_btn" type="Button" parent="Control/controls"]
 margin_right = 315.0
 margin_bottom = 21.0
+focus_neighbour_top = NodePath("../exit_btn")
 theme = SubResource( 29 )
 custom_colors/font_color_focus = Color( 0.909804, 0.835294, 0.0352941, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
@@ -225,6 +225,7 @@ text = "VOLTAR"
 margin_top = 205.0
 margin_right = 315.0
 margin_bottom = 226.0
+focus_neighbour_bottom = NodePath("../erarich_btn")
 theme = SubResource( 29 )
 custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
