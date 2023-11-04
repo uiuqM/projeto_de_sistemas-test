@@ -20,3 +20,7 @@ func _on_dev_list_pressed():
 
 func on_button_exited():
 	$button_exit.play()
+
+
+func _on_exit_btn_pressed():
+	get_tree().quit()

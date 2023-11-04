@@ -33,12 +33,14 @@ func _get_input():
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("jump") and is_grounded:
 		velocity.y = jump_force /2
+		$jumpSound.play()
 
 
 func _check_is_ground():
 	for raycast in raycasts.get_children():
 		if raycast.is_colliding():
-			return true 
+			$jumpSound.stop()
+			return true
 	return false
 	
 func _set_animation():
