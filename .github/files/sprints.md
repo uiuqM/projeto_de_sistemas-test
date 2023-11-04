@@ -517,9 +517,7 @@ _- Objetivo do Jogo: Derrotar Arithmetros, o Regente do Caos Numérico, restaura
 ![Resultados alcançados](./images_results_sprint_4/decimador_desafiante.png)
 ![Resultados alcançados](./images_results_sprint_4/quebrador_de_fracoes.png)
 
-
 ## Sprint 5 (17/10 - 30/10)
-
 
 #### 1. Concluir Mapa (Percurso do Personagem).
 
