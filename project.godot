@@ -107,6 +107,8 @@ config/icon="res://config/icon.jpg"
 SceneTransition="*res://scenes/sceneTransition.tscn"
 State="*res://scripts/battleFirstGame/State.gd"
 playMusicMenu="*res://scenes/start_screen_scenes/first_phase_screen_scenes/music-game-player.tscn"
+Global="*res://scripts/Global.gd"
+Hud="*res://scenes/HUD.tscn"
 
 [display]
 
