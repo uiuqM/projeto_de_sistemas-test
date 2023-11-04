@@ -8,7 +8,7 @@ func _ready():
 func _on_return_btn_pressed():
 	$button_pressed.play()
 	playMusicMenu._pause()
-	SceneTransition.change_scene("res://scenes/start_screen_scenes/startScreen.tscn")
+	SceneTransition.change_scene("res://scenes/startScreen.tscn")
 
 func _on_codebase_btn_pressed():
 	$button_pressed.play()
