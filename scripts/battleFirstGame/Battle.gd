@@ -4,7 +4,6 @@ signal textbox_closed
 
 export(Resource) var enemy = null
 
-var current_player_health = 0
 var current_enemy_health = 0
 var is_defending = false
 var operation = ""
@@ -16,10 +15,9 @@ func _ready():
 	$ActionsPanel/Actions/NoResponse.set_meta("_gui_order", 2)
 	$ActionsPanel/Actions/Run.set_meta("_gui_order", 3)
 	set_health($EnemyContainer/ProgressBar, enemy.health, enemy.health)
-	set_health($PlayerPanel/PlayerData/ProgressBar, State.current_health, State.max_health)
+	set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
 	$EnemyContainer/Enemy.texture = enemy.texture
 	
-	current_player_health = State.current_health
 	current_enemy_health = enemy.health
 		
 	$Textbox.hide()
@@ -50,12 +48,12 @@ func display_text(text):
 	$Textbox/Label.text = text
 
 func enemy_turn():
-	if current_player_health > 0:
+	if Global.player_health_points > 0:
 		display_text("%s ataca você ferozmente!" % enemy.name)
 		yield(self, "textbox_closed")
 		
-		current_player_health = max(0, current_player_health - enemy.damage)
-		set_health($PlayerPanel/PlayerData/ProgressBar, current_player_health, State.max_health)
+		Global.player_health_points = max(0, Global.player_health_points - enemy.damage)
+		set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
 		$PlayerPanel/anime.play("dano")
 		yield($PlayerPanel/anime, "animation_finished")
 		display_text("%s infligiu %d de dano!" % [enemy.name, enemy.damage])
@@ -113,13 +111,13 @@ func _on_LineEdit_enter_pressed(value):
 			yield($AnimationPlayer, "animation_finished")
 			
 			yield(get_tree().create_timer(0.25), "timeout")
-			SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/firstStageScreen.tscn")
+			SceneTransition.change_scene("res://scenes/start_screen_scenes/second_phase_screen_scenes/Second_stage.tscn")
 		
 		$ActionsPanel/Actions/LineEdit.clear()
 		display_question()
 	else:
 		print("Valor incorreto")
-		if current_player_health == 0:
+		if Global.player_health_points == 0:
 			display_text("%s derrotou você!" % enemy.name)
 			yield(self, "textbox_closed") 
 			$PlayerPanel/anime.play("hit")

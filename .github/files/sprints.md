@@ -516,3 +516,45 @@ _- Objetivo do Jogo: Derrotar Arithmetros, o Regente do Caos Numérico, restaura
 ![Resultados alcançados](./images_results_sprint_4/numbruxo.png)
 ![Resultados alcançados](./images_results_sprint_4/decimador_desafiante.png)
 ![Resultados alcançados](./images_results_sprint_4/quebrador_de_fracoes.png)
+
+## Sprint 5 (17/10 - 30/10)
+
+#### 1. Concluir Mapa (Percurso do Personagem).
+
+- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+
+#### 2. Estruturar a Trilha Sonora do jogo.
+
+- **Autor:** [Wilque Muriel](https://github.com/uiuqM).
+
+#### 3. Procurar Sprites dos Inimigos.
+
+- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+
+#### 4. Adicionar Inimigos ao mapa.
+
+- **Autor:** [Sophia Menezes](https://github.com/SophiaMenezes).
+
+#### 5. Adaptar o jogo para que o mouse/teclado seja utilizável. US 1.1 e US 1.2.
+
+- **Autor:** [Mateus Alves](https://github.com/MateusAlvez).
+
+#### 6. HUD Básica.
+
+- **Autores:** [Érick Santos](https://github.com/erarich).
+
+#### 7. Morte do Personagem (Reiniciar).
+
+- **Autor:** [Érick Santos](https://github.com/erarich).
+
+#### 8. Morte dos Inimigos (Inimigos sumirem).
+
+- **Autor:** [Érick Santos](https://github.com/erarich).
+
+#### 9. Salvamento.
+
+- **Autor:** [Wilque Muriel](https://github.com/uiuqM).
+
+#### 10. Opção para usuário realizar o controle do áudio (música e sons de interaface).
+
+- **Autor:** [Wilque Muriel](https://github.com/uiuqM).

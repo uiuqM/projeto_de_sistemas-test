@@ -2,7 +2,7 @@ extends Control
 
 func _ready():
 	$controls/start_btn.grab_focus()
-	playMusicMenu
+	playMusicMenu._ready()
 
 # Funções de botão pressionado
 func _on_start_btn_pressed(): # "Jogar" button
