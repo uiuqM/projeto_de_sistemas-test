@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/playerScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://models/worlds/autumn_forest/Terrain (16 x 16).png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/3 - Bottom_leaf_piles.png" type="Texture" id=6]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/6 - Distant_trees.png" type="Texture" id=7]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/4 - Tree_row_BG_1.png" type="Texture" id=8]
+[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -890,6 +891,8 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 36/z_index = 0
 
 [node name="SecondStage" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource( 9 )]
 
 [node name="sprites" type="Node2D" parent="."]
 
