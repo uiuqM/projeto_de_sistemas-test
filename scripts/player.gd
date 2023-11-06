@@ -27,7 +27,7 @@ func _get_input():
 	
 	 if move_direction !=0:
 		 $texture.scale.x = move_direction
-		knocback_dir = move_direction
+		 knocback_dir = move_direction
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("jump") and is_grounded:
@@ -69,5 +69,4 @@ func _on_hurtbox_body_entered(body):
 	if Global.player_health < 1:
 		$anime.play("hit")
 		queue_free()
-		yield(get_tree().create_timer(0.4),"timeout")
-		get_tree().rolead_current_scene()
+		get_tree().reload_current_scene()
