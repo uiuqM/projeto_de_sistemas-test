@@ -1,0 +1,466 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://scripts/xingling.gd" type="Script" id=1]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/inimigo1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://models/worlds/grassland/Background parts/5 - Sky_color.png" type="Texture" id=4]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/inimigo1.gd" type="Script" id=5]
+[ext_resource path="res://scripts/Reset_Level.gd" type="Script" id=6]
+[ext_resource path="res://scripts/player.gd" type="Script" id=7]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/Area2D.gd" type="Script" id=8]
+[ext_resource path="res://scripts/frutasSound.gd" type="Script" id=9]
+[ext_resource path="res://scripts/battleFirstGame/apple.gd" type="Script" id=10]
+[ext_resource path="res://models/worlds/grassland/Background parts/4 - Cloud_cover_2.png" type="Texture" id=11]
+[ext_resource path="res://models/worlds/grassland/Background parts/3 - Cloud_cover_1.png" type="Texture" id=12]
+[ext_resource path="res://models/worlds/grassland/Background parts/1 - Foreground_scenery.png" type="Texture" id=13]
+[ext_resource path="res://models/worlds/grassland/Background parts/2 - Hills.png" type="Texture" id=15]
+[ext_resource path="res://models/worlds/tropics/Background parts/1 - Waters_version_1.png" type="Texture" id=16]
+[ext_resource path="res://sounds/FIELD002.ogg" type="AudioStream" id=17]
+[ext_resource path="res://sounds/jump.wav" type="AudioStream" id=18]
+[ext_resource path="res://models/objects/middle_lane_tree3.png" type="Texture" id=19]
+[ext_resource path="res://sounds/powerUp.wav" type="AudioStream" id=20]
+[ext_resource path="res://models/worlds/tropics/Background parts/2 - Waters_version_2.png" type="Texture" id=21]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/npc_1_pre_luta.gd" type="Script" id=22]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/npc_1.gd" type="Script" id=23]
+[ext_resource path="res://scripts/interfaceScreen.gd" type="Script" id=24]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/npc_1_1.gd" type="Script" id=25]
+[ext_resource path="res://scenes/Death.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/playerScreen.tscn" type="PackedScene" id=27]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/xingling.tscn" type="PackedScene" id=28]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/npc_1.tscn" type="PackedScene" id=29]
+[ext_resource path="res://models/itens/apple.tscn" type="PackedScene" id=30]
+[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=31]
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/interfaceScreen.tscn" type="PackedScene" id=32]
+
+[sub_resource type="Shader" id=37]
+code = "shader_type canvas_item;
+
+uniform vec2 Direction = vec2(1.0 , 0.0);
+uniform float Speed = 0.02f;
+
+void fragment()
+{
+	COLOR = texture(TEXTURE, UV + (Direction * TIME * Speed)); 
+}"
+
+[sub_resource type="ShaderMaterial" id=35]
+shader = SubResource( 37 )
+shader_param/Direction = Vector2( 1, 0 )
+shader_param/Speed = 0.02
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 3816, 23.5 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fase_04" type="Node2D" parent="."]
+position = Vector2( -1, -4 )
+script = ExtResource( 6 )
+
+[node name="sprite" type="Node2D" parent="Fase_04"]
+
+[node name="arvore1" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 613, 412 )
+scale = Vector2( 0.92246, 0.873541 )
+texture = ExtResource( 19 )
+
+[node name="arvore2" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 2160, 455 )
+scale = Vector2( 0.75, 0.724708 )
+texture = ExtResource( 19 )
+
+[node name="arvore3" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 1569, 307 )
+scale = Vector2( 0.92246, 0.873541 )
+texture = ExtResource( 19 )
+
+[node name="arvore4" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 3111, 346 )
+scale = Vector2( 0.850932, 0.763074 )
+texture = ExtResource( 19 )
+
+[node name="arvore5" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 4195, 378 )
+scale = Vector2( 0.850932, 0.763074 )
+texture = ExtResource( 19 )
+
+[node name="Rio" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 3361.5, 501 )
+scale = Vector2( 1.23958, 1 )
+texture = ExtResource( 21 )
+
+[node name="rio3" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 3924, 695 )
+scale = Vector2( 1.68403, 1 )
+texture = ExtResource( 16 )
+offset = Vector2( -19.2988, -196 )
+
+[node name="rio2" type="Sprite" parent="Fase_04/sprite"]
+position = Vector2( 2626.77, 702 )
+scale = Vector2( 2.76042, 1 )
+texture = ExtResource( 16 )
+offset = Vector2( -19.2988, -196 )
+
+[node name="inimigo1" type="KinematicBody2D" parent="Fase_04/sprite" instance=ExtResource( 2 )]
+position = Vector2( 459, 504 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[node name="player" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 27 )]
+position = Vector2( 4767, 146 )
+collision_mask = 78
+script = ExtResource( 7 )
+
+[node name="jumpSound" type="AudioStreamPlayer" parent="Fase_04/player"]
+stream = ExtResource( 18 )
+
+[node name="xingling" type="StaticBody2D" parent="Fase_04" instance=ExtResource( 28 )]
+position = Vector2( 6663, 46 )
+collision_layer = 2
+script = ExtResource( 1 )
+dialogo_text = [ "Se você acha que pode me vencer ? venhaaaaa !!!!!!                                  ->", "", "" ]
+
+[node name="interface" type="CanvasLayer" parent="Fase_04" groups=["interface"] instance=ExtResource( 32 )]
+script = ExtResource( 24 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Fase_04"]
+
+[node name="sky" type="ParallaxLayer" parent="Fase_04/ParallaxBackground"]
+motion_mirroring = Vector2( 1152, 0 )
+
+[node name="Sprite" type="Sprite" parent="Fase_04/ParallaxBackground/sky"]
+position = Vector2( -3, -309 )
+scale = Vector2( 4.00694, 4.40865 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="clouds" type="ParallaxLayer" parent="Fase_04/ParallaxBackground"]
+motion_mirroring = Vector2( 1152, 0 )
+
+[node name="Sprite" type="Sprite" parent="Fase_04/ParallaxBackground/clouds"]
+material = SubResource( 35 )
+position = Vector2( 0, 107 )
+scale = Vector2( 4, 2.39904 )
+texture = ExtResource( 12 )
+centered = false
+
+[node name="cloud_mountain" type="ParallaxLayer" parent="Fase_04/ParallaxBackground"]
+motion_scale = Vector2( 0.6, 1 )
+motion_mirroring = Vector2( 1152, 0 )
+
+[node name="Sprite" type="Sprite" parent="Fase_04/ParallaxBackground/cloud_mountain"]
+position = Vector2( 0, 141 )
+scale = Vector2( 4, 2.23558 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="mountains_trees" type="ParallaxLayer" parent="Fase_04/ParallaxBackground"]
+motion_scale = Vector2( 0.7, 1 )
+motion_mirroring = Vector2( 1152, 0 )
+
+[node name="Sprite" type="Sprite" parent="Fase_04/ParallaxBackground/mountains_trees"]
+position = Vector2( -1, 195 )
+scale = Vector2( 4, 1.96154 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="trees" type="ParallaxLayer" parent="Fase_04/ParallaxBackground"]
+motion_scale = Vector2( 0.8, 1 )
+motion_mirroring = Vector2( 1152, 0 )
+
+[node name="Sprite" type="Sprite" parent="Fase_04/ParallaxBackground/trees"]
+position = Vector2( 0, 190 )
+scale = Vector2( 4.00694, 2 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="npc" type="Node2D" parent="Fase_04"]
+position = Vector2( 6644, 52 )
+
+[node name="Nosliede" type="StaticBody2D" parent="Fase_04/npc" instance=ExtResource( 29 )]
+position = Vector2( -6519, 433 )
+script = ExtResource( 23 )
+
+[node name="Nosliede2" type="StaticBody2D" parent="Fase_04/npc" instance=ExtResource( 29 )]
+position = Vector2( -5165, 389 )
+script = ExtResource( 25 )
+
+[node name="Nosliede3" type="StaticBody2D" parent="Fase_04/npc" instance=ExtResource( 29 )]
+position = Vector2( -2300, 322 )
+script = ExtResource( 22 )
+
+[node name="fall_zone" type="Area2D" parent="Fase_04"]
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fase_04/fall_zone"]
+position = Vector2( 3656, 644.5 )
+shape = SubResource( 36 )
+
+[node name="frutas" type="Node2D" parent="Fase_04"]
+script = ExtResource( 9 )
+
+[node name="apple" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 211, 483 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple5" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 1278, 498 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple6" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 1868, 503 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple4" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 1341, 497 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple3" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 2391, 435 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple7" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 2512, 407 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple9" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 3438, 255 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple8" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 3341, 289 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple2" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 383, 485 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple10" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 3643, 190 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple11" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 3544, 232 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple13" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 3720, 423 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple16" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 4551, 179 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple15" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 4534, 158 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple14" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 3462, 445 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple17" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 4574, 156 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple18" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 354, 484 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple12" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 4049, 152 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple19" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 849, 368 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple20" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 973, 361 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple21" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 1104, 361 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple22" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 2056, 503 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple23" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 2803, 283 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple24" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 2938, 331 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple25" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 2952, 379 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple26" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 5234, 288 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple27" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 5389, 276 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple28" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 5927, 155 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple29" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 5993, 150 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="apple30" type="Area2D" parent="Fase_04/frutas" instance=ExtResource( 30 )]
+position = Vector2( 6214, 149 )
+collision_layer = 4
+script = ExtResource( 10 )
+
+[node name="powerSound" type="AudioStreamPlayer" parent="Fase_04/frutas"]
+stream = ExtResource( 20 )
+
+[node name="inimigo1" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 2 )]
+position = Vector2( 2073, 381 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[node name="gameMusic" type="AudioStreamPlayer" parent="Fase_04"]
+stream = ExtResource( 17 )
+
+[node name="Death" type="Node2D" parent="Fase_04" instance=ExtResource( 26 )]
+position = Vector2( 1839, -18 )
+
+[node name="HUD" type="CanvasLayer" parent="Fase_04" instance=ExtResource( 31 )]
+
+[node name="inimigo3" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 2 )]
+position = Vector2( 2858, 317 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[node name="inimigo4" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 2 )]
+position = Vector2( 1790, 457 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[node name="inimigo5" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 2 )]
+position = Vector2( 4044, 488 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[node name="inimigo6" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 2 )]
+position = Vector2( 4999, 197 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[node name="inimigo7" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 2 )]
+position = Vector2( 4833, 216 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[node name="inimigo2" type="KinematicBody2D" parent="Fase_04" instance=ExtResource( 2 )]
+position = Vector2( 729, 409 )
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 5 )
+
+[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_fall_zone_body_entered"]
+[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Fase_04/frutas/apple" to="Fase_04/frutas/apple" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple" to="Fase_04/frutas" method="_on_apple_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple5" to="Fase_04/frutas/apple5" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple5" to="Fase_04/frutas" method="_on_apple5_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple6" to="Fase_04/frutas/apple6" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple6" to="Fase_04/frutas" method="_on_apple6_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple4" to="Fase_04/frutas/apple4" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple4" to="Fase_04/frutas" method="_on_apple4_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple3" to="Fase_04/frutas/apple3" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple3" to="Fase_04/frutas" method="_on_apple3_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple7" to="Fase_04/frutas/apple7" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple7" to="Fase_04/frutas" method="_on_apple7_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple9" to="Fase_04/frutas/apple9" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple9" to="Fase_04/frutas" method="_on_apple9_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple8" to="Fase_04/frutas/apple8" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple8" to="Fase_04/frutas" method="_on_apple8_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple2" to="Fase_04/frutas/apple2" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple2" to="Fase_04/frutas" method="_on_apple2_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple10" to="Fase_04/frutas/apple10" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple10" to="Fase_04/frutas" method="_on_apple10_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple11" to="Fase_04/frutas/apple11" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple11" to="Fase_04/frutas" method="_on_apple11_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple13" to="Fase_04/frutas/apple13" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple13" to="Fase_04/frutas" method="_on_apple13_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple16" to="Fase_04/frutas/apple16" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple16" to="Fase_04/frutas" method="_on_apple16_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple15" to="Fase_04/frutas/apple15" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple15" to="Fase_04/frutas" method="_on_apple15_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple14" to="Fase_04/frutas/apple14" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple14" to="Fase_04/frutas" method="_on_apple14_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple17" to="Fase_04/frutas/apple17" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple17" to="Fase_04/frutas" method="_on_apple17_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple18" to="Fase_04/frutas/apple18" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple18" to="Fase_04/frutas" method="_on_apple18_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple12" to="Fase_04/frutas/apple12" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple12" to="Fase_04/frutas" method="_on_apple12_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple19" to="Fase_04/frutas/apple19" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple19" to="Fase_04/frutas" method="_on_apple19_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple20" to="Fase_04/frutas/apple20" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple20" to="Fase_04/frutas" method="_on_apple20_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple21" to="Fase_04/frutas/apple21" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple21" to="Fase_04/frutas" method="_on_apple21_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple22" to="Fase_04/frutas/apple22" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple22" to="Fase_04/frutas" method="_on_apple22_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple23" to="Fase_04/frutas/apple23" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple23" to="Fase_04/frutas" method="_on_apple23_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple24" to="Fase_04/frutas/apple24" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple24" to="Fase_04/frutas" method="_on_apple24_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple25" to="Fase_04/frutas/apple25" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple25" to="Fase_04/frutas" method="_on_apple25_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple26" to="Fase_04/frutas/apple26" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple26" to="Fase_04/frutas" method="_on_apple26_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple27" to="Fase_04/frutas/apple27" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple27" to="Fase_04/frutas" method="_on_apple27_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple28" to="Fase_04/frutas/apple28" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple28" to="Fase_04/frutas" method="_on_apple28_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple29" to="Fase_04/frutas/apple29" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple29" to="Fase_04/frutas" method="_on_apple29_geted"]
+[connection signal="body_entered" from="Fase_04/frutas/apple30" to="Fase_04/frutas/apple30" method="_on_itens_body_entered"]
+[connection signal="geted" from="Fase_04/frutas/apple30" to="Fase_04/frutas" method="_on_apple30_geted"]
