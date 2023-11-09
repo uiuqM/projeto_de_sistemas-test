@@ -138,21 +138,16 @@ text = "PAUSED"
 align = 1
 valign = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-
-[node name="controls" type="VBoxContainer" parent="CenterContainer"]
+[node name="controls" type="VBoxContainer" parent="."]
 margin_left = 365.0
 margin_top = 277.0
 margin_right = 659.0
 margin_bottom = 323.0
 focus_neighbour_bottom = NodePath("quit_btn")
 
-[node name="return_btn" type="Button" parent="CenterContainer/controls"]
+[node name="return_btn" type="Button" parent="controls"]
 margin_right = 294.0
 margin_bottom = 21.0
-focus_neighbour_top = NodePath("../quit_btn")
 theme = SubResource( 29 )
 custom_colors/font_color_focus = Color( 0.866667, 0.87451, 0.054902, 1 )
 custom_colors/font_color = Color( 0.929412, 0.862745, 0.862745, 1 )
@@ -161,7 +156,7 @@ custom_colors/font_color_pressed = Color( 0.929412, 0.0862745, 0.203922, 1 )
 custom_fonts/font = SubResource( 30 )
 text = "VOLTAR AO JOGO"
 
-[node name="quit_btn" type="Button" parent="CenterContainer/controls"]
+[node name="quit_btn" type="Button" parent="controls"]
 margin_top = 25.0
 margin_right = 294.0
 margin_bottom = 46.0
@@ -180,7 +175,7 @@ stream = ExtResource( 5 )
 [node name="button_exit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 
-[connection signal="focus_exited" from="CenterContainer/controls/return_btn" to="." method="on_button_exited"]
-[connection signal="pressed" from="CenterContainer/controls/return_btn" to="." method="_on_return_btn_pressed"]
-[connection signal="focus_exited" from="CenterContainer/controls/quit_btn" to="." method="on_button_exited"]
-[connection signal="pressed" from="CenterContainer/controls/quit_btn" to="." method="_on_quit_btn_pressed"]
+[connection signal="focus_exited" from="controls/return_btn" to="." method="on_button_exited"]
+[connection signal="pressed" from="controls/return_btn" to="." method="_on_return_btn_pressed"]
+[connection signal="focus_exited" from="controls/quit_btn" to="." method="on_button_exited"]
+[connection signal="pressed" from="controls/quit_btn" to="." method="_on_quit_btn_pressed"]
