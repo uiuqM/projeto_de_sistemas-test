@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/BATTLE_NORMAL002.ogg-08f7cc71ad7f15232053d423b4e8ce07.oggstr"
+
+[deps]
+
+source_file="res://sounds/BATTLE_NORMAL002.ogg"
+dest_files=[ "res://.import/BATTLE_NORMAL002.ogg-08f7cc71ad7f15232053d423b4e8ce07.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
