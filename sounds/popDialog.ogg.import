@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/popDialog.ogg-42bd453ed1c771a73dc4144077ae2826.oggstr"
+
+[deps]
+
+source_file="res://sounds/popDialog.ogg"
+dest_files=[ "res://.import/popDialog.ogg-42bd453ed1c771a73dc4144077ae2826.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
