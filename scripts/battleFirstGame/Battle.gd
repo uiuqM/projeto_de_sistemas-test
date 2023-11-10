@@ -31,6 +31,10 @@ func _ready():
 	
 	$ActionsPanel/Actions/LineEdit.connect("space_pressed", self, "_on_LineEdit_space_pressed")
 	$ActionsPanel/Actions/LineEdit.connect("enter_pressed", self, "_on_LineEdit_enter_pressed")
+	
+	$battleSound.play()
+	
+	
 
 func set_health(progress_bar, health, max_health):
 	progress_bar.value = health
@@ -93,9 +97,11 @@ func _on_LineEdit_enter_pressed(value):
 		result = n_one * n_two
 		
 	if value == result:
+		
 		print("Valor correto")
 		current_enemy_health = max(0, current_enemy_health - State.damage)
 		set_health($EnemyContainer/ProgressBar, current_enemy_health, enemy.health)
+		$impactSound.play()
 		
 		$AnimationPlayer.play("enemy_damaged")
 		yield($AnimationPlayer, "animation_finished")
