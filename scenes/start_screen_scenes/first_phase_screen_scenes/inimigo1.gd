@@ -6,7 +6,7 @@ var velocity = Vector2.ZERO
 var move_direction = -1
 var gravity = 1200
 var hitted = false
-signal geted
+
 
 # warning-ignore:unused_argument
 func _physics_process(delta: float ) -> void:
@@ -47,7 +47,6 @@ func _on_hitbox_body_entered(body: Node)-> void:
 	yield(get_tree().create_timer(0.2),"timeout")
 	hitted = false
 	if health < 1:
-		emit_signal("geted")
 		queue_free()
 		get_node("hitbox/collision").set_deferred("disabled",true)
 
