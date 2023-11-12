@@ -900,7 +900,7 @@ tile_data = PoolIntArray( 65601, 36, 0, 65603, 36, 0, 131136, 36, 0, 131138, 36,
 position = Vector2( 459, 507 )
 
 [node name="player" parent="Fase_01" instance=ExtResource( 12 )]
-position = Vector2( -25, 408 )
+position = Vector2( 7382, 103 )
 
 [node name="jumpSound" type="AudioStreamPlayer" parent="Fase_01/player"]
 stream = ExtResource( 18 )
