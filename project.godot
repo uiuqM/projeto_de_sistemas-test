@@ -69,6 +69,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/dialago.gd"
 }, {
+"base": "Control",
+"class": "dialago_1",
+"language": "GDScript",
+"path": "res://scenes/start_screen_scenes/second_phase_screen_scenes/battle-2/dialago-1.gd"
+}, {
 "base": "StaticBody2D",
 "class": "enemy",
 "language": "GDScript",
@@ -92,6 +97,7 @@ _global_script_class_icons={
 "DialogicUtil": "",
 "HistoryRow": "",
 "dialago": "",
+"dialago_1": "",
 "enemy": "",
 "interface": ""
 }
