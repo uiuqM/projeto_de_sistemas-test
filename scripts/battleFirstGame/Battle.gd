@@ -16,7 +16,7 @@ func _ready():
 	$ActionsPanel/Actions/Run.set_meta("_gui_order", 3)
 	set_health($EnemyContainer/ProgressBar, enemy.health, enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
-	$EnemyContainer/Enemy.texture = enemy.texture
+	
 	
 	current_enemy_health = enemy.health
 		
