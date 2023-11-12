@@ -13,7 +13,6 @@ func _process(delta):
 		
 	if is_paused == true:
 		show()
-		$CenterContainer/controls/return_btn.grab_focus()
 		get_tree().paused = true
 		
 
