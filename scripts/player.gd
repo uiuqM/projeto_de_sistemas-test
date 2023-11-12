@@ -8,8 +8,12 @@ var is_grounded
 var hurted = false
 var knocback_dir = 10
 var knocback_int = 600
+var player_position = position
 onready var raycasts = $raycasts
 
+
+func _ready() -> void:
+	position.x = Global.checkpoint_pos
 
 func _physics_process(delta : float) -> void:
  velocity.y += gravity * delta
@@ -28,6 +32,7 @@ func _get_input():
 	 if move_direction !=0:
 		 $texture.scale.x = move_direction
 		 knocback_dir = move_direction
+	 print(player_position)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("jump") and is_grounded:
@@ -70,3 +75,6 @@ func _on_hurtbox_body_entered(body):
 		$anime.play("hit")
 		queue_free()
 		get_tree().reload_current_scene()
+
+func hit_checkpoint():
+	Global.checkpoint_pos = position.x
