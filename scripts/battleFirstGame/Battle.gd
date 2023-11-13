@@ -11,6 +11,7 @@ var n_one = 0
 var n_two = 0 
 
 func _ready():
+	$battleSound.play()
 	$ActionsPanel/Actions/LineEdit.set_meta("_gui_order", 1)
 	$ActionsPanel/Actions/NoResponse.set_meta("_gui_order", 2)
 	$ActionsPanel/Actions/Run.set_meta("_gui_order", 3)
