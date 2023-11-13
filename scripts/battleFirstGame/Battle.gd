@@ -11,12 +11,13 @@ var n_one = 0
 var n_two = 0 
 
 func _ready():
+	$battleSound.play()
 	$ActionsPanel/Actions/LineEdit.set_meta("_gui_order", 1)
 	$ActionsPanel/Actions/NoResponse.set_meta("_gui_order", 2)
 	$ActionsPanel/Actions/Run.set_meta("_gui_order", 3)
 	set_health($EnemyContainer/ProgressBar, enemy.health, enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
-	$EnemyContainer/Enemy.texture = enemy.texture
+	
 	
 	current_enemy_health = enemy.health
 		
@@ -111,7 +112,7 @@ func _on_LineEdit_enter_pressed(value):
 			yield($AnimationPlayer, "animation_finished")
 			
 			yield(get_tree().create_timer(0.25), "timeout")
-			SceneTransition.change_scene("res://scenes/start_screen_scenes/second_phase_screen_scenes/Second_stage.tscn")
+			SceneTransition.change_scene("res://scenes/start_screen_scenes/second_phase_screen_scenes/Fase_02.tscn")
 		
 		$ActionsPanel/Actions/LineEdit.clear()
 		display_question()

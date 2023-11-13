@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/skweak1.ogg-960c0d04ede6a9b49b5e04ed76066cd1.oggstr"
+
+[deps]
+
+source_file="res://sounds/skweak1.ogg"
+dest_files=[ "res://.import/skweak1.ogg-960c0d04ede6a9b49b5e04ed76066cd1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

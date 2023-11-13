@@ -1,5 +1,5 @@
 extends StaticBody2D
-class_name enemy
+
 
 
 var can_intarect: bool = false

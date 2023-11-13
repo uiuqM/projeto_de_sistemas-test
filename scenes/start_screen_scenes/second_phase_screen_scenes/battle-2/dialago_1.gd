@@ -1,6 +1,5 @@
-
 extends Control
-class_name dialago
+class_name dialago_1
 
 signal dialogo_finished
 
@@ -10,8 +9,6 @@ var can_intarect : bool = false
 
 var current_dialogo: int = 0
 var dialogo_text_list : Array = []
-
-
 
 
 func _ready() -> void:
@@ -28,9 +25,7 @@ func show_dialogo() -> void:
 		emit_signal("dialogo_finished")
 		queue_free()
 		return
-		
-	text.percent_visible = 0
-	text.text = dialogo_text_list[current_dialogo]
+
 	
 	
 	while text.percent_visible < 1:
@@ -42,4 +37,4 @@ func show_dialogo() -> void:
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/battle/Battle.tscn")
+	get_tree().change_scene("res://scenes/start_screen_scenes/second_phase_screen_scenes/battle-2/Battle.tscn")
