@@ -11,8 +11,6 @@ var current_dialogo: int = 0
 var dialogo_text_list : Array = []
 
 
-
-
 func _ready() -> void:
 	show_dialogo()
 
@@ -27,9 +25,7 @@ func show_dialogo() -> void:
 		emit_signal("dialogo_finished")
 		queue_free()
 		return
-		
-	text.percent_visible = 0
-	text.text = dialogo_text_list[current_dialogo]
+
 	
 	
 	while text.percent_visible < 1:
