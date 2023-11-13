@@ -1310,7 +1310,13 @@ position = Vector2( 5897, 173 )
 position = Vector2( 5805, 220 )
 
 [node name="apple30" parent="Fase_03/frutas" instance=ExtResource( 5 )]
-position = Vector2( 6183, 84 )
+position = Vector2( 6159, 97 )
+
+[node name="apple33" parent="Fase_03/frutas" instance=ExtResource( 5 )]
+position = Vector2( 6465, 103 )
+
+[node name="apple34" parent="Fase_03/frutas" instance=ExtResource( 5 )]
+position = Vector2( 6724, 97 )
 
 [node name="powerSound" type="AudioStreamPlayer" parent="Fase_03/frutas"]
 stream = ExtResource( 25 )
@@ -1371,3 +1377,5 @@ position = Vector2( 1718, 409 )
 [connection signal="geted" from="Fase_03/frutas/apple28" to="Fase_03/frutas" method="_on_apple28_geted"]
 [connection signal="geted" from="Fase_03/frutas/apple29" to="Fase_03/frutas" method="_on_apple29_geted"]
 [connection signal="geted" from="Fase_03/frutas/apple30" to="Fase_03/frutas" method="_on_apple30_geted"]
+[connection signal="geted" from="Fase_03/frutas/apple33" to="Fase_03/frutas" method="_on_apple30_geted"]
+[connection signal="geted" from="Fase_03/frutas/apple34" to="Fase_03/frutas" method="_on_apple30_geted"]
