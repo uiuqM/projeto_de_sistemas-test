@@ -12,6 +12,7 @@ font_data = ExtResource( 1 )
 [sub_resource type="StyleBoxEmpty" id=3]
 
 [node name="Death" type="Node2D"]
+visible = false
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 207.0
