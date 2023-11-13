@@ -12,8 +12,8 @@ var player_position = position
 onready var raycasts = $raycasts
 
 
-func _ready() -> void:
-	position.x = Global.checkpoint_pos
+#func _ready() -> void:
+#	position.x = Global.checkpoint_pos
 
 func _physics_process(delta : float) -> void:
  velocity.y += gravity * delta
