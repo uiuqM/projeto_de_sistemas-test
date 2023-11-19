@@ -79,6 +79,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scenes/start_screen_scenes/third_phase_screen_scenes/battle_3/dialago_1.gd"
 }, {
+"base": "Control",
+"class": "dialago_4",
+"language": "GDScript",
+"path": "res://scenes/start_screen_scenes/fourt_phase_screen_scenes/battle_4/dialago_1.gd"
+}, {
 "base": "StaticBody2D",
 "class": "enemy",
 "language": "GDScript",
@@ -104,6 +109,7 @@ _global_script_class_icons={
 "dialago": "",
 "dialago_2": "",
 "dialago_3": "",
+"dialago_4": "",
 "enemy": "",
 "interface": ""
 }
