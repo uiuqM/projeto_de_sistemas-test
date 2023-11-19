@@ -1,7 +1,6 @@
 extends StaticBody2D
 
 
-
 var can_intarect: bool = false
 
 export (Array, String) var dialogo_text

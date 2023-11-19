@@ -1,5 +1,5 @@
 extends Control
-class_name dialago_1
+class_name dialago_2
 
 signal dialogo_finished
 
