@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/xingling.tscn" type="PackedScene" id=1]
+[ext_resource path="res://models/npc/inimigos/Boss/Golem_01_Attacking_007 (1).png" type="Texture" id=2]
+[ext_resource path="res://scenes/start_screen_scenes/fourt_phase_screen_scenes/battle_4/WinterXingXing.gd" type="Script" id=3]
+
+[node name="XengXeng" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 2 )
