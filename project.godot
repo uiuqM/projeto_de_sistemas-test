@@ -72,7 +72,7 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "dialago_1",
 "language": "GDScript",
-"path": "res://scenes/start_screen_scenes/second_phase_screen_scenes/battle-2/dialago_1.gd"
+"path": "res://scenes/start_screen_scenes/third_phase_screen_scenes/battle_3/dialago_1.gd"
 }, {
 "base": "StaticBody2D",
 "class": "enemy",
