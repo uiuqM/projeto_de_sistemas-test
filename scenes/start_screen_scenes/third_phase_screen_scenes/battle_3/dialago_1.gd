@@ -1,5 +1,5 @@
 extends Control
-class_name dialago_2
+class_name dialago_3
 
 signal dialogo_finished
 
@@ -37,4 +37,4 @@ func show_dialogo() -> void:
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://scenes/start_screen_scenes/second_phase_screen_scenes/battle-2/Battle.tscn")
+	get_tree().change_scene("res://scenes/start_screen_scenes/third_phase_screen_scenes/battle_3/Battle.tscn")

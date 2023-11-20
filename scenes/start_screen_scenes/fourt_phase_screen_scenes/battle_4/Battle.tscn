@@ -1,7 +1,7 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://models/worlds/grassland/Terrain (16 x 16).png" type="Texture" id=1]
-[ext_resource path="res://models/npc/inimigos/Boss/0_Golem_Idle_000.png" type="Texture" id=2]
+[ext_resource path="res://models/npc/inimigos/Boss/Golem_01_Attacking_007 (1).png" type="Texture" id=2]
 [ext_resource path="res://fonts/NES.tres" type="DynamicFont" id=3]
 [ext_resource path="res://scripts/battleFirstGame/Battle.gd" type="Script" id=4]
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/battle/Dragon.tres" type="Resource" id=5]
@@ -16,15 +16,14 @@
 [ext_resource path="res://scenes/health_points_progress_bar.gd" type="Script" id=14]
 [ext_resource path="res://sounds/BATTLE_NORMAL002.ogg" type="AudioStream" id=15]
 [ext_resource path="res://sounds/punch-1-166694.mp3" type="AudioStream" id=16]
-[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/game_background_4/layers/front_decor.png" type="Texture" id=17]
+[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/winter 1/1.png" type="Texture" id=17]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/5 - Tree_row_BG_2.png" type="Texture" id=18]
 [ext_resource path="res://models/worlds/grassland/Background parts/3 - Cloud_cover_1.png" type="Texture" id=19]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/4 - Tree_row_BG_1.png" type="Texture" id=20]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/3 - Bottom_leaf_piles.png" type="Texture" id=21]
-[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/game_background_4/layers/ground_decor.png" type="Texture" id=22]
-[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/game_background_4/layers/back_decor.png" type="Texture" id=23]
-[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/game_background_4/layers/battleground.png" type="Texture" id=24]
-[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/game_background_4/layers/back_land.png" type="Texture" id=25]
+[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/winter 1/5.png" type="Texture" id=22]
+[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/winter 1/3.png" type="Texture" id=23]
+[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/winter 1/2.png" type="Texture" id=24]
 
 [sub_resource type="TileSet" id=39]
 0/name = "_Complete_static_BG_(288 x 208).png 0"
@@ -983,10 +982,10 @@ anchor_left = 0.623
 anchor_top = 0.5
 anchor_right = 0.63
 anchor_bottom = 0.5
-margin_left = 130.952
-margin_top = -7.0
-margin_right = 1272.99
-margin_bottom = 593.0
+margin_left = -507.0
+margin_top = -307.0
+margin_right = 649.376
+margin_bottom = 293.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
 
@@ -1008,14 +1007,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 2162.28
-margin_top = -141.0
-margin_right = 2362.28
-margin_bottom = 90.0
+margin_left = 2136.08
+margin_top = -106.0
+margin_right = 2347.08
+margin_bottom = 209.0
 rect_scale = Vector2( 1.2624, 0.854184 )
 
 [node name="ProgressBar" type="ProgressBar" parent="EnemyContainer"]
-margin_right = 200.0
+margin_right = 211.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 0, 16 )
 custom_styles/fg = SubResource( 1 )
@@ -1039,8 +1038,8 @@ valign = 1
 
 [node name="Enemy" type="TextureRect" parent="EnemyContainer"]
 margin_top = 20.0
-margin_right = 200.0
-margin_bottom = 220.0
+margin_right = 211.0
+margin_bottom = 153.0
 texture = ExtResource( 2 )
 stretch_mode = 4
 flip_h = true
@@ -1122,10 +1121,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 1167.65
-margin_top = -218.0
-margin_right = 1565.65
-margin_bottom = -4.0
+margin_left = 993.6
+margin_top = -192.0
+margin_right = 1391.6
+margin_bottom = 22.0
 custom_styles/panel = SubResource( 3 )
 
 [node name="Actions" type="VBoxContainer" parent="ActionsPanel"]
@@ -1250,10 +1249,10 @@ custom_styles/panel = SubResource( 30 )
 [node name="Label" type="Label" parent="QuestionsPanel/Textbox2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -91.4099
-margin_top = 36.0
-margin_right = 281.59
-margin_bottom = 20.0
+margin_left = -175.781
+margin_top = 58.0
+margin_right = 197.219
+margin_bottom = 42.0
 custom_fonts/font = SubResource( 32 )
 custom_styles/normal = SubResource( 42 )
 text = "Qual o resutaldo de 4 * 9?"
@@ -1272,23 +1271,19 @@ stream = ExtResource( 16 )
 visible = false
 
 [node name="sky" type="ParallaxLayer" parent="ParallaxBackground"]
-visible = false
 motion_mirroring = Vector2( 1152, 0 )
 
 [node name="trees2" type="ParallaxLayer" parent="ParallaxBackground"]
-visible = false
 motion_scale = Vector2( 0.8, 1 )
 motion_mirroring = Vector2( 1152, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/trees2"]
-visible = false
 position = Vector2( -1, 11 )
 scale = Vector2( 4.00694, 2 )
 texture = ExtResource( 21 )
 centered = false
 
 [node name="clouds" type="ParallaxLayer" parent="ParallaxBackground"]
-visible = false
 motion_mirroring = Vector2( 1152, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/clouds"]
@@ -1300,31 +1295,26 @@ texture = ExtResource( 19 )
 centered = false
 
 [node name="trees" type="ParallaxLayer" parent="ParallaxBackground"]
-visible = false
 motion_scale = Vector2( 0.8, 1 )
 motion_mirroring = Vector2( 1152, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/trees"]
-visible = false
 position = Vector2( 1, 105 )
 scale = Vector2( 4.00694, 2 )
 texture = ExtResource( 18 )
 centered = false
 
 [node name="cloud_mountain" type="ParallaxLayer" parent="ParallaxBackground"]
-visible = false
 motion_scale = Vector2( 0.6, 1 )
 motion_mirroring = Vector2( 1152, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/cloud_mountain"]
-visible = false
 position = Vector2( 0, 88 )
 scale = Vector2( 4, 2.23558 )
 texture = ExtResource( 20 )
 centered = false
 
 [node name="mountains_trees" type="ParallaxLayer" parent="ParallaxBackground"]
-visible = false
 motion_scale = Vector2( 0.7, 1 )
 motion_mirroring = Vector2( 1152, 0 )
 
@@ -1333,37 +1323,33 @@ motion_mirroring = Vector2( 1152, 0 )
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 2783, 219 )
-scale = Vector2( 0.321484, 0.439005 )
-texture = ExtResource( 24 )
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground2"]
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer3"]
-position = Vector2( 2738.94, 290.469 )
-scale = Vector2( 0.270866, 0.351418 )
-texture = ExtResource( 25 )
+position = Vector2( 2597, 364 )
+scale = Vector2( 2.5816, 3.2963 )
+texture = ExtResource( 17 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground2"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer2"]
-position = Vector2( 2738.94, 290.469 )
-scale = Vector2( 0.270866, 0.351418 )
+position = Vector2( 1930, -7 )
+scale = Vector2( 2.30729, 2.79012 )
+texture = ExtResource( 24 )
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground2"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer3"]
+position = Vector2( 2104, 26 )
+scale = Vector2( 2.31597, 2.60185 )
 texture = ExtResource( 23 )
+centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground2"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer4"]
-position = Vector2( 2735, 205 )
-scale = Vector2( 0.270866, 0.351418 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground2"]
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer5"]
-position = Vector2( 2735, 205 )
-scale = Vector2( 0.270866, 0.351418 )
+position = Vector2( 1032, 264 )
+scale = Vector2( 2.26215, 2.37963 )
 texture = ExtResource( 22 )
+centered = false
 
 [connection signal="text_changed" from="ActionsPanel/Actions/LineEdit" to="ActionsPanel/Actions/LineEdit" method="_on_LineEdit_text_changed"]
 [connection signal="text_entered" from="ActionsPanel/Actions/LineEdit" to="ActionsPanel/Actions/LineEdit" method="_on_LineEdit_text_entered"]
