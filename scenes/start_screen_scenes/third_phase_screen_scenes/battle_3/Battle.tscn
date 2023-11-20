@@ -16,7 +16,7 @@
 [ext_resource path="res://scenes/health_points_progress_bar.gd" type="Script" id=14]
 [ext_resource path="res://sounds/BATTLE_NORMAL002.ogg" type="AudioStream" id=15]
 [ext_resource path="res://sounds/punch-1-166694.mp3" type="AudioStream" id=16]
-[ext_resource path="res://models/worlds/autumn_forest/Background parts/6 - Distant_trees.png" type="Texture" id=17]
+[ext_resource path="res://models/worlds/background_battle/craftpix-net-270096-free-forest-battle-backgrounds/PNG/game_background_3/photo1700506896.jpeg" type="Texture" id=17]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/5 - Tree_row_BG_2.png" type="Texture" id=18]
 [ext_resource path="res://models/worlds/grassland/Background parts/3 - Cloud_cover_1.png" type="Texture" id=19]
 [ext_resource path="res://models/worlds/autumn_forest/Background parts/4 - Tree_row_BG_1.png" type="Texture" id=20]
@@ -859,7 +859,7 @@ antialiased = false
 font_path = "res://fonts/Adventurer.ttf"
 
 [sub_resource type="DynamicFont" id=32]
-size = 31
+size = 25
 outline_size = 1
 outline_color = Color( 0.968627, 0.45098, 0.45098, 1 )
 font_data = SubResource( 31 )
@@ -981,7 +981,7 @@ anchor_right = 0.63
 anchor_bottom = 0.5
 margin_left = 130.952
 margin_top = -7.0
-margin_right = 1265.82
+margin_right = 1301.66
 margin_bottom = 593.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
@@ -992,12 +992,13 @@ format = 1
 tile_data = PoolIntArray( 65531, 3, 0, 65532, 3, 0, 0, 3, 0, 4, 3, 0, 8, 3, 0, 12, 3, 0, 16, 3, 0, 20, 3, 0, 24, 3, 0, 28, 3, 0, 32, 3, 0, 36, 3, 0, 40, 3, 0, 44, 3, 0, 262139, 3, 0, 262140, 3, 0, 196608, 3, 0, 196612, 3, 0, 196616, 3, 0, 196620, 3, 0, 196624, 3, 0, 196628, 3, 0, 196632, 3, 0, 196633, 3, 0, 196634, 3, 0, 196635, 3, 0, 196636, 3, 0, 196637, 3, 0, 196638, 3, 0, 196639, 3, 0, 196640, 3, 0, 196641, 3, 0, 196642, 3, 0, 196643, 3, 0, 196644, 3, 0, 196645, 3, 0, 196646, 3, 0, 196647, 3, 0, 196648, 3, 0, 196649, 3, 0, 196650, 3, 0, 196651, 3, 0, 196652, 3, 0, 458747, 1, 0, 458748, 1, 0, 393216, 1, 0, 393220, 1, 0, 393224, 1, 0, 393228, 1, 0, 393232, 1, 0, 393236, 1, 0, 393240, 1, 0, 393244, 1, 0, 393248, 1, 0, 393252, 1, 0, 393256, 1, 0, 393260, 1, 0, 589819, 2, 0, 589820, 2, 0, 524288, 2, 0, 524292, 2, 0, 524296, 2, 0, 524300, 2, 0, 524304, 2, 0, 524308, 2, 0, 524312, 2, 0, 524316, 2, 0, 524320, 2, 0, 524324, 2, 0, 524328, 2, 0, 524332, 2, 0 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1968.1, -168 )
-scale = Vector2( 4.22916, 4.79807 )
+position = Vector2( 2037.1, -84 )
+scale = Vector2( 0.899219, 0.997264 )
 texture = ExtResource( 17 )
 centered = false
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 tile_set = SubResource( 40 )
 cell_size = Vector2( 16, 16 )
 collision_layer = 8
@@ -1009,10 +1010,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 2162.28
-margin_top = -141.0
-margin_right = 2362.28
-margin_bottom = 90.0
+margin_left = 2185.08
+margin_top = -92.0
+margin_right = 2385.08
+margin_bottom = 139.0
 rect_scale = Vector2( 1.2624, 0.854184 )
 
 [node name="ProgressBar" type="ProgressBar" parent="EnemyContainer"]
@@ -1102,7 +1103,7 @@ align = 1
 valign = 1
 
 [node name="texture" type="Sprite" parent="PlayerPanel"]
-position = Vector2( 434.663, -280 )
+position = Vector2( -26.9222, -229 )
 scale = Vector2( 0.961425, 0.973632 )
 texture = ExtResource( 10 )
 hframes = 3
@@ -1251,10 +1252,10 @@ custom_styles/panel = SubResource( 30 )
 [node name="Label" type="Label" parent="QuestionsPanel/Textbox2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -91.4099
-margin_top = 36.0
-margin_right = 281.59
-margin_bottom = 20.0
+margin_left = 17.0442
+margin_top = 92.0
+margin_right = 390.044
+margin_bottom = 76.0
 custom_fonts/font = SubResource( 32 )
 custom_styles/normal = SubResource( 42 )
 text = "Qual o resutaldo de 4 * 9?"
