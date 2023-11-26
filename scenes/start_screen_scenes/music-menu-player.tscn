@@ -11,3 +11,4 @@ modulate = Color( 1, 1, 1, 0 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
+bus = "menu"

@@ -192,6 +192,7 @@ valign = 1
 
 [node name="button_exit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
+bus = "Interface"
 
 [node name="controls" type="VBoxContainer" parent="."]
 anchor_left = 0.5
@@ -230,6 +231,7 @@ text = "SAIR"
 
 [node name="button_pressed" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+bus = "Interface"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_left = 63.0
@@ -306,7 +308,7 @@ margin_bottom = 24.0
 custom_fonts/font = ExtResource( 7 )
 text = "MÚSICA DO JOGO"
 
-[node name="HSlider" type="HSlider" parent="HBoxContainer/game_music_container"]
+[node name="sliderGame" type="HSlider" parent="HBoxContainer/game_music_container"]
 margin_top = 28.0
 margin_right = 171.0
 margin_bottom = 44.0
@@ -354,7 +356,7 @@ margin_bottom = 24.0
 custom_fonts/font = ExtResource( 7 )
 text = "SONS DE INTERFACE"
 
-[node name="HSlider" type="HSlider" parent="HBoxContainer/sfx_container"]
+[node name="sliderInterface" type="HSlider" parent="HBoxContainer/sfx_container"]
 margin_top = 28.0
 margin_right = 206.0
 margin_bottom = 44.0
@@ -393,13 +395,20 @@ text = "Stop"
 [connection signal="focus_exited" from="controls/exit_btn" to="." method="on_button_exited"]
 [connection signal="pressed" from="controls/exit_btn" to="." method="_on_exit_btn_pressed"]
 [connection signal="focus_exited" from="HBoxContainer/main_menu_container/HSlider" to="." method="on_button_exited"]
+[connection signal="value_changed" from="HBoxContainer/main_menu_container/HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="focus_exited" from="HBoxContainer/main_menu_container/HBoxContainer/Button_play_menu_music" to="." method="on_button_exited"]
+[connection signal="pressed" from="HBoxContainer/main_menu_container/HBoxContainer/Button_play_menu_music" to="." method="_on_Button_play_menu_music_pressed"]
 [connection signal="focus_exited" from="HBoxContainer/main_menu_container/HBoxContainer/Button_stop_menu_music" to="." method="on_button_exited"]
-[connection signal="focus_exited" from="HBoxContainer/game_music_container/HSlider" to="." method="on_button_exited"]
+[connection signal="pressed" from="HBoxContainer/main_menu_container/HBoxContainer/Button_stop_menu_music" to="." method="_on_Button_stop_menu_music_pressed"]
+[connection signal="focus_exited" from="HBoxContainer/game_music_container/sliderGame" to="." method="on_button_exited"]
+[connection signal="value_changed" from="HBoxContainer/game_music_container/sliderGame" to="." method="_on_sliderGame_value_changed"]
 [connection signal="focus_exited" from="HBoxContainer/game_music_container/HBoxContainer/Button_play_music_game" to="." method="on_button_exited"]
 [connection signal="pressed" from="HBoxContainer/game_music_container/HBoxContainer/Button_play_music_game" to="." method="_on_Button_play_music_game_pressed"]
 [connection signal="focus_exited" from="HBoxContainer/game_music_container/HBoxContainer/Button_stop_music_game" to="." method="on_button_exited"]
 [connection signal="pressed" from="HBoxContainer/game_music_container/HBoxContainer/Button_stop_music_game" to="." method="_on_Button_stop_music_game_pressed"]
-[connection signal="focus_exited" from="HBoxContainer/sfx_container/HSlider" to="." method="on_button_exited"]
+[connection signal="focus_exited" from="HBoxContainer/sfx_container/sliderInterface" to="." method="on_button_exited"]
+[connection signal="value_changed" from="HBoxContainer/sfx_container/sliderInterface" to="." method="_on_sliderInterface_value_changed"]
 [connection signal="focus_exited" from="HBoxContainer/sfx_container/HBoxContainer/Button_play_interface_sound" to="." method="on_button_exited"]
+[connection signal="pressed" from="HBoxContainer/sfx_container/HBoxContainer/Button_play_interface_sound" to="." method="_on_Button_play_interface_sound_pressed"]
 [connection signal="focus_exited" from="HBoxContainer/sfx_container/HBoxContainer/Button_stop_interface_sound" to="." method="on_button_exited"]
+[connection signal="pressed" from="HBoxContainer/sfx_container/HBoxContainer/Button_stop_interface_sound" to="." method="_on_Button_stop_interface_sound_pressed"]

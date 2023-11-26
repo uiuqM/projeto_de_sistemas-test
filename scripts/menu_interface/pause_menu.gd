@@ -17,12 +17,15 @@ func _process(delta):
 		
 
 func _on_return_btn_pressed():
-	$button_pressed.play()
+	if SoundControl.stateInterface():
+		$button_pressed.play()
 	is_paused = false
 
 func on_button_exited():
-	$button_exit.play()
+	if SoundControl.stateInterface():
+		$button_exit.play()
 
 func _on_quit_btn_pressed():
-	$button_pressed.play()
+	if SoundControl.stateInterface():
+		$button_pressed.play()
 	get_tree().quit()

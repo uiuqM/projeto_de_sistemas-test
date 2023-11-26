@@ -901,6 +901,7 @@ position = Vector2( 6476, 71 )
 
 [node name="jumpSound" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource( 21 )
+bus = "game"
 
 [node name="xingling" parent="." instance=ExtResource( 3 )]
 position = Vector2( 6663, 46 )
@@ -977,6 +978,7 @@ script = ExtResource( 16 )
 
 [node name="popDIalog" type="AudioStreamPlayer" parent="npc"]
 stream = ExtResource( 30 )
+bus = "game"
 
 [node name="fall_zone" type="Area2D" parent="."]
 script = ExtResource( 13 )
@@ -1080,6 +1082,7 @@ position = Vector2( 6214, 149 )
 
 [node name="powerSound" type="AudioStreamPlayer" parent="frutas"]
 stream = ExtResource( 22 )
+bus = "game"
 
 [node name="Death" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1839, -18 )
@@ -1118,6 +1121,7 @@ position = Vector2( 459, 504 )
 
 [node name="gameMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
+bus = "game"
 
 [node name="checkpoints" type="Node2D" parent="."]
 
@@ -1130,8 +1134,8 @@ position = Vector2( 3053, 495 )
 [node name="checkpoint3" parent="checkpoints" instance=ExtResource( 31 )]
 position = Vector2( 4546, 220 )
 
-[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="fall_zone" to="fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="geted" from="frutas/apple" to="frutas" method="_on_apple_geted"]
 [connection signal="geted" from="frutas/apple5" to="frutas" method="_on_apple5_geted"]
 [connection signal="geted" from="frutas/apple6" to="frutas" method="_on_apple6_geted"]
