@@ -25,7 +25,7 @@ func _ready():
 	$ActionsPanel.hide()
 	$QuestionsPanel.hide()
 	
-	display_text("Um %s apareceu!" % enemy.name.to_upper())
+	display_text("Uma batalha está iniciando!")
 	yield(self, "textbox_closed")
 	
 	display_question()
