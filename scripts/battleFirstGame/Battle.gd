@@ -72,7 +72,7 @@ func enemy_turn():
 		get_tree().reload_current_scene()
 
 func _on_Run_pressed():
-	display_text("Got away safely!")
+	display_text("Você correu. Perdeu um ponto de vida!")
 	yield(self, "textbox_closed")
 	yield(get_tree().create_timer(0.25), "timeout")
 	get_tree().quit()
