@@ -9,7 +9,7 @@ func _ready():
 func _on_start_btn_pressed(): # "Jogar" button
 	if SoundControl.stateInterface():
 		$button_pressed.play()
-	SceneTransition.change_scene("res://scenes/start_screen_scenes/firstPhaseScreen.tscn")
+	SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/firstStageScreen.tscn")
 
 func _on_control_btn_pressed(): # "Controles" button
 	if SoundControl.stateInterface():

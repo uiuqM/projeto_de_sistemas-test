@@ -25,7 +25,7 @@ func _ready():
 	$ActionsPanel.hide()
 	$QuestionsPanel.hide()
 	
-	display_text("Um %s apareceu!" % enemy.name.to_upper())
+	display_text("Uma batalha está iniciando!")
 	yield(self, "textbox_closed")
 	
 	display_question()
@@ -50,20 +50,20 @@ func display_text(text):
 
 func enemy_turn():
 	if Global.player_health_points > 0:
-		display_text("%s ataca você ferozmente!" % enemy.name)
+		display_text("Inimigo ataca você ferozmente!")
 		yield(self, "textbox_closed")
 		
 		Global.player_health_points = max(0, Global.player_health_points - enemy.damage)
 		set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
 		$PlayerPanel/anime.play("dano")
 		yield($PlayerPanel/anime, "animation_finished")
-		display_text("%s infligiu %d de dano!" % [enemy.name, enemy.damage])
+		display_text("Inimigo infligiu %d de dano!" % [enemy.damage])
 
 		display_question()
 		$ActionsPanel.show()
 		$ActionsPanel/Actions/LineEdit.grab_focus()
 	else:
-		display_text("%s derrotou você!" % enemy.name)
+		display_text("Inimigo derrotou você!")
 		yield(self, "textbox_closed") 
 		$PlayerPanel/anime.play("hit")
 		yield($PlayerPanel/anime, "animation_finished")
@@ -72,7 +72,7 @@ func enemy_turn():
 		get_tree().reload_current_scene()
 
 func _on_Run_pressed():
-	display_text("Got away safely!")
+	display_text("Você correu. Perdeu um ponto de vida!")
 	yield(self, "textbox_closed")
 	yield(get_tree().create_timer(0.25), "timeout")
 	get_tree().quit()
@@ -105,7 +105,7 @@ func _on_LineEdit_enter_pressed(value):
 		yield(self, "textbox_closed")
 		
 		if current_enemy_health == 0:
-			display_text("%s foi derrotado!" % enemy.name)
+			display_text("Inimigo foi derrotado!")
 			yield(self, "textbox_closed")
 			
 			$AnimationPlayer.play("enemy_died")
@@ -119,7 +119,7 @@ func _on_LineEdit_enter_pressed(value):
 	else:
 		print("Valor incorreto")
 		if Global.player_health_points == 0:
-			display_text("%s derrotou você!" % enemy.name)
+			display_text("Inimigo derrotou você!")
 			yield(self, "textbox_closed") 
 			$PlayerPanel/anime.play("hit")
 			yield($PlayerPanel/anime, "animation_finished")
