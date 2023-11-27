@@ -50,9 +50,10 @@ func display_text(text):
 
 func enemy_turn():
 	if Global.player_health_points > 0:
+		$impactSound.play()
 		display_text("Inimigo ataca você ferozmente!")
 		yield(self, "textbox_closed")
-		
+		$impactSound.stop()
 		Global.player_health_points = max(0, Global.player_health_points - enemy.damage)
 		set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
 		$PlayerPanel/anime.play("dano")
@@ -65,16 +66,20 @@ func enemy_turn():
 	else:
 		display_text("Inimigo derrotou você!")
 		yield(self, "textbox_closed") 
+		$playerDeath.play()
 		$PlayerPanel/anime.play("hit")
+		$playerDeath.stop()
 		yield($PlayerPanel/anime, "animation_finished")
 			
 		yield(get_tree().create_timer(0.25), "timeout")
 		get_tree().reload_current_scene()
 
 func _on_Run_pressed():
+	$runBattle.play()
 	display_text("Você correu. Perdeu um ponto de vida!")
 	yield(self, "textbox_closed")
 	yield(get_tree().create_timer(0.25), "timeout")
+	$runBattle.stop()
 	get_tree().quit()
 
 func _on_LineEdit_enter_pressed(value):
@@ -98,19 +103,22 @@ func _on_LineEdit_enter_pressed(value):
 		current_enemy_health = max(0, current_enemy_health - State.damage)
 		set_health($EnemyContainer/ProgressBar, current_enemy_health, enemy.health)
 		
+		$impactSound.play()
 		$AnimationPlayer.play("enemy_damaged")
 		yield($AnimationPlayer, "animation_finished")
+		$impactSound.stop()
 		
 		display_text("O inimigo recebeu %d de dano!" % State.damage)
 		yield(self, "textbox_closed")
 		
 		if current_enemy_health == 0:
+			$enemyDeath.play()
 			display_text("Inimigo foi derrotado!")
 			yield(self, "textbox_closed")
 			
 			$AnimationPlayer.play("enemy_died")
 			yield($AnimationPlayer, "animation_finished")
-			
+			$enemyDeath.stop()
 			yield(get_tree().create_timer(0.25), "timeout")
 			SceneTransition.change_scene("res://scenes/start_screen_scenes/fourt_phase_screen_scenes/Fase_04.tscn")
 		
@@ -120,7 +128,8 @@ func _on_LineEdit_enter_pressed(value):
 		print("Valor incorreto")
 		if Global.player_health_points == 0:
 			display_text("Inimigo derrotou você!")
-			yield(self, "textbox_closed") 
+			yield(self, "textbox_closed")
+			$playerDeath.play()
 			$PlayerPanel/anime.play("hit")
 			yield($PlayerPanel/anime, "animation_finished")
 			
@@ -172,5 +181,6 @@ func display_question():
 
 func _on_LineEdit_space_pressed():
 	print("TESTE")
+	$button.play()
 	$ActionsPanel/Actions/NoResponse.set_focus_mode(FOCUS_ALL)
 	$ActionsPanel/Actions/Run.set_focus_mode(FOCUS_ALL)
