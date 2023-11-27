@@ -253,3 +253,4 @@ bus = "Interface"
 [connection signal="focus_exited" from="Control/controls/return_btn" to="." method="on_button_exited"]
 [connection signal="pressed" from="Control/controls/return_btn" to="." method="_on_return_btn_pressed"]
 [connection signal="focus_exited" from="Control/controls/exit_btn" to="." method="on_button_exited"]
+[connection signal="pressed" from="Control/controls/exit_btn" to="." method="_on_exit_btn_pressed"]
