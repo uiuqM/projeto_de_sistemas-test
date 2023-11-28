@@ -15,6 +15,7 @@ var dialogo_text_list : Array = []
 
 
 func _ready() -> void:
+	$background/Text/Button.grab_focus()
 	show_dialogo()
 
 func _precces (_delta: float) -> void:

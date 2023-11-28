@@ -13,16 +13,20 @@ func _process(delta):
 		
 	if is_paused == true:
 		show()
+		$controls/return_btn.grab_focus()
 		get_tree().paused = true
 		
 
 func _on_return_btn_pressed():
-	$button_pressed.play()
+	if SoundControl.stateInterface():
+		$button_pressed.play()
 	is_paused = false
 
 func on_button_exited():
-	$button_exit.play()
+	if SoundControl.stateInterface():
+		$button_exit.play()
 
 func _on_quit_btn_pressed():
-	$button_pressed.play()
+	if SoundControl.stateInterface():
+		$button_pressed.play()
 	get_tree().quit()
