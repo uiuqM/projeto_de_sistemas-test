@@ -118,14 +118,14 @@ func _on_LineEdit_enter_pressed(value):
 		display_question()
 	else:
 		print("Valor incorreto")
-		if Global.player_health_points == 0:
+		if Global.player_health_points == 85:
 			display_text("%s derrotou você!" % enemy.name)
 			yield(self, "textbox_closed") 
 			$PlayerPanel/anime.play("hit")
 			yield($PlayerPanel/anime, "animation_finished")
 			
 			yield(get_tree().create_timer(0.25), "timeout")
-			get_tree().reload_current_scene()
+			SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/firstStageScreen.tscn")
 		enemy_turn()
 	
 

@@ -747,5 +747,5 @@ position = Vector2( 3487, -91 )
 [node name="inimigo2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3085, -113 )
 
-[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_fall_zone_body_entered"]
