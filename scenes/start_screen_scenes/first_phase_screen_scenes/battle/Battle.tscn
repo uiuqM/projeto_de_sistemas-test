@@ -410,14 +410,10 @@ anchor_left = 0.623
 anchor_top = 0.5
 anchor_right = 0.63
 anchor_bottom = 0.5
-margin_left = -507.0
-margin_top = -307.0
-<<<<<<< HEAD
-margin_right = 613.538
-=======
-margin_right = 670.888
->>>>>>> fdf23e25eef70751c2a5946956fcf243d251b743
-margin_bottom = 293.0
+margin_left = 130.952
+margin_top = -7.0
+margin_right = 1316.01
+margin_bottom = 593.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
 
