@@ -53,7 +53,9 @@ func enemy_turn():
 		$impactSound.play()
 		display_text("Inimigo ataca você ferozmente!")
 		yield(self, "textbox_closed")
+		
 		$impactSound.stop()
+		
 		Global.player_health_points = max(0, Global.player_health_points - enemy.damage)
 		set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
 		$PlayerPanel/anime.play("dano")
@@ -126,15 +128,21 @@ func _on_LineEdit_enter_pressed(value):
 		display_question()
 	else:
 		print("Valor incorreto")
+
+		if Global.player_health_points == 85:
+			display_text("%s derrotou você!" % enemy.name)
+			yield(self, "textbox_closed") 
+
 		if Global.player_health_points == 0:
 			display_text("Inimigo derrotou você!")
 			yield(self, "textbox_closed")
 			$playerDeath.play()
+
 			$PlayerPanel/anime.play("hit")
 			yield($PlayerPanel/anime, "animation_finished")
 			
 			yield(get_tree().create_timer(0.25), "timeout")
-			get_tree().reload_current_scene()
+			SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/firstStageScreen.tscn")
 		enemy_turn()
 	
 

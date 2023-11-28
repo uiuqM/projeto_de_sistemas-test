@@ -711,7 +711,7 @@ script = ExtResource( 6 )
 position = Vector2( 5002, 483 )
 
 [node name="player" parent="Fase_04" instance=ExtResource( 27 )]
-position = Vector2( 4623, 501 )
+position = Vector2( 4787, 465 )
 
 [node name="jumpSound" type="AudioStreamPlayer" parent="Fase_04/player"]
 stream = ExtResource( 18 )
