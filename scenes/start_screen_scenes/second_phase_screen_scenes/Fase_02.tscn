@@ -902,7 +902,7 @@ position = Vector2( 7482, 107 )
 stream = ExtResource( 18 )
 
 [node name="XongXong" parent="Fase_01" instance=ExtResource( 5 )]
-position = Vector2( 7569, 82 )
+position = Vector2( 7579, 79 )
 
 [node name="interface" parent="Fase_01" instance=ExtResource( 1 )]
 
@@ -1104,8 +1104,8 @@ position = Vector2( 4833, 216 )
 [node name="inimigo2" parent="Fase_01" instance=ExtResource( 3 )]
 position = Vector2( 779, 424 )
 
-[connection signal="body_entered" from="Fase_01/fall_zone" to="Fase_01/fall_zone" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Fase_01/fall_zone" to="Fase_01/fall_zone" method="_on_fall_zone_body_entered"]
+[connection signal="body_entered" from="Fase_01/fall_zone" to="Fase_01/fall_zone" method="_on_Area2D_body_entered"]
 [connection signal="geted" from="Fase_01/frutas/apple" to="Fase_01/frutas" method="_on_apple_geted"]
 [connection signal="geted" from="Fase_01/frutas/apple5" to="Fase_01/frutas" method="_on_apple5_geted"]
 [connection signal="geted" from="Fase_01/frutas/apple6" to="Fase_01/frutas" method="_on_apple6_geted"]
