@@ -66,7 +66,7 @@ func enemy_turn():
 		$ActionsPanel.show()
 		$ActionsPanel/Actions/LineEdit.grab_focus()
 	else:
-		Global.player_health_points = 15
+		Global.player_health_points = 100
 		Global.player_health -= 1
 		print("Global.player_health: ", Global.player_health)
 		print("Global.max_player_health_points: ", Global.max_player_health_points)
