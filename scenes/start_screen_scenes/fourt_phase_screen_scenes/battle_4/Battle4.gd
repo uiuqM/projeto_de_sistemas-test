@@ -1,3 +1,5 @@
+### Battle 4
+
 extends Control
 
 signal textbox_closed
@@ -86,9 +88,7 @@ func _on_Run_pressed():
 
 func _on_LineEdit_enter_pressed(value):
 	if $ActionsPanel/Actions/LineEdit.text.empty():
-		print("empty")
 		return
-		
 		
 	$QuestionsPanel/Textbox2/Label.hide()
 	var result = 0
@@ -101,7 +101,6 @@ func _on_LineEdit_enter_pressed(value):
 		result = n_one * n_two
 		
 	if value == result:
-		print("Valor correto")
 		current_enemy_health = max(0, current_enemy_health - State.damage)
 		set_health($EnemyContainer/ProgressBar, current_enemy_health, enemy.health)
 		
@@ -122,12 +121,11 @@ func _on_LineEdit_enter_pressed(value):
 			yield($AnimationPlayer, "animation_finished")
 			$enemyDeath.stop()
 			yield(get_tree().create_timer(0.25), "timeout")
-			SceneTransition.change_scene("res://scenes/start_screen_scenes/fourt_phase_screen_scenes/Fase_04.tscn")
+			SceneTransition.change_scene("res://scenes/startScreen.tscn")
 		
 		$ActionsPanel/Actions/LineEdit.clear()
 		display_question()
 	else:
-		print("Valor incorreto")
 
 		if Global.player_health_points == 85:
 			display_text("%s derrotou você!" % enemy.name)
@@ -188,7 +186,6 @@ func display_question():
 	$ActionsPanel/Actions/LineEdit.grab_focus()
 
 func _on_LineEdit_space_pressed():
-	print("TESTE")
 	$button.play()
 	$ActionsPanel/Actions/NoResponse.set_focus_mode(FOCUS_ALL)
 	$ActionsPanel/Actions/Run.set_focus_mode(FOCUS_ALL)

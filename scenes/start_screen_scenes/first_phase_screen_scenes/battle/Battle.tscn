@@ -3,7 +3,7 @@
 [ext_resource path="res://sounds/click.wav" type="AudioStream" id=1]
 [ext_resource path="res://models/battle/Dragon.png" type="Texture" id=2]
 [ext_resource path="res://fonts/NES.tres" type="DynamicFont" id=3]
-[ext_resource path="res://scripts/battleFirstGame/Battle.gd" type="Script" id=4]
+[ext_resource path="res://scripts/battleFirstGame/Battle1.gd" type="Script" id=4]
 [ext_resource path="res://scenes/start_screen_scenes/first_phase_screen_scenes/battle/Dragon.tres" type="Resource" id=5]
 [ext_resource path="res://scripts/battleFirstGame/Questions.gd" type="Script" id=6]
 [ext_resource path="res://scripts/battleFirstGame/LineEdit.gd" type="Script" id=7]
@@ -412,7 +412,7 @@ anchor_right = 0.63
 anchor_bottom = 0.5
 margin_left = 130.952
 margin_top = -7.0
-margin_right = 1316.01
+margin_right = 1402.02
 margin_bottom = 593.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
@@ -519,7 +519,7 @@ align = 1
 [node name="ProgressBar" type="ProgressBar" parent="PlayerPanel/PlayerData"]
 margin_left = 285.0
 margin_top = 20.0
-margin_right = 567.0
+margin_right = 566.0
 margin_bottom = 36.0
 rect_min_size = Vector2( 0, 16 )
 size_flags_horizontal = 3
