@@ -1,14 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/start_screen_scenes/third_phase_screen_scenes/battle_3/dialago_1.gd" type="Script" id=2]
+[ext_resource path="res://fonts/NES.tres" type="DynamicFont" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 9
 font_data = ExtResource( 1 )
 
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.937255, 0.113725, 0.113725, 1 )
+
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.894118, 1, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.384314, 0.894118, 0.101961, 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.909804, 0.207843, 0.156863, 0.988235 )
@@ -40,7 +47,7 @@ margin_top = 5.0
 margin_right = -10.0
 margin_bottom = -5.0
 custom_fonts/normal_font = SubResource( 1 )
-text = "Se está preparado para me vencer que venha "
+text = "Se está preparado para me vencer, que venha!"
 
 [node name="Button" type="Button" parent="background/Text"]
 anchor_left = 1.0
@@ -52,11 +59,14 @@ margin_top = -22.0
 margin_bottom = -2.0
 custom_colors/font_color_disabled = Color( 0.870588, 0.819608, 0.819608, 1 )
 custom_colors/font_color_focus = Color( 0.552941, 0.141176, 0.141176, 1 )
-custom_colors/font_color = Color( 0.909804, 0.101961, 0.101961, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.866667, 0.807843, 0.0666667, 1 )
 custom_colors/font_color_pressed = Color( 0.968627, 0.215686, 0.0352941, 1 )
+custom_fonts/font = ExtResource( 3 )
+custom_styles/hover = SubResource( 4 )
 custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 5 )
 custom_styles/normal = SubResource( 3 )
-align = 0
+text = "Ok"
 
 [connection signal="pressed" from="background/Text/Button" to="." method="_on_Button_pressed"]
