@@ -1,11 +1,9 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=2 format=2]
 
-[ext_resource path="res://models/npc/inimigos/Boss/0_Golem_Idle_000.png" type="Texture" id=1]
-[ext_resource path="res://scripts/battleFirstGame/BaseEnemy.gd" type="Script" id=2]
+[ext_resource path="res://scenes/start_screen_scenes/third_phase_screen_scenes/battle_3/BaseEnemyBattle3.gd" type="Script" id=1]
 
 [resource]
-script = ExtResource( 2 )
-name = "Enemy"
-texture = ExtResource( 1 )
-health = 45
-damage = 15
+script = ExtResource( 1 )
+name = "Batty"
+health = 30
+damage = 20

@@ -1,11 +1,9 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=2 format=2]
 
-[ext_resource path="res://src/BaseEnemy.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Batty.png" type="Texture" id=2]
+[ext_resource path="res://scenes/start_screen_scenes/second_phase_screen_scenes/battle-2/BaseEnemyBattle2.gd" type="Script" id=1]
 
 [resource]
 script = ExtResource( 1 )
 name = "Batty"
-texture = ExtResource( 2 )
 health = 35
 damage = 5

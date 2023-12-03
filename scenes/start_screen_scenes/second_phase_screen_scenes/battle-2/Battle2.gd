@@ -1,4 +1,4 @@
-### Battle 1
+### Battle 2
 
 extends Control
 
@@ -121,7 +121,7 @@ func _on_LineEdit_enter_pressed(value):
 			yield($AnimationPlayer, "animation_finished")
 			$enemyDeath.stop()
 			yield(get_tree().create_timer(0.25), "timeout")
-			SceneTransition.change_scene("res://scenes/start_screen_scenes/second_phase_screen_scenes/Fase_02.tscn")
+			SceneTransition.change_scene("res://scenes/start_screen_scenes/third_phase_screen_scenes/Fase_03.tscn")
 		
 		$ActionsPanel/Actions/LineEdit.clear()
 		display_question()
