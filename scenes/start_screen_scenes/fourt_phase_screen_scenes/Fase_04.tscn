@@ -676,7 +676,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [node name="Node2D" type="Node2D"]
 
 [node name="AdobeStock489114224Preview" type="Sprite" parent="."]
-position = Vector2( 669, 156.75 )
+position = Vector2( 669, 159 )
 scale = Vector2( 1.42017, 1.39618 )
 texture = ExtResource( 4 )
 
@@ -747,5 +747,5 @@ position = Vector2( 3487, -91 )
 [node name="inimigo2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3085, -113 )
 
-[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_fall_zone_body_entered"]

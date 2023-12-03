@@ -1344,8 +1344,8 @@ position = Vector2( 81, -5 )
 [node name="XengXeng" parent="." instance=ExtResource( 4 )]
 position = Vector2( 7085, 74 )
 
-[connection signal="body_entered" from="Fase_03/fall_zone" to="Fase_03/fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="Fase_03/fall_zone" to="Fase_03/fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Fase_03/fall_zone" to="Fase_03/fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="geted" from="Fase_03/frutas/apple" to="Fase_03/frutas" method="_on_apple_geted"]
 [connection signal="geted" from="Fase_03/frutas/apple5" to="Fase_03/frutas" method="_on_apple5_geted"]
 [connection signal="geted" from="Fase_03/frutas/apple6" to="Fase_03/frutas" method="_on_apple6_geted"]
