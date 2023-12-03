@@ -15,8 +15,6 @@ var n_two = 0
 func _ready():
 	$battleSound.play()
 	$ActionsPanel/Actions/LineEdit.set_meta("_gui_order", 1)
-	$ActionsPanel/Actions/NoResponse.set_meta("_gui_order", 2)
-	$ActionsPanel/Actions/Run.set_meta("_gui_order", 3)
 	set_health($EnemyContainer/ProgressBar, enemy.health, enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBar, Global.player_health_points, Global.max_player_health_points)
 	
@@ -68,23 +66,24 @@ func enemy_turn():
 		$ActionsPanel.show()
 		$ActionsPanel/Actions/LineEdit.grab_focus()
 	else:
+		Global.player_health_points = 15
+		Global.player_health -= 1
+		print("Global.player_health: ", Global.player_health)
+		print("Global.max_player_health_points: ", Global.max_player_health_points)
+		print("Global.player_health_points: ", Global.player_health_points)
+		if Global.player_health == 0:
+			Global.player_health = 3
+			SceneTransition.change_scene("res://scenes/startScreen.tscn")
+
 		display_text("Inimigo derrotou você!")
 		yield(self, "textbox_closed") 
 		$playerDeath.play()
 		$PlayerPanel/anime.play("hit")
 		$playerDeath.stop()
 		yield($PlayerPanel/anime, "animation_finished")
-			
+
 		yield(get_tree().create_timer(0.25), "timeout")
 		get_tree().reload_current_scene()
-
-func _on_Run_pressed():
-	$runBattle.play()
-	display_text("Você correu. Perdeu um ponto de vida!")
-	yield(self, "textbox_closed")
-	yield(get_tree().create_timer(0.25), "timeout")
-	$runBattle.stop()
-	get_tree().quit()
 
 func _on_LineEdit_enter_pressed(value):
 	if $ActionsPanel/Actions/LineEdit.text.empty():
@@ -126,11 +125,6 @@ func _on_LineEdit_enter_pressed(value):
 		$ActionsPanel/Actions/LineEdit.clear()
 		display_question()
 	else:
-
-		if Global.player_health_points == 85:
-			display_text("%s derrotou você!" % enemy.name)
-			yield(self, "textbox_closed") 
-
 		if Global.player_health_points == 0:
 			display_text("Inimigo derrotou você!")
 			yield(self, "textbox_closed")
@@ -138,12 +132,11 @@ func _on_LineEdit_enter_pressed(value):
 
 			$PlayerPanel/anime.play("hit")
 			yield($PlayerPanel/anime, "animation_finished")
-			
+			Global.player_health_points = Global.max_player_health_points
+			Global.player_health = Global.player_health - 1
 			yield(get_tree().create_timer(0.25), "timeout")
-			SceneTransition.change_scene("res://scenes/start_screen_scenes/first_phase_screen_scenes/firstStageScreen.tscn")
+			SceneTransition.change_scene("res://scenes/start_screen_scenes/fourt_phase_screen_scenes/Fase_04.tscn")
 		enemy_turn()
-	
-
 		
 	$ActionsPanel/Actions/LineEdit.clear()
 	$ActionsPanel.show()
@@ -187,5 +180,3 @@ func display_question():
 
 func _on_LineEdit_space_pressed():
 	$button.play()
-	$ActionsPanel/Actions/NoResponse.set_focus_mode(FOCUS_ALL)
-	$ActionsPanel/Actions/Run.set_focus_mode(FOCUS_ALL)
