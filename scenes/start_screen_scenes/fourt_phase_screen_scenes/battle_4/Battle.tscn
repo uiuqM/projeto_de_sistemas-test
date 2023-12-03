@@ -966,10 +966,10 @@ anchor_left = 0.623
 anchor_top = 0.5
 anchor_right = 0.63
 anchor_bottom = 0.5
-margin_left = -507.0
-margin_top = -307.0
-margin_right = 706.732
-margin_bottom = 293.0
+margin_left = 130.952
+margin_top = -7.0
+margin_right = 1351.85
+margin_bottom = 593.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
 

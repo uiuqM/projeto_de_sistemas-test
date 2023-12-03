@@ -712,12 +712,13 @@ position = Vector2( -1, -4 )
 script = ExtResource( 6 )
 
 [node name="interface" parent="Fase_04" instance=ExtResource( 2 )]
+visible = false
 
 [node name="XengXeng" parent="Fase_04" instance=ExtResource( 3 )]
 position = Vector2( 5002, 483 )
 
 [node name="player" parent="Fase_04" instance=ExtResource( 27 )]
-position = Vector2( 466, 339 )
+position = Vector2( 4751, 483 )
 
 [node name="jumpSound" type="AudioStreamPlayer" parent="Fase_04/player"]
 stream = ExtResource( 18 )
@@ -733,6 +734,7 @@ shape = SubResource( 36 )
 stream = ExtResource( 17 )
 
 [node name="Death" parent="Fase_04" instance=ExtResource( 26 )]
+visible = true
 position = Vector2( 1839, -18 )
 
 [node name="HUD" parent="Fase_04" instance=ExtResource( 31 )]

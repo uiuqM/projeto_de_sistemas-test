@@ -66,13 +66,22 @@ func enemy_turn():
 		$ActionsPanel.show()
 		$ActionsPanel/Actions/LineEdit.grab_focus()
 	else:
+		Global.player_health_points = 15
+		Global.player_health -= 1
+		print("Global.player_health: ", Global.player_health)
+		print("Global.max_player_health_points: ", Global.max_player_health_points)
+		print("Global.player_health_points: ", Global.player_health_points)
+		if Global.player_health == 0:
+			Global.player_health = 3
+			SceneTransition.change_scene("res://scenes/startScreen.tscn")
+
 		display_text("Inimigo derrotou você!")
 		yield(self, "textbox_closed") 
 		$playerDeath.play()
 		$PlayerPanel/anime.play("hit")
 		$playerDeath.stop()
 		yield($PlayerPanel/anime, "animation_finished")
-			
+
 		yield(get_tree().create_timer(0.25), "timeout")
 		get_tree().reload_current_scene()
 

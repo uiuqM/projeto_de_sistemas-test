@@ -311,18 +311,13 @@ tracks/0/keys = {
 }
 
 [node name="Battle-1" type="Control"]
-anchor_left = 0.873047
-anchor_top = 0.473333
-anchor_right = 2.09894
-anchor_bottom = 1.47833
-margin_left = -729.0
-margin_top = -257.0
-margin_right = 532.682
-margin_bottom = 343.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 130.952
+margin_top = -7.0
+margin_right = 130.952
+margin_bottom = -7.0
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
 enemy = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -336,10 +331,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -804.682
-margin_top = -305.0
-margin_right = -604.682
-margin_bottom = -74.0001
+margin_left = 21.0
+margin_top = -67.0
+margin_right = 221.0
+margin_bottom = 164.0
 rect_scale = Vector2( 1.2624, 0.854184 )
 
 [node name="ProgressBar" type="ProgressBar" parent="EnemyContainer"]
@@ -378,10 +373,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -1255.5
-margin_top = -698.0
-margin_right = -399.5
-margin_bottom = -637.0
+margin_left = -495.0
+margin_top = -67.0
+margin_right = 361.0
+margin_bottom = -6.0
 custom_styles/panel = SubResource( 3 )
 
 [node name="PlayerData" type="HBoxContainer" parent="PlayerPanel"]
@@ -443,10 +438,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -2542.36
-margin_top = -476.0
-margin_right = -2144.37
-margin_bottom = -262.0
+margin_left = -958.0
+margin_top = -144.0
+margin_right = -560.01
+margin_bottom = 70.0
 custom_styles/panel = SubResource( 3 )
 
 [node name="Actions" type="VBoxContainer" parent="ActionsPanel"]
@@ -530,10 +525,10 @@ custom_styles/panel = SubResource( 30 )
 [node name="Label" type="Label" parent="QuestionsPanel/Textbox2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -2557.89
-margin_top = 70.91
-margin_right = -2184.89
-margin_bottom = 46.91
+margin_left = 366.393
+margin_top = 131.0
+margin_right = 739.393
+margin_bottom = 107.0
 custom_fonts/font = SubResource( 32 )
 custom_styles/normal = SubResource( 42 )
 text = "Qual o resutaldo de 4 * 9?"
