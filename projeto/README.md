@@ -3,7 +3,7 @@
 
 [Documento de especificação de requisitos](.github/files/requirements.md)  
 [Documento de planejamento de sprints](.github/files/sprints.md)
-## Índice  
+## Índice 
 
 - [Mundo Matemático](#conhecimento-em-ação)
   - [Índice](#índice)
