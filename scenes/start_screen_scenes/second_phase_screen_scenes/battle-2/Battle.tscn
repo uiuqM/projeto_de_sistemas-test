@@ -311,12 +311,23 @@ tracks/0/keys = {
 }
 
 [node name="Battle-1" type="Control"]
+<<<<<<< HEAD
+anchor_left = 0.623
+anchor_top = 0.5
+anchor_right = 0.63
+anchor_bottom = 0.5
+margin_left = -507.0
+margin_top = -307.0
+margin_right = 726.008
+margin_bottom = 293.0
+=======
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 130.952
 margin_top = -7.0
 margin_right = 130.952
 margin_bottom = -7.0
+>>>>>>> 08d972d72cbc9163e6258c62a1768d2b6353499a
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
 
@@ -534,7 +545,11 @@ custom_styles/normal = SubResource( 42 )
 text = "Qual o resutaldo de 4 * 9?"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+<<<<<<< HEAD
+position = Vector2( 381.048, 307 )
+=======
 position = Vector2( 379, 299 )
+>>>>>>> 08d972d72cbc9163e6258c62a1768d2b6353499a
 
 [node name="texture" type="Sprite" parent="."]
 position = Vector2( 99.048, 326 )

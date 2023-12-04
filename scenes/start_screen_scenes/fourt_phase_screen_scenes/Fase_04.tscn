@@ -718,7 +718,7 @@ visible = false
 position = Vector2( 5002, 483 )
 
 [node name="player" parent="Fase_04" instance=ExtResource( 27 )]
-position = Vector2( 4751, 483 )
+position = Vector2( 51, 487 )
 
 [node name="jumpSound" type="AudioStreamPlayer" parent="Fase_04/player"]
 stream = ExtResource( 18 )
@@ -755,5 +755,5 @@ position = Vector2( 3487, -91 )
 [node name="inimigo2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3085, -113 )
 
-[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_fall_zone_body_entered"]
 [connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Fase_04/fall_zone" to="Fase_04/fall_zone" method="_on_fall_zone_body_entered"]

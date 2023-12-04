@@ -395,7 +395,7 @@ anchor_right = 0.63
 anchor_bottom = 0.5
 margin_left = -507.0
 margin_top = -307.0
-margin_right = 785.572
+margin_right = 792.74
 margin_bottom = 293.0
 script = ExtResource( 4 )
 enemy = ExtResource( 5 )
@@ -502,7 +502,7 @@ align = 1
 [node name="ProgressBar" type="ProgressBar" parent="PlayerPanel/PlayerData"]
 margin_left = 285.0
 margin_top = 20.0
-margin_right = 566.0
+margin_right = 567.0
 margin_bottom = 36.0
 rect_min_size = Vector2( 0, 16 )
 size_flags_horizontal = 3
