@@ -70,9 +70,19 @@ _global_script_classes=[ {
 "path": "res://scripts/dialago.gd"
 }, {
 "base": "Control",
-"class": "dialago_1",
+"class": "dialago_2",
 "language": "GDScript",
 "path": "res://scenes/start_screen_scenes/second_phase_screen_scenes/battle-2/dialago_1.gd"
+}, {
+"base": "Control",
+"class": "dialago_3",
+"language": "GDScript",
+"path": "res://scenes/start_screen_scenes/third_phase_screen_scenes/battle_3/dialago_1.gd"
+}, {
+"base": "Control",
+"class": "dialago_4",
+"language": "GDScript",
+"path": "res://scenes/start_screen_scenes/fourt_phase_screen_scenes/battle_4/dialago_1.gd"
 }, {
 "base": "StaticBody2D",
 "class": "enemy",
@@ -97,7 +107,9 @@ _global_script_class_icons={
 "DialogicUtil": "",
 "HistoryRow": "",
 "dialago": "",
-"dialago_1": "",
+"dialago_2": "",
+"dialago_3": "",
+"dialago_4": "",
 "enemy": "",
 "interface": ""
 }
@@ -114,6 +126,7 @@ SceneTransition="*res://scenes/sceneTransition.tscn"
 State="*res://scripts/battleFirstGame/State.gd"
 playMusicMenu="*res://scenes/start_screen_scenes/first_phase_screen_scenes/music-game-player.tscn"
 Global="*res://scripts/Global.gd"
+SoundControl="*res://scripts/soundControl.gd"
 
 [display]
 

@@ -238,9 +238,11 @@ text = "SAIR"
 
 [node name="button_pressed" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+bus = "Interface"
 
 [node name="button_exit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+bus = "Interface"
 
 [connection signal="focus_exited" from="Control/controls/codebase_btn" to="." method="on_button_exited"]
 [connection signal="pressed" from="Control/controls/codebase_btn" to="." method="_on_codebase_btn_pressed"]
@@ -248,4 +250,5 @@ stream = ExtResource( 5 )
 [connection signal="pressed" from="Control/controls/dev_list" to="." method="_on_dev_list_pressed"]
 [connection signal="focus_exited" from="Control/controls/return_btn" to="." method="on_button_exited"]
 [connection signal="pressed" from="Control/controls/return_btn" to="." method="_on_return_btn_pressed"]
+[connection signal="focus_exited" from="Control/controls/exit_btn" to="." method="on_button_exited"]
 [connection signal="pressed" from="Control/controls/exit_btn" to="." method="_on_exit_btn_pressed"]

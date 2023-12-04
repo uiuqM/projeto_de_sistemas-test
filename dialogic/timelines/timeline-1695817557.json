@@ -37,6 +37,18 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Boa sorte !!!!!\n\n"
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Como assim eu estou voando??\n"
+		},
+		{
+			"character": "character-1695817008.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eu sou um mago, posso fazer tudo, ou quase tudo rsrs"
 		}
 	],
 	"metadata": {
