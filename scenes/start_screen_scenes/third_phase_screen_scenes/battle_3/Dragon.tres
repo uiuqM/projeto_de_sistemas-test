@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scenes/start_screen_scenes/third_phase_screen_scenes/battle_3/BaseEnemyBattle3.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Batty"
+health = 30
+damage = 20

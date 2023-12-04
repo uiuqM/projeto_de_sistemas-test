@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Summer Memories.ogg-f85b0d8c23fc40cffaddad42df65606d.oggstr"
+
+[deps]
+
+source_file="res://sounds/Summer Memories.ogg"
+dest_files=[ "res://.import/Summer Memories.ogg-f85b0d8c23fc40cffaddad42df65606d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

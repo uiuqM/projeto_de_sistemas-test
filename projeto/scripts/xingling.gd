@@ -17,6 +17,7 @@ func on_body_entered(body)->void:
 	if body.name == "player":
 		can_intarect =true
 		print("Personagem entrou em contato")
+		$questmark/AnimationPlayer.play("idle")
 
 func _on_Area2D_body_exited(body)->void:
 	if body.name == "player":
